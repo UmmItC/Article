@@ -5,7 +5,7 @@ description: "Take your Gentoo Linux system to the next level with user manageme
 tags: ["Open-RC", "Gentoo", "Linux"]
 date: 2023-09-20T16:40:21+0800
 thumbnail: https://wallpapercave.com/wp/wp11345838.png
-lastmod: 2023-09-21T16:40:24+0800
+lastmod: 2023-10-20T21:17:54+0800
 ---
 
 ## Introduction
@@ -228,6 +228,30 @@ firefox-bin
 ```
 
 By following these steps, you'll have a fully configured Firefox web browser on your Gentoo system, ready for all your browsing needs.
+
+## 8. Setting Up Time Synchronization with Chrony
+
+Ensuring accurate time synchronization is crucial for the proper functioning of your Gentoo system. The NTP (Network Time Protocol) protocol is commonly used for this purpose, and one popular software implementation is Chrony. Here's how you can set up Chrony for time synchronization:
+
+### Installing Chrony
+
+First, install Chrony using the following command:
+
+```bash
+emerge --ask net-misc/chrony
+```
+
+### Adding Chrony to System Startup
+
+To make sure Chrony starts automatically during boot, add it to the default runlevel with this command:
+
+```bash
+rc-update add chronyd default
+```
+
+By adding Chrony to the default runlevel, you ensure that it initializes with your system every time it boots up.
+
+Chrony offers accurate time synchronization, crucial for various system processes and network activities. Setting it up correctly contributes to the overall stability and reliability of your Gentoo system.
 
 ## Summarize
 
