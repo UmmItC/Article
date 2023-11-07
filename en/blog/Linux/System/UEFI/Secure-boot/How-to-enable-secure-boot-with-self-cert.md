@@ -165,3 +165,4 @@ By following these steps, you've securely enabled Secure Boot with your self-cer
 - [Install Secure Boot on Arch Linux (the easy way)](https://onion.tube/watch?v=yU-SE7QX6WQ)
 - [Setting Up Secure Boot on Arch Linux Using sbctl](https://onion.tube/watch?v=R5dUWnSQIuY)
 - [Github: sbctl](https://github.com/Foxboron/sbctl)
+- [How to Enable Secure Boot in Bios Gigabyte✅](https://onion.tube/watch?v=waCl06Mg02E)
