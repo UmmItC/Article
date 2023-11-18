@@ -253,6 +253,28 @@ By adding Chrony to the default runlevel, you ensure that it initializes with yo
 
 Chrony offers accurate time synchronization, crucial for various system processes and network activities. Setting it up correctly contributes to the overall stability and reliability of your Gentoo system.
 
+## 9. Network Connectivity with NetworkManager
+
+NetworkManager is a versatile software crafted to efficiently manage an array of network connections, including wired, wireless, DSL, dial-up, VPN, WiMAX, and mobile broadband networks.
+
+### Installation
+
+For a seamless network management experience, install NetworkManager using the following command in your shell:
+
+```shell
+sudo emerge --ask --verbose net-misc/networkmanager
+```
+
+### Autostart at Boot
+
+Ensure NetworkManager starts automatically at boot by adding it to the default run level with the following command:
+
+```shell
+rc-update add NetworkManager default
+```
+
+Whether you need standard wired and wireless connections or desire to set up custom networks like WireGuard or OpenVPN, NetworkManager provides a user-friendly platform for configuring and managing diverse network environments.
+
 ## Summarize
 
 These tools are useful for your daily use of gentoo. Installation is not required, but they will definitely help your future work or experience.
