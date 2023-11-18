@@ -303,10 +303,10 @@ INPUT_DEVICES="libinput synaptics"
 VIDEO_CARDS="nouveau"
 ```
 
-#### AMD/ATI Cards:
+#### Support for AMDGPU, RadeonSI, and AMD/ATI Cards:
 
-```bash
-VIDEO_CARDS="radeon"
+```shell
+VIDEO_CARDS="amdgpu radeonsi radeon"
 ```
 
 These configurations provide comprehensive support for input devices and graphics cards on your Gentoo system. Customize these settings based on your specific hardware and preferences, ensuring a seamless and optimized computing experience.
