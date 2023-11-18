@@ -247,43 +247,69 @@ rm -rfv stage3-*.tar.xz
 
 ## Step 6: Configuring make.conf
 
-Gentoo is known for its high customization potential, where you compile and configure everything to your specific needs. In this step, we'll optimize compilation speed and enhance terminal output aesthetics.
+Gentoo Linux is renowned for its customization potential, offering users the ability to compile and configure their systems according to specific needs. In this step, we'll focus on enhancing compilation speed, refining the aesthetics of terminal output and GPU Support.
 
-### Edit make.conf
+### Edit `make.conf`
+
 ```bash
 nano /mnt/gentoo/etc/portage/make.conf
 ```
-Open the `make.conf` file for customization. This file contains essential configuration options for the Portage package manager, allowing you to tailor your system as you desire.
 
-### Configure Compiler Flags
+Open the `make.conf` file for customization. This file holds crucial configuration options for the Portage package manager, providing a platform for tailoring your system to your preferences.
+
+### Fine-Tune Compiler Flags
+
 ```bash
 COMMON_FLAGS="-march=native -O2 -pipe"
 FEATURES="candy parallel-fetch parallel-install"
 MAKEOPTS="-j20"
 ```
-Within `make.conf`, you can set compiler flags to optimize system performance. Adjust these flags to match your CPU architecture and personal preferences.
 
-#### How It Works
+Within `make.conf`, you can set compiler flags to optimize system performance. Adjust these flags to align with your CPU architecture and personal preferences.
 
-In Gentoo Linux, the `make.conf` file is a critical configuration file that empowers you to optimize software package compilation and performance. It offers various settings you can customize to suit your specific hardware and preferences.
+### Understanding the Flags
+
+In Gentoo Linux, `make.conf` is a pivotal configuration file enabling you to optimize software package compilation and overall performance. The following flags offer customization options:
 
 #### `COMMON_FLAGS="-march=native -O2 -pipe"`
 
-- `-march=native`: This flag directs the compiler to generate code tailored to your system's CPU architecture. It automatically detects your CPU type during compilation, optimizing performance. However, it may result in less portable code.
-- `-O2`: This flag sets the optimization level for the compiler. `-O2` is a balanced level that improves code execution speed without significantly increasing compilation time. Higher levels, like `-O3`, provide more aggressive optimization but may extend compile times.
-- `-pipe`: Enabling this flag streamlines the compilation process by using pipes instead of temporary files for communication between different compilation stages. This reduces disk I/O and accelerates compilation.
+- `-march=native`: Directs the compiler to generate code tailored to your system's CPU architecture, automatically detecting your CPU type during compilation for optimized performance.
+- `-O2`: Sets the optimization level for the compiler. `-O2` strikes a balance, improving code execution speed without significantly increasing compilation time.
+- `-pipe`: Enables the use of pipes instead of temporary files for communication between different compilation stages, streamlining the process and reducing disk I/O.
 
 #### `FEATURES="candy parallel-fetch parallel-install"`
 
-- `candy`: This seems to be a custom or project-specific feature that may not be standard in all Gentoo installations. It could relate to additional optimizations or project-specific features.
-- `parallel-fetch`: When enabled, this feature permits Portage (Gentoo's package manager) to download source code and files for packages concurrently. It significantly expedites the package installation process, especially for packages with multiple source files.
-- `parallel-install`: Enabling this feature allows Portage to install multiple packages concurrently. This is particularly advantageous on systems with multiple CPU cores, reducing the time required to install software.
+- `candy`: Potentially a custom or project-specific feature that may not be standard in all Gentoo installations, possibly related to additional optimizations or project-specific features.
+- `parallel-fetch`: When enabled, permits Portage to download source code and files for packages concurrently, expediting the package installation process.
+- `parallel-install`: Allows Portage to install multiple packages concurrently, particularly advantageous on systems with multiple CPU cores.
 
 #### `MAKEOPTS="-j20"`
 
-- `-j20`: This flag specifies the number of parallel compilation jobs that Portage can run simultaneously. In this case, it allows up to 20 parallel jobs. The value you set for `-j` should align with the number of CPU cores in your system. Using too many jobs can lead to resource contention, while using too few may not fully utilize your hardware. Adjust this value according to your system's capabilities.
+- `-j20`: Specifies the number of parallel compilation jobs Portage can run simultaneously, allowing up to 20 parallel jobs. Adjust this value based on your system's CPU core count.
 
-These settings in `make.conf` empower you to fine-tune the compilation process on your Gentoo system, resulting in optimized software performance and efficient resource utilization. While the provided values are suitable for many setups, feel free to customize them to better match your hardware and preferences.
+### GPU Support
+
+To ensure optimal performance and compatibility with your hardware, consider adding the following configurations for mouse, keyboard, and GPU support in your Gentoo system.
+
+#### Mouse, Keyboard, and Synaptics Touchpad Support:
+
+```bash
+INPUT_DEVICES="libinput synaptics"
+```
+
+#### NVIDIA Cards:
+
+```bash
+VIDEO_CARDS="nouveau"
+```
+
+#### AMD/ATI Cards:
+
+```bash
+VIDEO_CARDS="radeon"
+```
+
+These configurations provide comprehensive support for input devices and graphics cards on your Gentoo system. Customize these settings based on your specific hardware and preferences, ensuring a seamless and optimized computing experience.
 
 ## Step 7: Repository Configuration
 
