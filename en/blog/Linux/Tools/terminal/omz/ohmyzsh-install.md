@@ -43,6 +43,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 2. Follow the prompts to set Oh My Zsh as your default shell.
 
+>Note: After configuring zsh as your default shell, you need to manually reboot your system. To ensure that zsh is the default shell when launching the terminal.
+
 ## Switching Themes in Oh My Zsh
 
 Changing themes in Oh My Zsh is a breeze and allows you to transform the appearance of your terminal to suit your style. Follow these simple steps to switch to a different theme and give your terminal a fresh new look:
