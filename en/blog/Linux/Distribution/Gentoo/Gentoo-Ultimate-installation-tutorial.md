@@ -45,13 +45,13 @@ Before delving into the installation process, there are a few critical prelimina
 As you boot up the Gentoo Linux ISO, your first decision is to select the appropriate keyboard layout. The default setting is a US keyboard layout. To confirm this choice, simply press Enter.
 
 ### Verify Internet Connectivity
-```bash
+```shell
 ping gentoo.org
 ```
 To begin the Gentoo installation, it's crucial to confirm that you have a working internet connection. You can quickly check this by running the following command. A successful response indicates that your network connection is functional and ready for the installation process.
 
 ### List Available Block Devices
-```bash
+```shell
 lsblk
 ```
 To proceed with the installation, you need to identify the specific storage device where you'll install Gentoo. The `lsblk` command provides a comprehensive list of available block devices on your system. Take note of the device you intend to use for the Gentoo installation.
@@ -60,7 +60,7 @@ To proceed with the installation, you need to identify the specific storage devi
 
 Now, let's initialize the GUID Partition Table (GPT) on your chosen device:
 
-```bash
+```shell
 gdisk /dev/vda
 ```
 
@@ -98,7 +98,7 @@ In this step, you will create and format the necessary partitions for your Gento
 
 To ensure your system supports EFI booting, the EFI partition needs to be correctly formatted with the FAT32 file system. Use the following command:
 
-```bash
+```shell
 mkfs.fat -F32 /dev/vda1
 ```
 
@@ -108,7 +108,7 @@ This command prepares the EFI partition (/dev/vda1) with the FAT32 file system, 
 
 The root partition is where the core Gentoo filesystem will reside. Format it with the Btrfs file system using this command:
 
-```bash
+```shell
 mkfs.btrfs /dev/vda3
 ```
 
@@ -118,7 +118,7 @@ By running this command, you're configuring the root partition (/dev/vda3) with 
 
 Swap space is essential for memory management in your system. Begin by initializing the swap partition with this command:
 
-```bash
+```shell
 mkswap /dev/vda2
 ```
 
@@ -128,7 +128,7 @@ This command prepares the swap partition (/dev/vda2) for use in your Gentoo syst
 
 Activate the swap partition to make it available for use in your system:
 
-```bash
+```shell
 swapon /dev/vda2
 ```
 
@@ -138,7 +138,7 @@ This step ensures that your Gentoo installation can effectively manage system me
 
 Before proceeding, create the required directory structure for your Gentoo filesystem:
 
-```bash
+```shell
 mkdir --parents /mnt/gentoo
 ```
 
@@ -182,7 +182,7 @@ chronyd -q
 
 The date command can manually set the system clock. Use the following format: `MMDDhhmmYYYY (Month, Day, Hour, Minute, and Year)`.
 
-```bash
+```shell
 date <MMDD><hhmm><YYYY>
 ```
 
@@ -204,7 +204,7 @@ Now, it’s time to download Stage3 Tarball.
 
 Begin by changing your working directory to `/mnt/gentoo`, which is where you'll install Gentoo. This location serves as the foundation for your Gentoo Linux system.
 
-```bash
+```shell
 cd /mnt/gentoo
 ```
 
@@ -231,7 +231,7 @@ Once you've downloaded the Gentoo system, it's time to extract it.
 >Please Ensure you include the following options. This very important
 
 ### Extract the Tarball
-```bash
+```shell
 tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 ```
 
@@ -251,7 +251,7 @@ Gentoo Linux is renowned for its customization potential, offering users the abi
 
 ### Edit `make.conf`
 
-```bash
+```shell
 nano /mnt/gentoo/etc/portage/make.conf
 ```
 
@@ -259,7 +259,7 @@ Open the `make.conf` file for customization. This file holds crucial configurati
 
 ### Fine-Tune Compiler Flags
 
-```bash
+```shell
 COMMON_FLAGS="-march=native -O2 -pipe"
 FEATURES="candy parallel-fetch parallel-install"
 MAKEOPTS="-j20"
@@ -293,13 +293,13 @@ To ensure optimal performance and compatibility with your hardware, consider add
 
 #### Mouse, Keyboard, and Synaptics Touchpad Support:
 
-```bash
+```shell
 INPUT_DEVICES="libinput synaptics"
 ```
 
 #### NVIDIA Cards:
 
-```bash
+```shell
 VIDEO_CARDS="nouveau"
 ```
 
@@ -319,7 +319,7 @@ In this step, we establish the necessary configuration for managing package repo
 
 To begin, create the `repos.conf` directory within the `/mnt/gentoo/etc/portage/` path:
 
-```bash
+```shell
 mkdir --parents /mnt/gentoo/etc/portage/repos.conf
 ```
 
@@ -329,7 +329,7 @@ This directory is crucial for housing repository configurations.
 
 Next, duplicate the default Gentoo repository configuration to ensure Portage can locate software packages. Execute the following command:
 
-```bash
+```shell
 cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
 ```
 
@@ -343,7 +343,7 @@ Same, In Gentoo network configuration is not set up by default, so you'll need t
 
 Begin by copying the DNS resolver configuration from the host system to your Gentoo environment:
 
-```bash
+```shell
 cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
 ```
 
@@ -357,7 +357,7 @@ In this section, we mount essential system directories within the Gentoo environ
 
 ### Mount /proc
 
-```bash
+```shell
 mount --types proc /proc /mnt/gentoo/proc
 ```
 
@@ -365,7 +365,7 @@ The `/proc` directory provides a virtual filesystem that exposes information abo
 
 ### Mount /sys
 
-```bash
+```shell
 mount --rbind /sys /mnt/gentoo/sys
 mount --make-rslave /mnt/gentoo/sys
 ```
@@ -374,7 +374,7 @@ The `/sys` directory offers a view into the kernel's internal data structures an
 
 ### Mount /dev
 
-```bash
+```shell
 mount --rbind /dev /mnt/gentoo/dev
 mount --make-rslave /mnt/gentoo/dev
 ```
@@ -383,7 +383,7 @@ The `/dev` directory is crucial for device interaction. It contains special file
 
 ### Mount /run
 
-```bash
+```shell
 mount --bind /run /mnt/gentoo/run
 mount --make-slave /mnt/gentoo/run
 ```
@@ -398,7 +398,7 @@ Now that your Gentoo system is prepared and mounted, it's time to enter the new 
 
 Execute the following command to enter the chroot environment, where you will perform system configurations and installations:
 
-```bash
+```shell
 chroot /mnt/gentoo /bin/bash
 ```
 
@@ -426,7 +426,7 @@ For users installing Gentoo on a UEFI (Unified Extensible Firmware Interface) sy
 
 - `mkdir /efi`: This command creates a directory named "efi" at the root of the file system. This directory will serve as the mounting point for the EFI system partition (ESP).
 
-```bash
+```shell
 mkdir /efi
 ```
 
@@ -436,7 +436,7 @@ UEFI-based systems use the EFI system partition to store bootloader files and re
 
 After creating the "efi" directory, we proceed to mount the EFI partition onto this directory:
 
-```bash
+```shell
 mount /dev/vda1 /efi
 ```
 
@@ -452,7 +452,7 @@ In this step, we'll perform the initial configuration for your Gentoo system. Sy
 
 On your first Gentoo installation, it's essential to synchronize your Portage tree database. You can achieve this by running the following command:
 
-```bash
+```shell
 emerge-webrsync
 ```
 
@@ -462,7 +462,7 @@ emerge-webrsync
 
 One of the interesting features of Gentoo is the ability to read package news using the `eselect` command. After completing the Portage tree synchronization, you can use the following command to stay informed about important Gentoo news:
 
-```bash
+```shell
 eselect news read
 ```
 
@@ -478,7 +478,7 @@ In this step, we will install the packages listed in your world file, and for th
 
 Begin by listing the available system profiles with the following command:
 
-```bash
+```shell
 eselect profile list
 ```
 
@@ -488,7 +488,7 @@ eselect profile list
 
 Next, select a system profile that aligns with your needs using the `eselect profile set` command. Replace the number "5" in the command below with the profile number you want to set:
 
-```bash
+```shell
 eselect profile set 5
 ```
 
@@ -498,7 +498,7 @@ eselect profile set 5
 
 Finally, it's essential to confirm that the correct system profile has been selected. This verification step ensures that your Gentoo system is configured as intended and aligns with your chosen specifications. Use the following command to confirm the selected profile:
 
-```bash
+```shell
 eselect profile list
 ```
 
@@ -513,14 +513,14 @@ To optimize your source downloads and ensure a swift installation process, choos
 1. **Install `mirrorselect` Tool:**
    Ensure you have the `mirrorselect` tool installed. If not, you can install it using:
 
-   ```bash
+   ```shell
    emerge --ask app-portage/mirrorselect
    ```
 
 2. **Run `mirrorselect`:**
    Execute the following command to initiate `mirrorselect`:
 
-   ```bash
+   ```shell
    mirrorselect -i -o >> /etc/portage/make.conf
    ```
 
@@ -541,7 +541,7 @@ Now, let's proceed with updating your Gentoo system, which involves updating all
 
 Run the following command to update the entire system, including packages:
 
-```bash
+```shell
 emerge --ask --verbose --update --deep --newuse @world
 ```
 
@@ -551,7 +551,7 @@ emerge --ask --verbose --update --deep --newuse @world
 
 After the system update, you can optimize your Gentoo system by removing unnecessary dependencies and packages:
 
-```bash
+```shell
 emerge --depclean
 ```
 
@@ -569,7 +569,7 @@ To customize your license acceptance preferences, you need to add a line to your
 
 Run the following command to add the necessary line to your `make.conf` file:
 
-```bash
+```shell
 echo 'ACCEPT_LICENSE="*"' >> /etc/portage/make.conf
 ```
 
@@ -579,7 +579,7 @@ This command appends the line `ACCEPT_LICENSE="*"` to your `make.conf` file, whi
 
 Alternatively, you can manually edit your `make.conf` file and add the following line:
 
-```bash
+```shell
 ACCEPT_LICENSE="*"
 ```
 
@@ -595,7 +595,7 @@ Configuring the correct time zone is essential for your system to maintain accur
 
 Begin by listing the available time zones to find the one that corresponds to your region. You can use the following command to list the available time zone files:
 
-```bash
+```shell
 ls /usr/share/zoneinfo/
 ```
 
@@ -605,7 +605,7 @@ This command provides a list of available time zone files. You'll need to choose
 
 Once you've identified the time zone file that matches your location, you can set your system's time zone by adding a line with the chosen time zone file path. For example, if your time zone is "Asia/Taipei," use the following command:
 
-```bash
+```shell
 echo "Asia/Taipei" > /etc/timezone
 ```
 
@@ -617,7 +617,7 @@ This command specifies your preferred time zone, ensuring that your Gentoo syste
 
 To complete the time zone configuration, you need to configure the time zone data to align with your chosen time zone. Use the following command to perform this configuration:
 
-```bash
+```shell
 emerge --config sys-libs/timezone-data
 ```
 
@@ -631,7 +631,7 @@ Configuring the correct locale settings is crucial for defining your system's la
 
 1. **Uncomment Locale Settings:** Begin by uncommenting the locale settings that match your preferred language and regional settings. Use a text editor to open the `locale.gen` file, for example:
 
-    ```bash
+    ```shell
     nano /etc/locale.gen
     ```
 
@@ -641,7 +641,7 @@ Configuring the correct locale settings is crucial for defining your system's la
 
 2. **Generate Locales:** After you've uncommented and saved the changes to the `locale.gen` file, you can generate the specified locales using the following command:
 
-    ```bash
+    ```shell
     locale-gen
     ```
 
@@ -651,7 +651,7 @@ Configuring the correct locale settings is crucial for defining your system's la
 
 3. **List Available Language Options:** To verify that the desired locales have been successfully generated, you can list the available language options using the following command:
 
-    ```bash
+    ```shell
     eselect locale list
     ```
 
@@ -661,7 +661,7 @@ Configuring the correct locale settings is crucial for defining your system's la
 
 4. **Set Default Locale:** To set the default locale for your system, use the `eselect locale set` command followed by the number associated with your preferred locale. For example, to set the default locale to "en_US.utf8," you might use:
 
-    ```bash
+    ```shell
     eselect locale set 6
     ```
 
@@ -671,7 +671,7 @@ Configuring the correct locale settings is crucial for defining your system's la
 
 5. **Update Environment Variables:** Finally, update the environment variables and apply the changes to the system's locale settings with the following commands:
 
-    ```bash
+    ```shell
     source /etc/profile
     env-update
     ```
@@ -704,7 +704,7 @@ This step involves installing essential firmware and the Gentoo kernel to ensure
 
 1. **Install Firmware Packages:**
 
-   ```bash
+   ```shell
    emerge --ask sys-kernel/linux-firmware
    ```
 
@@ -712,7 +712,7 @@ This step involves installing essential firmware and the Gentoo kernel to ensure
 
 2. **Intel CPU Microcode (Optional):**
 
-   ```bash
+   ```shell
    emerge --ask sys-firmware/intel-microcode
    ```
 
@@ -722,7 +722,7 @@ This step involves installing essential firmware and the Gentoo kernel to ensure
 
 3. **Install Gentoo Kernel:**
 
-   ```bash
+   ```shell
    emerge --ask sys-kernel/gentoo-kernel
    ```
 
@@ -730,7 +730,7 @@ This step involves installing essential firmware and the Gentoo kernel to ensure
 
 4. **List Available Kernels:**
 
-   ```bash
+   ```shell
    eselect kernel list
    ```
 
@@ -746,13 +746,13 @@ In this step, you will configure your filesystem by editing the `/etc/fstab` fil
 
 Open the `/etc/fstab` file for editing using a text editor, such as Nano:
 
-```bash
+```shell
 nano /etc/fstab
 ```
 
 Inside the `/etc/fstab` file, add entries for different partitions based on your system configuration. Here's an example of what the entries might look like:
 
-```bash
+```shell
 # EFI Partition
 /dev/vda1   /efi        vfat    defaults    0 2
 
@@ -830,7 +830,7 @@ Configuring your network correctly is essential for proper system functionality.
 
 Use the following command to identify the names of available network interfaces on your system, including both active and inactive interfaces:
 
-```bash
+```shell
 ifconfig -a
 ```
 
@@ -840,7 +840,7 @@ This command will display a list of network interfaces, helping you determine th
 
 Edit the network interface configurations in the `/etc/conf.d/net` file to suit your specific network requirements. You can use a text editor like Nano for this purpose:
 
-```bash
+```shell
 nano /etc/conf.d/net
 ```
 
@@ -856,13 +856,13 @@ Replace "enp1s0" with the actual name of your network interface. Adjust the conf
 
 Navigate to the `/etc/init.d/` directory, which is used for managing system services:
 
-```bash
+```shell
 cd /etc/init.d/
 ```
 
 Create a symbolic link for your network interface, simplifying its management:
 
-```bash
+```shell
 ln -s net.lo net.enp1s0
 ```
 
@@ -872,7 +872,7 @@ Replace "enp1s0" with the actual name of your network interface.
 
 Ensure that the network interface starts automatically with the system by adding it to the default runlevel:
 
-```bash
+```shell
 rc-update add net.enp1s0 default
 ```
 
@@ -888,7 +888,7 @@ Securing your Gentoo system starts with setting a strong and secure root passwor
 
 To set a secure root password, use the `passwd` command:
 
-```bash
+```shell
 passwd
 ```
 
@@ -904,7 +904,7 @@ To effectively manage various filesystems on your Gentoo system, it's important 
 
 [Btrfs](https://btrfs.readthedocs.io/en/latest/) is a modern and feature-rich filesystem that offers benefits like snapshots and data integrity. To manage Btrfs filesystems on your Gentoo system, you'll need the `btrfs-progs` package. Use the following command to install it:
 
-```bash
+```shell
 emerge -av sys-fs/btrfs-progs
 ```
 
@@ -914,7 +914,7 @@ This command will install the Btrfs tools, enabling you to create, manage, and m
 
 DOSFAT (also known as FAT) is a filesystem format commonly used for removable storage devices such as USB drives and SD cards. To interact with DOSFAT filesystems on your Gentoo system, you'll need the `dosfstools` package. Use the following command to install it:
 
-```bash
+```shell
 emerge -av sys-fs/dosfstools
 ```
 
@@ -930,7 +930,7 @@ Configuring the GRUB bootloader is a crucial step in setting up your Gentoo Linu
 
 First, we need to specify the GRUB platform as "efi-64" in your `make.conf` file. This is essential for systems that use EFI for booting. To do this, execute the following command:
 
-```bash
+```shell
 echo 'GRUB_PLATFORMS="efi-64"' >> /etc/portage/make.conf
 ```
 
@@ -940,7 +940,7 @@ This command appends the `GRUB_PLATFORMS` setting to your `make.conf` file, ensu
 
 Now that we've configured GRUB, we need to install it on your system. Use the following command to install the GRUB bootloader:
 
-```bash
+```shell
 emerge --ask --verbose sys-boot/grub
 ```
 
@@ -950,7 +950,7 @@ This command tells Gentoo's package manager, Portage, to install the `sys-boot/g
 
 To ensure that your system can boot using the UEFI firmware, we'll install GRUB to the EFI partition. Use the following command to accomplish this:
 
-```bash
+```shell
 grub-install --target=x86_64-efi --efi-directory=/efi
 ```
 
@@ -960,7 +960,7 @@ This command installs GRUB for the x86_64 EFI target architecture and specifies 
 
 The final step in configuring GRUB is to generate the GRUB configuration file, `grub.cfg`. This file contains the menu entries and settings required for booting into your Gentoo installation. Use the following command to generate the configuration file:
 
-```bash
+```shell
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
@@ -981,7 +981,7 @@ cd ~
 
 To begin, unmount specific directories within the Gentoo installation by executing the following command:
 
-```bash
+```shell
 umount -l /mnt/gentoo/dev{/shm,/pts,}
 ```
 
@@ -991,7 +991,7 @@ umount -l /mnt/gentoo/dev{/shm,/pts,}
 
 Next, unmount the entire Gentoo installation from the `/mnt/gentoo` directory using the following command:
 
-```bash
+```shell
 umount -R /mnt/gentoo
 ```
 
@@ -1001,7 +1001,7 @@ umount -R /mnt/gentoo
 
 With all the necessary unmounting completed, it's time to reboot your system to initiate the use of the newly installed Gentoo Linux.
 
-```bash
+```shell
 reboot
 ```
 
