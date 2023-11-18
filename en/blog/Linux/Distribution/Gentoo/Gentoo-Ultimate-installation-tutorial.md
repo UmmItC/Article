@@ -285,35 +285,6 @@ In Gentoo Linux, the `make.conf` file is a critical configuration file that empo
 
 These settings in `make.conf` empower you to fine-tune the compilation process on your Gentoo system, resulting in optimized software performance and efficient resource utilization. While the provided values are suitable for many setups, feel free to customize them to better match your hardware and preferences.
 
-## Selecting Fast Mirrors for Source Downloads (Optional)
-
-To optimize your source downloads and ensure a swift installation process, choosing a fast mirror is highly recommended. Portage, Gentoo's package manager, relies on the `GENTOO_MIRRORS` variable in the `make.conf` file to determine the mirrors to use. Here's how you can conveniently select mirrors using the `mirrorselect` tool:
-
-### Using `mirrorselect` Tool
-
-1. **Install `mirrorselect` Tool:**
-   Ensure you have the `mirrorselect` tool installed. If not, you can install it using:
-
-   ```bash
-   emerge --ask app-portage/mirrorselect
-   ```
-
-2. **Run `mirrorselect`:**
-   Execute the following command to initiate `mirrorselect`:
-
-   ```bash
-   mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
-   ```
-
-   This command queries the available mirrors and appends the selected mirrors to your `make.conf` file, optimizing your source downloads.
-
-3. **Selecting Mirrors:**
-   - Use the arrow keys to navigate to your preferred mirror(s) in the list displayed.
-   - Press the spacebar to select one or more mirrors.
-   - Once selected, press `Enter` to confirm your choice(s).
-
-By using `mirrorselect`, you ensure that Portage fetches packages from nearby mirrors, significantly enhancing download speeds. This step is optional but highly recommended for a smoother Gentoo installation experience.
-
 ## Step 7: Repository Configuration
 
 In this step, we establish the necessary configuration for managing package repositories using Portage, Gentoo's package manager. This allows you to define additional repositories beyond the defaults.
@@ -446,6 +417,35 @@ mount /dev/vda1 /efi
 - `mount /dev/vda1 /efi`: This command instructs the system to mount the EFI partition, which is typically identified as `/dev/vda1`, onto the `/efi` directory. Mounting the EFI partition in this way ensures that the UEFI firmware can locate and access the necessary bootloader files and configuration data during the system's boot process.
 
 In summary, this step is crucial for UEFI-based systems, as it sets up the directory structure and mounting point needed for successful UEFI booting, allowing Gentoo Linux to start correctly in such environments.
+
+## Selecting Fast Mirrors for Source Downloads (Optional)
+
+To optimize your source downloads and ensure a swift installation process, choosing a fast mirror is highly recommended. Portage, Gentoo's package manager, relies on the `GENTOO_MIRRORS` variable in the `make.conf` file to determine the mirrors to use. Here's how you can conveniently select mirrors using the `mirrorselect` tool:
+
+### Using `mirrorselect` Tool
+
+1. **Install `mirrorselect` Tool:**
+   Ensure you have the `mirrorselect` tool installed. If not, you can install it using:
+
+   ```bash
+   emerge --ask app-portage/mirrorselect
+   ```
+
+2. **Run `mirrorselect`:**
+   Execute the following command to initiate `mirrorselect`:
+
+   ```bash
+   mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
+   ```
+
+   This command queries the available mirrors and appends the selected mirrors to your `make.conf` file, optimizing your source downloads.
+
+3. **Selecting Mirrors:**
+   - Use the arrow keys to navigate to your preferred mirror(s) in the list displayed.
+   - Press the `spacebar` to select one or more mirrors.
+   - Once selected, press `Enter` to confirm your choice(s).
+
+By using `mirrorselect`, you ensure that Portage fetches packages from nearby mirrors, significantly enhancing download speeds. This step is optional but highly recommended for a smoother Gentoo installation experience.
 
 ## Step 12: Initial Configuration
 
