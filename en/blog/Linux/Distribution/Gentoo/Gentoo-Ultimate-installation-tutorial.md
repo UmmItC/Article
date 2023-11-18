@@ -495,7 +495,7 @@ To optimize your source downloads and ensure a swift installation process, choos
    Execute the following command to initiate `mirrorselect`:
 
    ```bash
-   mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
+   mirrorselect -i -o >> /etc/portage/make.conf
    ```
 
    This command queries the available mirrors and appends the selected mirrors to your `make.conf` file, optimizing your source downloads.
