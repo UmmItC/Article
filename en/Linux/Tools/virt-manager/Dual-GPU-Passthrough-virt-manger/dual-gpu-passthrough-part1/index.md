@@ -56,7 +56,7 @@ Ensuring proper CPU virtualization support is a crucial step toward a successful
 
 - [Intel® Core™ i9-13900K Processor](https://www.intel.com/content/www/us/en/products/sku/230496/intel-core-i913900k-processor-36m-cache-up-to-5-80-ghz/specifications.html?wapkw=i9%2013900k)
 
-![CPU](/blog/linux/dual-gpu-passthrough/part1/Example-with-cpu-supported.png)
+![CPU](./Example-with-cpu-supported.png)
 
 ### 1.3 Motherboard Compatibility
 
@@ -74,7 +74,7 @@ Having a motherboard with robust IOMMU support is essential for a seamless dual 
 
 - [Intel Z790/H770/B760 Series Motherboard](https://download.asrock.com/Manual/Software/Intel%20B760/Software_BIOS%20Setup%20Guide_English.pdf)
 
-![MotherBoard](/blog/linux/dual-gpu-passthrough/part1/Example-with-motherboard-supported.png)
+![MotherBoard](./Example-with-motherboard-supported.png)
 
 ### 1.4 Additional Peripherals (Optional)
 

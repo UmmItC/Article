@@ -61,8 +61,8 @@ dd if=/home/username/Downloads/archlinux.iso of=/dev/sdX status=progress
 
 當你整完一隻可以 Bootable 既 USB，Boot 到部機入去就可以繼續，呢度要視乎返你部機係用緊咩底版去決定你部機應該要撳乜先可以 Select 個 Boot options menu，我用自己部機黎做例子，係 `F9`。
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/boot-1.png)
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/boot-2.png)
+![archboot-1](./boot-1.png)
+![archboot-1](./boot-2.png)
 
 ## Ping network - 測試網路連線
 
@@ -72,7 +72,7 @@ dd if=/home/username/Downloads/archlinux.iso of=/dev/sdX status=progress
 ping google.com
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/ping%20arch%20website.png)
+![archboot-1](./ping%20arch%20website.png)
 
 
 # Check Booted UFFI
@@ -83,7 +83,7 @@ ping google.com
 ls /sys/firmware/efi/efivars
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/verify%20efi.png)
+![archboot-1](./verify%20efi.png)
 
 
 # 建立 Partitions
@@ -100,7 +100,7 @@ ls /sys/firmware/efi/efivars
 ```shell
 lsblk
 ```
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/lsblk.png)
+![archboot-1](./lsblk.png)
 
 
 我既 Target 係一隻 60GB 既 Partitions，你會見到 NAME 寫住 `sda`, TYPE 寫住 `disk`，用呢隻黎割上面四樣野出黎.
@@ -113,11 +113,11 @@ lsblk
 cfdisk /dev/sda
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/cfdisk%20gpt.png)
+![archboot-1](./cfdisk%20gpt.png)
 
 2. 打完你會見到以下既畫面，撳 `GPT`
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/gpt%20select.png)
+![archboot-1](./gpt%20select.png)
 
 3. 用鍵盤既方向鍵 `上下左右箭嘴` 控制，揀 `Free space`，下面個舊揀 `NEW`，之後佢會問你要起幾多 size，就咁樣跟住起：
 
@@ -128,21 +128,21 @@ cfdisk /dev/sda
 
 > 以上既都係一啲示範用既 Size. 你唔需要全部跟我!!! **比較重要既野係 EFI 唔可以太小。如果唔係既話就會開唔到機。**
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/CREATE%20PARTITION%204.png)
+![archboot-1](./CREATE%20PARTITION%204.png)
 
 4. 完成哂之後喺下面 select `Write` 寫入 Partition.
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/ARE%20YOU%20SURE%20WRITE%20PARTITION%3F.png)
+![archboot-1](./ARE%20YOU%20SURE%20WRITE%20PARTITION%3F.png)
 
 5. 會問你真咪真係要寫入 partition, 你打 `YES`.
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/DONE%20PARTITION.png)
+![archboot-1](./DONE%20PARTITION.png)
 
 6. 搞掂會見到下面會出現藍色字寫住 `The partition table has benn altered.`
 
 7. 用方向鍵指去 `Quit` quit `cfdisk`，之後你會見 `Syncing disks.`
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/Syncing%20disks.png)
+![archboot-1](./Syncing%20disks.png)
 
 ## lsblk 確定 Partition
 
@@ -157,7 +157,7 @@ cfdisk /dev/sda
 lsblk
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/confirm%20done%20partition.png)
+![archboot-1](./confirm%20done%20partition.png)
 
 ### 格式化 Partitions
 
@@ -171,7 +171,7 @@ EFI System 係只會 Support FAT32，打以下既指令格式化佢 ~
 mkfs.fat -F32 /dev/sda1
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/format%20efi.png)
+![archboot-1](./format%20efi.png)
 
 
 #### Format root partition (sda2)
@@ -182,7 +182,7 @@ home 同 root 一樣，都係用 ex4 format.
 mkfs.ext4 /dev/sda2
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/format%20root.png)
+![archboot-1](./format%20root.png)
 
 #### Format home partition (sda3)
 
@@ -190,7 +190,7 @@ mkfs.ext4 /dev/sda2
 mkfs.ext4 /dev/sda3
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/format%20home.png)
+![archboot-1](./format%20home.png)
 
 #### Format swap partition (sda4)
 
@@ -200,7 +200,7 @@ swap 同 root & home 唔一樣，要改小小.
 mkswap /dev/sda4
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/format%20swap.png)
+![archboot-1](./format%20swap.png)
 
 
 #### Enable swap partition (sda4)
@@ -211,7 +211,7 @@ format 完我地仲需要將呢個 partition enable.
 swapon /dev/sda4
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/swapon.png)
+![archboot-1](./swapon.png)
 
 # mount root Partition (sda2)
 
@@ -221,7 +221,7 @@ swapon /dev/sda4
 mount /dev/sda1 /mnt
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/mount%20root.png)
+![archboot-1](./mount%20root.png)
 
 # mount home Partition (sda3)
 
@@ -232,7 +232,7 @@ mkdir /mnt/home #create home space.
 mount /dev/sda3 /mnt/home
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/mount%20home.png)
+![archboot-1](./mount%20home.png)
 
 # 安裝 Arch 基本系統
 
@@ -259,11 +259,11 @@ pacstrap -i /mnt base base-devel linux linux-lts linux-headers linux-firmware in
 
 >注意：裝個陣佢可能會彈啲野問你想裝邊個，直接 enter 用 default 就可以，然後等佢裝哂.
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/install%20base%20system.png)
+![archboot-1](./install%20base%20system.png)
 
 安裝完成.
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/base%20system%20install%20complete.png)
+![archboot-1](./base%20system%20install%20complete.png)
 
 
 # Generate file system table (FSTAB)
@@ -274,7 +274,7 @@ Table 係你部機既 files system. 然後自動 Gen 返你頭先 Mount 完既 p
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/genfstab%20-U.png)
+![archboot-1](./genfstab%20-U.png)
 
 # CHRooting Arch system
 
@@ -284,7 +284,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/arch-chroot.png)
+![archboot-1](./arch-chroot.png)
 
 ## 修改 Root password
 
@@ -294,7 +294,7 @@ arch-chroot /mnt
 passwd
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/passwd.png)
+![archboot-1](./passwd.png)
 
 ## 新增新用戶 & 密碼
 
@@ -310,7 +310,7 @@ useradd -m <username>
 passwd <username>
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/useradd%26passwd.png)
+![archboot-1](./useradd%26passwd.png)
 
 ## 金魚腦用戶
 
@@ -320,7 +320,7 @@ passwd <username>
 getent passwd
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/getent%20passwd.png)
+![archboot-1](./getent%20passwd.png)
 
 ### Add Permission to 新用戶
 
@@ -330,7 +330,7 @@ getent passwd
 usermod -aG wheel,storage,power <username>
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/usermod.png)
+![archboot-1](./usermod.png)
 
 ## sudoers.tmp 修改
 
@@ -351,7 +351,7 @@ Defaults timestamp_timeout=0
 - for save: Ctrl + S
 - for quit: Ctrl + X
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/sudoers.tmp.png)
+![archboot-1](./sudoers.tmp.png)
 
 # 設置系統語言 - 修改 `locale.gen`
 
@@ -367,7 +367,7 @@ Defaults timestamp_timeout=0
 nano /etc/locale.gen
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/nano%20locale.gen.png)
+![archboot-1](./nano%20locale.gen.png)
 
 ## 設置系紜語言 - 產生語言
 
@@ -377,7 +377,7 @@ nano /etc/locale.gen
 locale-gen
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/locale-gen.png)
+![archboot-1](./locale-gen.png)
 
 ## 設置系統語言 - 建立語言 config 檔案
 
@@ -386,7 +386,7 @@ echo LANG=en_US.UTF-8 > /etc/locale.conf
 export LANG=en_US.UTF-8
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/config%20lang.png)
+![archboot-1](./config%20lang.png)
 
 # Hostname 設置
 
@@ -394,7 +394,7 @@ export LANG=en_US.UTF-8
 echo Archlinux > /etc/hostname
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/hostname.png)
+![archboot-1](./hostname.png)
 
 ## Host table 新增內容
 
@@ -410,7 +410,7 @@ nano /etc/hosts
 127.0.0.1       localhost
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/hosts.png)
+![archboot-1](./hosts.png)
 
 # Timezone 新增,更新硬件時間
 
@@ -419,7 +419,7 @@ ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
 hwclock -w
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/timezone.png)
+![archboot-1](./timezone.png)
 
 # EFI System 安裝 Grub Boot
 
@@ -433,7 +433,7 @@ hwclock -w
 pacman -S grub efibootmgr
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/grub%20efibootmgr.png)
+![archboot-1](./grub%20efibootmgr.png)
 
 
 ## 起 folder for efi boot
@@ -445,7 +445,7 @@ mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/mount%20boot%20efi.png)
+![archboot-1](./mount%20boot%20efi.png)
 
 ## grub-install set bios type, set install paths
 
@@ -453,7 +453,7 @@ mount /dev/sda1 /mnt/boot
 grub-install --target=x86_64-efi --efi-directory=/boot/efi
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/grub-install.png)
+![archboot-1](./grub-install.png)
 
 ## grub-mkconfig
 
@@ -461,7 +461,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/grub-mkconfig.png)
+![archboot-1](./grub-mkconfig.png)
 
 # Enable 上網 Service
 
@@ -474,7 +474,7 @@ systemctl enable NetworkManager.service
 systemctl enable dhcpcd.service
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/enable%20networkmanager%20dhcpcd.png)
+![archboot-1](./enable%20networkmanager%20dhcpcd.png)
 
 # exit arch-chroot
 
@@ -484,7 +484,7 @@ systemctl enable dhcpcd.service
 exit
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/exit%20arch-chroot.png)
+![archboot-1](./exit%20arch-chroot.png)
 
 # umount /mnt
 
@@ -492,7 +492,7 @@ exit
 umount -lR /mnt
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/umount%20lR%20mnt.png)
+![archboot-1](./umount%20lR%20mnt.png)
 
 # reboot
 
@@ -502,19 +502,19 @@ reboot 完之後你就會見到你既 arch linux grub menu, select arch linux �
 reboot
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/reboot-1.png)
+![archboot-1](./reboot-1.png)
 
 ## Grub 安裝成功 ~
 
 搞掂 ~ 撳 enter 入返你部 arch linux ~~
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/grub%20done.png)
+![archboot-1](./grub%20done.png)
 
 ## Login
 
 入返你頭先整左既 user 名，打返你個密碼.
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/login.png)
+![archboot-1](./login.png)
 
 ## Check network
 
@@ -524,7 +524,7 @@ reboot
 ping archlinux.org
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/ping%20web%20arch.png)
+![archboot-1](./ping%20web%20arch.png)
 
 # 安裝 DE
 
@@ -538,9 +538,9 @@ ping archlinux.org
 sudo pacman -S xorg xorg-xinit plasma plasma-desktop plasma-wayland-session kde-applications kdeplasma-addons sddm
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/install%20de.png)
+![archboot-1](./install%20de.png)
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/de_install_done.png)
+![archboot-1](./de_install_done.png)
 
 ## 新增 `xinitrc`
 
@@ -552,7 +552,7 @@ sudo pacman -S xorg xorg-xinit plasma plasma-desktop plasma-wayland-session kde-
 echo startkde > ~/.xinitrc
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/startkde.png)
+![archboot-1](./startkde.png)
 
 ## SDDM service
 
@@ -562,7 +562,7 @@ echo startkde > ~/.xinitrc
 sudo systemctl enable sddm.service
 ```
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/sddmservice%20enable.png)
+![archboot-1](./sddmservice%20enable.png)
 
 ## reboot
 
@@ -571,9 +571,9 @@ sudo systemctl enable sddm.service
 ```shell
 reboot
 ```
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/kde-1.png)
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/kde-2.png)
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/kde-3.png)
+![archboot-1](./kde-1.png)
+![archboot-1](./kde-2.png)
+![archboot-1](./kde-3.png)
 
 
 # 後話
@@ -594,7 +594,7 @@ reboot
 
 ## archinstall Screen
 
-![archboot-1](/blog/linux/ArchlinuxOS-Complete-Installation/archinstall.png)
+![archboot-1](./archinstall.png)
 
 # Reference
 

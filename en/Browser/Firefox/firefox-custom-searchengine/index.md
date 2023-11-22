@@ -21,7 +21,7 @@ Before we dive into the steps, keep in mind that these instructions involve modi
 
 2. You may encounter a warning message. Click on "Accept the Risk and Continue" to proceed.
 
-![about:config](/blog/browser/custom-searchengine/about-config.png)
+![about:config](./about-config.png)
 
 ### Step 2: Enabling Additional Search Engines
 
@@ -29,13 +29,13 @@ Before we dive into the steps, keep in mind that these instructions involve modi
 
 2. Locate the preference named `browser.urlbar.update2.engineAliasRefresh` and double-click on it to toggle its value from `false` to `true`.
 
-   ![browser.urlbar.update2.engineAliasRefresh](/blog/browser/custom-searchengine/browser.urlbar.update2.engineAliasRefresh.png)
+   ![browser.urlbar.update2.engineAliasRefresh](./browser.urlbar.update2.engineAliasRefresh.png)
 
 ### Step 3: Adding Your Preferred Search Engine
 
 1. Now, head back to the Firefox search settings. You'll notice a new option: "Add." Click on this option.
 
-   ![Add new search engine](/blog/browser/custom-searchengine/Add.png)
+   ![Add new search engine](./Add.png)
 
 2. Enter the details of your preferred search engine:
 
@@ -43,7 +43,7 @@ Before we dive into the steps, keep in mind that these instructions involve modi
    - Engine URL: `https://search.ononoki.org/search?q=%s`
    - Alias: @SearXNG
 
-![about:config](/blog/browser/custom-searchengine/added.png)
+![about:config](./added.png)
 
 3. Click "Add Engine" to save your custom search engine.
 

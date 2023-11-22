@@ -19,13 +19,13 @@ ReVanced Manager is a powerful tool designed to put you in the driver's seat of 
 
 Getting ReVanced Manager is a breeze. You can download it from the official website [here](https://revanced.app/download). Alternatively, you can find it on GitHub [here](https://github.com/revanced/revanced-manager). These sources ensure that you're getting the genuine and most up-to-date version of the app.
 
-![download-revanced-manager](/blog/android/tools/revanced-manager/download-revanced-manager.png)
+![download-revanced-manager](./download-revanced-manager.png)
 
 ### **Step 2: Download Your Target APK**
 
 To customize an app, you'll need its official APK. You can find these APKs on websites like [APKMirror](https://www.apkmirror.com/). This example for Download the APK of the [youtube](https://www.apkmirror.com/apk/google-inc/youtube/).
 
-![youtube-apk](/blog/android/tools/revanced-manager/download-youtubeAPK.png)
+![youtube-apk](./download-youtubeAPK.png)
 
 ### **Step 3: Build Your Customized APK**
 
@@ -35,7 +35,7 @@ Now, it's time to use ReVanced Manager to create your ad-free and customized APK
 
 2. **Select an Application:** In the ReVanced Manager interface, tap on "Patcher Selection," then click "Select an application."
 
-![Open-1](/blog/android/tools/revanced-manager/Open-1.png)
+![Open-1](./Open-1.png)
 
 3. **Load Your APK:** On the "Select an application" screen, tap the "Storage" button, and choose the APK you downloaded earlier from your device's storage.
 
@@ -45,7 +45,7 @@ Now, it's time to use ReVanced Manager to create your ad-free and customized APK
 
 6. **Wait for Compilation:** The compilation process may take some time, typically around 5-10 minutes, depending on your device's CPU speed.
 
-![building](/blog/android/tools/revanced-manager/building-apk.png)
+![building](./building-apk.png)
 
 7. **Install or Export:** Once the compilation is complete, you'll have the option to either install the customized app directly or export it as an APK file. You can share this customized APK with friends or keep it as a backup.
 
@@ -53,7 +53,7 @@ Now, it's time to use ReVanced Manager to create your ad-free and customized APK
 
 To ensure that your custom app works seamlessly, you'll need Vanced MicroG. This component enables Google push notifications (GCM). Download Vanced MicroG from [here](https://github.com/TeamVanced/VancedMicroG/releases).
 
-![Vanced-microg](/blog/android/tools/revanced-manager/Vanced-microg.png)
+![Vanced-microg](./Vanced-microg.png)
 
 ### **Preview: Your Custom YouTube**
 
@@ -66,7 +66,7 @@ Once you've successfully installed your custom YouTube app, you'll notice the ab
 3. Enhanced player with convenient functions
 4. Customizable settings, including Revanced-specific, SponsorBlock, and MicroG settings
 
-![Preview](/blog/android/tools/revanced-manager/preview-1.png)
+![Preview](./preview-1.png)
 
 With ReVanced Manager, you have the power to create a personalized and ad-free Android app experience. Say goodbye to interruptions.
 

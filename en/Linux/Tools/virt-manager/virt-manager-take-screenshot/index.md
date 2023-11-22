@@ -4,7 +4,7 @@ title: "A Step-by-Step Guide Capturing Screenshots in Virt-Manager QEMU/KVM"
 description: "Learn how to easily capture screenshots within Virt-Manager when using QEMU/KVM virtualization. Follow our step-by-step guide to master this handy feature."
 tags: ["virt-manager", "QEMU/KVM", "Screenshot"]
 date: 2023-09-28T22:28:50+0800
-thumbnail: /blog/linux/linux-tools/virt-manager/virt-manager-take-screenshot/sc.png
+thumbnail: ./sc.png
 ---
 
 ## Introduction
@@ -19,13 +19,13 @@ If you directly screenshot your current screen, one problem is that your windows
 
 Begin by launching Virt-Manager and opening the virtual machine (VM) from which you want to capture a screenshot. Ensure that the VM is powered on and running.
 
-![open virt-manager](/blog/linux/linux-tools/virt-manager/virt-manager-take-screenshot/open-1.png)
+![open virt-manager](./open-1.png)
 
 ## Step 2: Access the Screenshot Tool
 
 With your VM window in focus, navigate to the top bar menu. Here, you'll find the "Virtual Machine" option. Click on it to reveal a dropdown menu. Now you'll see the "Take Screenshot" option. Click on it to initiate the screenshot capture process.
 
-![options 1](/blog/linux/linux-tools/virt-manager/virt-manager-take-screenshot/ts-1.png)
+![options 1](./ts-1.png)
 
 ## Step 3: Choose the Save Location
 

@@ -4,7 +4,7 @@ title: "Arch Linux 安裝 fcitx5 速成輸入法 - Quick Classic"
 description: "於 Arch linux 內安裝中文輸入法 Fcitx5 並配置 速成 Classic."
 tags: ["Arch Linux", "Fcitx", "KDE"]
 date: 2022-12-17T02:57:50+08:00
-thumbnail: /blog/linux/Archlinux-fcitx5-install/fix_ed_fontfaimly.png
+thumbnail: ./fix_ed_fontfaimly.png
 ---
 
 # Fctix5
@@ -29,7 +29,7 @@ Fcitx5 is an input method framework with a lightweight core, offering additional
 sudo pacman -S fcitx5-chinese-addons libime fcitx5 fcitx5-table-extra
 ```
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/fxitx5%20install.png)
+![fcitx5 install](./fxitx5%20install.png)
 
 
 ## KDE Support
@@ -42,7 +42,7 @@ You're currently running KDE, but KCModule for fcitx couldn't be found, the pack
 sudo pacman -S kcm-fcitx5
 ```
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/kcm%20install.png)
+![fcitx5 install](./kcm%20install.png)
 
 ## Support Program Windows
 
@@ -55,7 +55,7 @@ sudo pacman -S kcm-fcitx5
 sudo pacman -S fcitx5-qt fcitx5-gtk fcitx5-im
 ```
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/qt5%20gtk%20im%20support%20install.png)
+![fcitx5 install](./qt5%20gtk%20im%20support%20install.png)
 
 ## 新增 `~/.profile`
 
@@ -74,7 +74,7 @@ QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 ```
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/profile%20edit.png)
+![fcitx5 install](./profile%20edit.png)
 
 ## 新增 `/etc/environment/`
 
@@ -91,13 +91,13 @@ export QT_IM_MODULE=fcitx
 export SDL_IM_MODULE=fcitx
 ```
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/etc%20environment%20added.png)
+![fcitx5 install](./etc%20environment%20added.png)
 
 ## 新增輸入法
 
 右下角打 search input method，將佢打開.
 
-![add input type](/blog/linux/Archlinux-fcitx5-install/add_input_type.png)
+![add input type](./add_input_type.png)
 
 ### Add Input Method
 
@@ -105,13 +105,13 @@ export SDL_IM_MODULE=fcitx
 
 - 速成 = QuickClassic
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/add%20input%20type-2.png)
+![fcitx5 install](./add%20input%20type-2.png)
 
 # Logout
 
 最後完成哂以上既野就將部機 Logout.
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/logout.png)
+![fcitx5 install](./logout.png)
 
 ## 檢查係咪已經 setup 好
 
@@ -125,7 +125,7 @@ echo $GTK_IM_MODULE
 
 因為 Arch linux 本身係冇裝到中文字體，所以你係需要另外再裝，如果唔裝既話，咁你打字個陣會見到有啲字係會變左亂碼，好似下圖咁
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/font-family-error.png)
+![fcitx5 install](./font-family-error.png)
 
 ## 解決方法
 
@@ -135,11 +135,11 @@ echo $GTK_IM_MODULE
 sudo pacman -S wqy-zenhei
 ```
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/install%20font-family%20fix.png)
+![fcitx5 install](./install%20font-family%20fix.png)
 
 之後重新 login 就可以見到啲字冇再亂碼啦！
 
-![fcitx5 install](/blog/linux/Archlinux-fcitx5-install/fix_ed_fontfaimly.png)
+![fcitx5 install](./fix_ed_fontfaimly.png)
 
 ---
 
@@ -153,11 +153,11 @@ sudo pacman -S fcitx5-configtool
 
 1. 直接 Search `fc` 就會搵到 (如下圖）
 
-![search-configtool](/blog/linux/Archlinux-fcitx5-install/search-configtool.png)
+![search-configtool](./search-configtool.png)
 
 2. 開左之後就咁用佢個箭嘴揀返 `Quick Classic  (速成)`  （如下圖）
 
-![configtool](/blog/linux/Archlinux-fcitx5-install/configtool.png)
+![configtool](./configtool.png)
 
 # Reference
 

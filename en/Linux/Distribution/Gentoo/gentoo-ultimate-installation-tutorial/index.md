@@ -30,7 +30,7 @@ Now, let's get started with the installation process:
 
 1. **Visit the Official Gentoo Website:** Open your web browser and navigate to [gentoo.org](https://www.gentoo.org/).
 
-![Download ISO](/blog/linux/Gentoo/gentoo-ultimate-installation-tutorial/Download-iso.png)
+![Download ISO](./Download-iso.png)
 
 2. **Download the Minimal Installation CD:** On the Gentoo download page, locate the "Minimal Installation CD (amd64)" option and click to initiate the download of the Gentoo ISO image.
 
@@ -1009,7 +1009,7 @@ reboot
 
 Rebooting is the final step in the installation process, and once your system restarts, you'll have access to your new Gentoo Linux environment. Congratulations on successfully installing Gentoo!
 
-![Grub has been installed!](/blog/linux/Gentoo/gentoo-ultimate-installation-tutorial/grub-done.png) 
+![Grub has been installed!](./grub-done.png) 
 
 ## Final Step: Testing Your System
 
@@ -1019,7 +1019,7 @@ Congratulations! You've successfully installed Gentoo Linux, and now it's time t
 
 Once your system has rebooted, you should see the login prompt. Log in using the username and password you configured during the installation process.
 
-![login](/blog/linux/Gentoo/gentoo-ultimate-installation-tutorial/login.png) 
+![login](./login.png) 
 
 ## Conclusion
 

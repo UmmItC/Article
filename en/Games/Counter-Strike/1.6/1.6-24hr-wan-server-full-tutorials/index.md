@@ -557,7 +557,7 @@ Now that you've successfully installed the Zombie Plague mod on your CS 1.6 serv
 
    When you successfully join the server, you should be greeted with a gameplay experience similar to the following image:
 
-   ![Zombie Plague Gameplay](/blog/games/1.6-24hr-wan-server-full-tutorials/zombie_plague_gameplay.png)
+   ![Zombie Plague Gameplay](./zombie_plague_gameplay.png)
 
 By following these detailed steps, you can ensure that the Zombie Plague mod has been seamlessly installed and that your CS 1.6 server is now equipped with this exciting gameplay enhancement. Enjoy the immersive and action-packed experience of the zombie apocalypse mode!
 

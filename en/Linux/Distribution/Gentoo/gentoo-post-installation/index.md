@@ -163,7 +163,7 @@ emerge -av neofetch
 
 Once installed, you can run `neofetch` to quickly view system information, including your distribution, kernel version, CPU, memory, and more. It's a useful tool for getting an overview of your system's configuration.
 
-![neofetch](/blog/linux/Gentoo/gentoo-post-installation/neofetch.png)
+![neofetch](./neofetch.png)
 
 ### 6. Install Gentoolkit
 

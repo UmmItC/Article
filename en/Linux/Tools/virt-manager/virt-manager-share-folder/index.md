@@ -4,7 +4,7 @@ title: "Enabling Folder Sharing Between Host and Virtual Machine in Virt-Manager
 description: "Learn how to effortlessly share files between your host and virtual machine using Virt-Manager, a comprehensive guide for seamless folder sharing in your virtualized environment."
 tags: ["virt-manager", "QEMU/KVM", "Folder Sharing"]
 date: 2023-09-28T20:31:10+0800
-thumbnail: /blog/linux/linux-tools/virt-manager/virt-manager-folder-share/create-1.png
+thumbnail: ./create-1.png
 ---
 
 ## Introduction
@@ -26,7 +26,7 @@ Before proceeding, you should already have a virtual machine set up. This guide 
     - `Target path`: This is the mount point you can name as you prefer. you also need to enter this name in vm.
 5. Once you've configured these settings, click "Finish" to add the new hardware.
 
-![example](/blog/linux/linux-tools/virt-manager/virt-manager-folder-share/example.png)
+![example](./example.png)
 
 ## Step 2: Creating a Shared Directory in Your Virtual Machine
 

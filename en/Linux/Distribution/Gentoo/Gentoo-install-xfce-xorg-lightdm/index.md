@@ -4,7 +4,7 @@ title: "Comprehensive Guide to Gentoo Linux: Installing XORG, XFCE and LightDM w
 description: "Gentoo Linux of installing XORG, XFCE and LightDM with the OpenRC init system. Dive into the realm of open-source customization and create a powerful and tailored desktop environment on your Gentoo system."
 tags: ["Open-RC", "Gentoo", "Linux", "XFCE", "XORG"]
 date: 2023-09-20T16:40:21+0800
-thumbnail: /blog/linux/Gentoo/Gentoo-xfce-xorg-lightdm/Gentoo-xfce-start.png
+thumbnail: ./Gentoo-xfce-start.png
 lastmod: 2023-09-23T21:30:50+0800
 ---
 
@@ -149,7 +149,7 @@ startx
 
 And there you have it—your Gentoo system has DE installed (As shown in the image below):
 
-![Started XFCE](/blog/linux/Gentoo/Gentoo-xfce-xorg-lightdm/Gentoo-xfce-start.png)
+![Started XFCE](./Gentoo-xfce-start.png)
 
 ## Step 10: Creating a Normal User
 
@@ -211,7 +211,7 @@ rc-service display-manager start
 
 Once LightDM is successfully started, your system should look similar to the image below:
 
-![lightdm](/blog/linux/Gentoo/Gentoo-xfce-xorg-lightdm/LightDM-start.png)
+![lightdm](./LightDM-start.png)
 
 ## Accessing Terminal in TTY Mode
 

@@ -50,7 +50,7 @@ Common NAT Issues:
 
 ensure that you can use local network sharing and that you are not being blocked by any program's default settings. Afterthat restart your system (VM) should be working. (As shown in the image below):
 
-![done](/blog/linux/virt-manager/Troubleshooting-NAT-Issues-in-Virt-Manager/done.png)
+![done](./done.png)
 
 ## Conclusion
 

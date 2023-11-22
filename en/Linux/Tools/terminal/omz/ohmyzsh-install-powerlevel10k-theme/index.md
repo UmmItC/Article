@@ -30,7 +30,7 @@ Choose the font style that suits your preferences:
 
 Configuring fonts in your terminal depends on the terminal emulator you are using. Each terminal emulator has different options and locations for font settings. In general, you need to access your terminal's settings and select the specific font you downloaded (Meslo Nerd Font) to ensure it's displayed correctly. (As shown in the image below):
 
-![fonts](/blog/linux/linux-tools/terminal/omz/powerlevel10k/fonts.png)
+![fonts](./fonts.png)
 
 ### Step 3: Installing Powerlevel10k for Oh My Zsh
 

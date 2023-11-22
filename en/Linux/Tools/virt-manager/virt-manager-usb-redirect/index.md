@@ -4,7 +4,7 @@ title: "Virt-Manager QEMU/KVM: Redirect Your USB Devices Without USB Passthrough
 description: "Discover how to seamlessly redirect USB devices to your virtual machines in Virt-Manager with QEMU/KVM, without the need for USB passthrough. Enhance your virtual machine experience today!"
 tags: ["virt-manager", "QEMU/KVM", "Redirect USB Device"]
 date: 2023-09-28T21:32:50+0800
-thumbnail: /blog/linux/linux-tools/virt-manager/virt-manger-usb-redirect/profile.png
+thumbnail: ./profile.png
 ---
 
 ## Introduction
@@ -21,19 +21,19 @@ This situation was far from ideal. I wanted the flexibility to use USB devices w
 
 First, launch your virtual machine in Virt-Manager as you normally would.
 
-![open-virt-manager](/blog/linux/linux-tools/virt-manager/virt-manger-usb-redirect/open-virt-manager.png)
+![open-virt-manager](./open-virt-manager.png)
 
 ## Step 2: Access VM Settings
 
 In the top menu bar, click on "Virtual Machine." A dropdown menu will appear. Then select “Redirect USB Device.” This action will prompt a new window to appear, listing all the USB devices connected to your host machine.
 
-![USB](/blog/linux/linux-tools/virt-manager/virt-manger-usb-redirect/open-menu-2.png)
+![USB](./open-menu-2.png)
 
 ## Step 3: Select USB Devices
 
 Now, you'll see a list of available USB devices. Each device will have a checkbox next to it. Simply click on the checkbox next to the USB device you want to redirect into your virtual machine.
 
-![USB](/blog/linux/linux-tools/virt-manager/virt-manger-usb-redirect/select.png)
+![USB](./select.png)
 
 ## Step 4: Apply and Use
 
@@ -43,7 +43,7 @@ Once you've selected the desired USB device(s), click the "Close" button to clos
 
 This function is effective immediately, you can enter `lsusb` command to check whether it has been effective or not.
 
-![lsusb](/blog/linux/linux-tools/virt-manager/virt-manger-usb-redirect/lsusb.png)
+![lsusb](./lsusb.png)
 
 ## Conclusion
 

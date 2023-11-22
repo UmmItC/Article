@@ -4,7 +4,7 @@ title: "Exploring GNOME OS: Your Gateway to the Latest GNOME Software"
 description: "Discover the GNOME OS, your ultimate destination to experience the latest and most innovative GNOME software. Dive into the cutting-edge of the GNOME desktop environment, explore new features."
 tags: ["GNOME", "Linux", "GNOME OS"]
 date: 2023-09-15T10:46:30+0800
-thumbnail: /blog/linux/gnome/gnomeos.png
+thumbnail: ./gnomeos.png
 ---
 
 ## Why this article?
@@ -58,19 +58,19 @@ Now, let's proceed with the installation process using the ISO you've obtained.
 
 Launch GNOME Boxes on your system. You can find it in your application menu or search for it.
 
-![Open GNOME Boxes](/blog/linux/gnome/open-0.png)
+![Open GNOME Boxes](./open-0.png)
 
 **2. Create a New Virtual Machine**
 
 Click on the "New" button to create a new virtual machine. You have two installation options: "Install from file" or "Download OS from Boxes." Choose the one that suits your preference.
 
-![Create a New VM](/blog/linux/gnome/open-1.png)
+![Create a New VM](./open-1.png)
 
 **3. Select GNOME OS**
 
 If you opt to download GNOME OS from Boxes, you can select it from the list of available operating systems.
 
-![Select GNOME OS](/blog/linux/gnome/open-dl.png)
+![Select GNOME OS](./open-dl.png)
 
 **3.2 Download from Boxes**
 
@@ -80,59 +80,59 @@ Wait for the Boxes download finish. Then goto next step. that will take some tim
 
 Specify your virtual machine's specifications, including the amount of RAM, CPU cores, and storage. Adjust these settings according to your system's capabilities.
 
-![Configure VM Specifications](/blog/linux/gnome/create-1.png)
+![Configure VM Specifications](./create-1.png)
 
 **5. Power On Your VM**
 
 Once you've configured the VM, click the "Create" button. Then, power on your VM by selecting it and clicking the "Start" button.
 
-![Power On VM](/blog/linux/gnome/poweron.png)
+![Power On VM](./poweron.png)
 
 **6. Begin the Installation**
 
 After powering on your VM, you'll see a window prompting you to install GNOME OS. By default, it will contain the latest version of GNOME.
 
-![Start Installation](/blog/linux/gnome/install-1.png)
+![Start Installation](./install-1.png)
 
 **7. Reformat and Install**
 
 Click "I agree to erasing all of my files and apps" to begin the installation process. This step will erase any existing data on the VM.
 
-![Reformat and Install](/blog/linux/gnome/install-2.png)
+![Reformat and Install](./install-2.png)
 
 **8. Wait for Installation to Complete**
 
 The installation process may take some time. Wait until it finishes.
 
-![Installation Progress](/blog/linux/gnome/install-3.png)
+![Installation Progress](./install-3.png)
 
 **9. Complete the Setup**
 
 Once the installation is complete, power off your GNOME OS VM and then power it on again.
 
-![Installation Complete](/blog/linux/gnome/install-done2.png)
+![Installation Complete](./install-done2.png)
 
 **10. Initial Configuration**
 
 Follow the on-screen prompts to set up your GNOME OS. This includes selecting your language, typing method, location services, time zone, personal information, and password.
 
-![Initial Configuration](/blog/linux/gnome/select-1.png)
+![Initial Configuration](./select-1.png)
 
-![Typing Method](/blog/linux/gnome/select-2.png)
+![Typing Method](./select-2.png)
 
-![Location Services](/blog/linux/gnome/select-3.png)
+![Location Services](./select-3.png)
 
-![Timezone](/blog/linux/gnome/select-4.png)
+![Timezone](./select-4.png)
 
-![About You](/blog/linux/gnome/select-5.png)
+![About You](./select-5.png)
 
-![Set Password](/blog/linux/gnome/select-6.png)
+![Set Password](./select-6.png)
 
 **11. GNOME OS is Ready**
 
 Congratulations! GNOME OS is now installed and ready to use on your virtual machine or real hardware.
 
-![Configuration Complete](/blog/linux/gnome/select-done.png)
+![Configuration Complete](./select-done.png)
 
 ### Exploring the Latest GNOME OS
 
@@ -140,7 +140,7 @@ Once you've completed the installation and initial configuration, you can explor
 
 >For GNOME 45 You'll notice changes, including a more detailed about page for GNOME. That was really cool, i love that!
 
-![About Page](/blog/linux/gnome/about.png)
+![About Page](./about.png)
 
 Now you can enjoy and experiment with the latest GNOME features and improvements on GNOME OS. Have fun exploring!
 

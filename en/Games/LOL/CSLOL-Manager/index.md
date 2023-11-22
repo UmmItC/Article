@@ -4,7 +4,7 @@ title: "League of Legends: A step-by-step guide to customizing skins using CSLOL
 description: "Discover how to relive the nostalgia of old-school League of Legends by customizing your skins with CSLOL Manager. Follow these simple steps to transform your gaming experience."
 tags: ["League of Legends", "Games"]
 date: 2023-09-24T23:06:40+0800
-thumbnail: /blog/games/LOL/CSLOL-Manager/Display.png
+thumbnail: ./Display.png
 lastmod: 2023-09-25T18:30:42+0800
 ---
 
@@ -40,7 +40,7 @@ CSLOL Manager is open-source software, not proprietary, and its code can be foun
 
 1. To download CSLOL Manager, click [here](https://github.com/LeagueToolkit/cslol-manager/releases/tag/2023-09-17-cb6885f) (as shown in the image below).
 
-![Download CSLOL Manager](/blog/games/LOL/CSLOL-Manager/download-cslol-manager.png)
+![Download CSLOL Manager](./download-cslol-manager.png)
 
 2. After downloading the file, extract `cslol-manager-windows.exe` from the archive.
 
@@ -52,19 +52,19 @@ Configuring the path to your League of Legends files is crucial for the skin cha
 
 1. Click the Settings icon.
 
-![Change Path Settings 1](/blog/games/LOL/CSLOL-Manager/Setting-PATH-1.png)
+![Change Path Settings 1](./Setting-PATH-1.png)
 
 2. Click on "CHANGE GAME FOLDER."
 
-![Change Path Settings 2](/blog/games/LOL/CSLOL-Manager/Setting-PATH-2.png)
+![Change Path Settings 2](./Setting-PATH-2.png)
 
 3. Click "BROWSE."
 
-![Change Path Settings 3](/blog/games/LOL/CSLOL-Manager/Setting-PATH-3.png)
+![Change Path Settings 3](./Setting-PATH-3.png)
 
 4. Locate your LoL path. By default, it's often found at `Program Files\Riot Games\League of Legends\Game\League of Legends.exe` (if you haven't changed it).
 
-![Change Path Settings 4](/blog/games/LOL/CSLOL-Manager/Setting-PATH-4.png)
+![Change Path Settings 4](./Setting-PATH-4.png)
 
 ## Step 3: Find Your Favorite Skin on Killerskins or Runeforge
 
@@ -78,19 +78,19 @@ As an example, let's download an [old jungle monsters](https://killerskins.com/f
 
 2. Click "Import New Mod."
 
-![Import 1](/blog/games/LOL/CSLOL-Manager/IMPORT-1.png)
+![Import 1](./IMPORT-1.png)
 
 3. Locate the downloaded skin file and click on it.
 
 4. After importing, you should see it listed as shown below.
 
-![Import 2](/blog/games/LOL/CSLOL-Manager/IMPORT-2.png)
+![Import 2](./IMPORT-2.png)
 
 5. Enable the skin by checking the checkbox next to it.
 
 6. Click "RUN."
 
-![Done](/blog/games/LOL/CSLOL-Manager/Done.png)
+![Done](./Done.png)
 
 7. You should now see the following message displayed: Status: Waiting for league match to start.
 
@@ -100,7 +100,7 @@ Now, Open your lol and then Match the game and you will see your modified skins 
 
 >Tips: To ensure the skin is working correctly, if you currently have the League of Legends client launched, Just restart your League of Legends client. and then open this again, After that you should now see the modified skin.
 
-![Done](/blog/games/LOL/CSLOL-Manager/Display.png)
+![Done](./Display.png)
 
 ## Impressions
 

@@ -42,7 +42,7 @@ Now you have to delete all the existing keys with this setting. Some BIOS system
 
 The factory default keys are no longer required and should therefore be disabled as we will be using our own key for the sign key.
 
-![Factory-Default-keys.png](/blog/linux/system/UEFI/Secure-Boot/How-to-enable-secure-boot-with-self-cert/Factory-Default-keys.png)
+![Factory-Default-keys.png](./Factory-Default-keys.png)
 
 Now, Save the changes and Boot-up your system.
 

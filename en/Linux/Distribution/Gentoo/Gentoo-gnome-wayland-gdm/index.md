@@ -12,7 +12,7 @@ lastmod: 2023-09-27T17:10:50+0800
 
 In the previous article, I demonstrated how to install XFCE. and in this comprehensive guide will walk you through the process of installing and configuring GNOME on your Gentoo system. (As shown in the image below):
 
-![gnome-gentoo](/blog/linux/Gentoo/Gentoo-gnome-wayland-gdm/neofetch.png)
+![gnome-gentoo](./neofetch.png)
 
 ## Step 1: Select Your Profile
 

@@ -47,11 +47,11 @@ Now, open your virt-mangaer QEMU/KVM. Add a new vm as usual, but this time as an
 
 1. Click `+` and then click `Import existing disk image`
 
-![](/blog/linux/linux-tools/virt-manager/virt-manager-convert-vdi-to-qcow2/1.png)
+![](./1.png)
 
 2. Now browse the image file and select the actual location of the converted qcow2.
 
-![](/blog/linux/linux-tools/virt-manager/virt-manager-convert-vdi-to-qcow2/2.png)
+![](./2.png)
 
 And Just follow the step do it, I haven't used virtualbox for a long time, and I don't want to install it, so I don't have any pictures, but the process is very simple, just follow the guide.
 

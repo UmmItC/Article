@@ -110,7 +110,7 @@ To fully benefit from the installed Nerd Fonts, you might need to configure your
 
 For a visual walkthrough of the font installation process, refer to the following animated guide:
 
-![Install Nerd Fonts](/blog/win/windows-install-oh-my-posh/set-fonts.gif)
+![Install Nerd Fonts](./set-fonts.gif)
 
 ## Browsing and Selecting Themes
 
@@ -126,7 +126,7 @@ To discover the available themes, you can visit the official Oh My Posh themes d
 Get-PoshThemes
 ```
 
-![listing-themes](/blog/win/windows-install-oh-my-posh/list.gif)
+![listing-themes](./list.gif)
 
 ### Previewing Themes
 
@@ -282,7 +282,7 @@ This mode mimics the behavior seen on most Linux systems and is a favorite among
 Set-PSReadLineOption -PredictionSource History
 ```
 
-![PSReadLine Mode: History](/blog/win/windows-install-oh-my-posh/history_1.gif)
+![PSReadLine Mode: History](./history_1.gif)
 
 #### PSReadLine Mode: ListView
 
@@ -296,7 +296,7 @@ To activate the ListView mode, execute the following command:
 Set-PSReadLineOption -PredictionViewStyle ListView
 ```
 
-![PSReadLine Mode: ListView](/blog/win/windows-install-oh-my-posh/history_2.gif)
+![PSReadLine Mode: ListView](./history_2.gif)
 
 By selecting the PSReadLine mode that aligns with your workflow, you can make your PowerShell interactions even more efficient and tailored to your needs. Experiment with these modes to find the one that best suits your preferences.
 

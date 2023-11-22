@@ -4,7 +4,7 @@ title: "Dual GPU Passthrough Guided Part 9: Installing Linux and Enabling Full P
 description: "In this section, we will guide you through the process of creating a new VM using Virt-Manager, installing the Linux and enabling complete passthrough of hardware components."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]
 date: 2023-08-16T02:50:40+0800
-thumbnail: /blog/linux/dual-gpu-passthrough/part9/install_ubuntu.png
+thumbnail: ./install_ubuntu.png
 lastmod: 2023-08-22T13:51:02+0800
 ---
 
@@ -48,31 +48,31 @@ Now that you have the Linux distribution ISO file downloaded, it's time to creat
 
 Open Virt-Manager and start the process of creating a new VM. Opt for a "Local install" to proceed.
 
-![Create a New VM - 1 of 5](/blog/linux/dual-gpu-passthrough/part9/1of5.png)
+![Create a New VM - 1 of 5](./1of5.png)
 
 #### 2. Choose the ISO
 
 Select the downloaded Linux distribution ISO as the installation media.
 
-![Choose ISO - 2 of 5](/blog/linux/dual-gpu-passthrough/part9/2of5.png)
+![Choose ISO - 2 of 5](./2of5.png)
 
 #### 3. Configure RAM and CPU
 
 Set the amount of RAM and the number of CPU cores for the VM.
 
-![Configure RAM and CPU - 3 of 5](/blog/linux/dual-gpu-passthrough/part9/3of5.png)
+![Configure RAM and CPU - 3 of 5](./3of5.png)
 
 #### 4. Set Up Disks and Enable Storage
 
 Allocate disk space for the VM and enable storage support for the setup.
 
-![Set Up Disks and Enable Storage - 4 of 5](/blog/linux/dual-gpu-passthrough/part9/4of5.png)
+![Set Up Disks and Enable Storage - 4 of 5](./4of5.png)
 
 #### 5. Ready to Install
 
 Enable custom configuration settings to fine-tune the installation.
 
-![Ready to Install - 5 of 5](/blog/linux/dual-gpu-passthrough/part9/5of5.png)
+![Ready to Install - 5 of 5](./5of5.png)
 
 With these settings in place, your VM is now ready for installation. You've efficiently configured the initial parameters for your passthrough setup. Let's proceed to the next steps.
 
@@ -84,7 +84,7 @@ With your virtual machine (VM) settings configured, it's time to prepare for the
 
 Begin by selecting the UEFI firmware for your VM. Choose "UEFI x86_64 OVM_CODE.fd" as the firmware option. This choice is essential for UEFI compatibility and optimal functionality.
 
-![Firmware](/blog/linux/dual-gpu-passthrough/part9/firmware.png)
+![Firmware](./firmware.png)
 
 #### 2. Configure Boot Options
 
@@ -92,13 +92,13 @@ Navigate to the boot options section and enable the boot menu. This will allow y
 
 With these crucial preparations in place, your VM is set up for a seamless Linux installation. Proceed with the installation process to bring your passthrough setup to life and enable complete hardware passthrough. Now click `begin installaiton button`.
 
-![Boot options](/blog/linux/dual-gpu-passthrough/part9/boot_options.png)
+![Boot options](./boot_options.png)
 
 ### Step 4: TianoCore UEFI Firmware
 
 Upon starting the VM, you should see the TianoCore UEFI logo and related text displayed. This confirms that your UEFI settings are correctly configured. If you do not see the TianoCore logo and text, it may indicate that you missed a step or that the ISO you are using is not UEFI-compatible and is using BIOS instead.
 
-![UEFI](/blog/linux/dual-gpu-passthrough/part9/Tiano_core.png)
+![UEFI](./Tiano_core.png)
 
 ### Step 5: Install Your Linux System
 
@@ -114,7 +114,7 @@ Simply follow these general steps:
 
 Keep in mind that the installation steps may vary slightly depending on the specific Linux distribution you're using, but the general process remains consistent.
 
-![ubuntu_install](/blog/linux/dual-gpu-passthrough/part9/install_ubuntu.png)
+![ubuntu_install](./install_ubuntu.png)
 
 With your Linux system installed, you're now ready to proceed to the final steps of enabling complete hardware passthrough. These upcoming steps will help you unlock the full potential of your passthrough setup and achieve a seamless virtualization experience.
 
@@ -152,7 +152,7 @@ If you're planning to perform system upgrades within your virtual machine (VM), 
 
    After installation, run `neofetch` in the terminal to display detailed information about your GPU and system configuration.
 
-![neofetch](/blog/linux/dual-gpu-passthrough/part9/neofetch.png)
+![neofetch](./neofetch.png)
 
 ### Final Step: Optimizing Monitor Configuration
 
@@ -168,7 +168,7 @@ Here's how to complete this process:
 
 4. **Switch to HDMI2 or Secondary Monitor:** After the VM restarts, switch your physical monitor's input source back to HDMI2 or your chosen secondary input. You should now see the output from your virtual machine on the secondary monitor.
 
-![ramfb](/blog/linux/dual-gpu-passthrough/part9/ramfb.png)
+![ramfb](./ramfb.png)
 
 By following these steps, you have successfully configured your monitor to display the output from your Linux VM on a secondary input. This optimization enhances your passthrough experience and provides a dedicated visual channel for your virtual machine. Enjoy the benefits of your fully set up and optimized dual GPU passthrough system!
 

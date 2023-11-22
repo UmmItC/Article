@@ -141,7 +141,7 @@ For testing your ISO on a UEFI-based system, follow these steps:
 
 Your terminal output should resemble the following:
 
-![UEFI Mode](/blog/linux/Archlinux-build-your-own-kernel-archlinux_iso/UEFI_test.png)
+![UEFI Mode](./UEFI_test.png)
 
 #### BIOS (Non-UEFI) Mode Testing
 
@@ -159,7 +159,7 @@ For testing on systems that use BIOS (non-UEFI), follow these instructions:
 
 Your terminal output should resemble the following:
 
-![BIOS Mode](/blog/linux/Archlinux-build-your-own-kernel-archlinux_iso/BIOS_test.png)
+![BIOS Mode](./BIOS_test.png)
 
 #### Test and Validate
 

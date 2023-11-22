@@ -4,7 +4,7 @@ title: "FFEMPG 下載 Jable.tv 影片教學"
 description: "教你點用 FFMPEG 下載 HLS 既片。"
 tags: ["ffmpeg"]
 date: 2021-12-13T00:28:36+0800
-thumbnail: /blog/linux/linux-tools/FFMPEG/FFMPEG-download-jabletv-video/jable.png
+thumbnail: ./jable.png
 ---
 
 # 2022.6.16 訊息
@@ -62,7 +62,7 @@ sudo apt-get install ffmpeg
 
 >搵唔到 m3u8 link 可能係因為你做漏左步驟，撳 F5 Refresh 再試下 Play 條片就一定會搵到架啦。
 
-![find](/blog/linux/linux-tools/FFMPEG/FFMPEG-download-jabletv-video/1.gif)
+![find](./1.gif)
 
 ### 下載影片
 
@@ -72,7 +72,7 @@ sudo apt-get install ffmpeg
 ffmpeg -user_agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" -headers "referer: https://jable.tv/" -i "https://qmm-truts.mushroomtrack.com/hls/NFb_sIwTdg3IZ6FeEFo9-g/1656586701/0/108/108.m3u8" -c copy IPX-258.mp4
 ```
 
-![find](/blog/linux/linux-tools/FFMPEG/FFMPEG-download-jabletv-video/downloaded.png)
+![find](./downloaded.png)
 
 ### 注意
 

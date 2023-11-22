@@ -30,7 +30,7 @@ Follow these steps to enable clipboard sharing between your host and VM using Vi
    - **Device Type:** com.redhat.spice.0
    - **Device:** Spice agent (spicevmc)
 
-![copy](/blog/linux/linux-tools/virt-manager/add.png)
+![copy](./add.png)
 
 5. **Apply Changes:** Save your settings and apply the changes to the VM.
 

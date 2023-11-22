@@ -4,7 +4,7 @@ title: "Installing Flatpak on Your Linux System: One Universal Platform for Apps
 description: "Flatpak, a universal platform for Linux applications, and benefit from a secure, cross-distribution sandboxed environment. Simplify software management and ensure compatibility of popular applications on your Linux system."
 tags: ["Flatpak", "Linux"]
 date: 2023-09-16T11:39:50+0800
-thumbnail: /blog/linux/linux-tools/flatpak/flatpak-software.png
+thumbnail: ./flatpak-software.png
 ---
 
 ## Introduction

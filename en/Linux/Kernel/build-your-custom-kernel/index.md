@@ -4,7 +4,7 @@ title: "Building the Linux Kernel on your Linux System (systemd-boot): Step-by-S
 description: "Learn how to build your own custom Linux kernel from scratch on your Linux system (systemd-boot). Follow this step-by-step guide to gain insight into kernel customization and enhance your system's performance and features."
 tags: ["Linux", "Kernel"]
 date: 2023-08-22T14:20:50+0800
-thumbnail: /blog/linux/Kernel/Compile%20Kernel%20Modules.png
+thumbnail: ./Compile%20Kernel%20Modules.png
 lastmod: 2023-09-03T19:17:22+0800
 ---
 
@@ -65,7 +65,7 @@ Embark on your kernel customization journey by obtaining the kernel source code 
 
    The official source for Linux kernel releases is [kernel.org](https://kernel.org/). You can access the website through your web browser and manually download the source code archive. Keep in mind that this method involves larger file sizes, so a stable internet connection is recommended.
 
-   ![kernel.org](/blog/linux/Kernel/Download%20Kernel%20source.png)
+   ![kernel.org](./Download%20Kernel%20source.png)
 
 ### 2. Download using `aria2c`:
 
@@ -231,7 +231,7 @@ To compile the kernel, you'll be using the `make` command, which automates the c
 make ARCH=x86_64 -j $(nproc)
 ```
 
-   ![compile the kernel](/blog/linux/Kernel/Compile%20Kernel%20Modules.png)
+   ![compile the kernel](./Compile%20Kernel%20Modules.png)
 
 - `make`: This command invokes the kernel build system and starts the compilation process.
 
@@ -253,7 +253,7 @@ The following command will install the kernel modules for your custom-built kern
 sudo make ARCH=x86_64 modules_install
 ```
 
-   ![install the kernel](/blog/linux/Kernel/Install%20Kernel%20Modules.png)
+   ![install the kernel](./Install%20Kernel%20Modules.png)
 
 #### What does this command do?
 

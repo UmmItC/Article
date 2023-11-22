@@ -35,11 +35,11 @@ Visit the [ReviOS website](https://revi.cc/revios/download) and download two ess
 
 1. **AME Wizard**: Click the download button on the [AME Wizard page](https://ameliorated.io/).
    
-   ![AME Wizard](/blog/win/custom/windows-revios/AME%20Wizard.png)
+   ![AME Wizard](./AME%20Wizard.png)
 
 2. **ReviOS Playbook**: Download the `apbx` file from the [ReviOS Playbook GitHub release page](https://github.com/meetrevision/playbook/releases).
    
-   ![ReviOS playbook](/blog/win/custom/windows-revios/ReviOS-playbook.png)
+   ![ReviOS playbook](./ReviOS-playbook.png)
 
 AME Wizard acts as an injector, allowing you to modify your Windows system. ReviOS is the program you'll inject into it. Now, let's move on to the installation steps.
 
@@ -49,57 +49,57 @@ Start the AME Wizard program. You might need administrative permissions, so clic
 
 > **Note**: Windows Defender might flag this program as harmful, leading to its closure. To proceed, disable all antivirus settings. You will also be asked to close the antivirus during the next step. Whether you do it now or later doesn't matter; just ensure it's closed before continuing.
 
-   ![select playbook](/blog/win/custom/windows-revios/Select-playbook.png)
+   ![select playbook](./Select-playbook.png)
 
 ## Step 3: Inject ReviOS Playbook into AME Wizard
 
 Drag and drop the downloaded `apbx` file into AME Wizard and click "Next."
 
-   ![Disable windows security](/blog/win/custom/windows-revios/Disable-windows-security.png)
+   ![Disable windows security](./Disable-windows-security.png)
 
 ## Step 4: Disable Windows Security
 
 As mentioned earlier, turn off all Windows security settings. Click "Next" once all security options turn gray.
 
-   ![Disable windows security-2](/blog/win/custom/windows-revios/Disable-windows-security-2.png)
+   ![Disable windows security-2](./Disable-windows-security-2.png)
 
 ## Step 5: Verify Windows Build Requirements
 
 Wait for the playbook to validate your Windows version.
 
-   ![Verifying windows](/blog/win/custom/windows-revios/verifying.png)
+   ![Verifying windows](./verifying.png)
 
 After validation, if the program confirms that your system meets the playbook's requirements, click "Next."
 
-   ![Verifying windows-2](/blog/win/custom/windows-revios/verifying-2.png)
+   ![Verifying windows-2](./verifying-2.png)
 
 ## Step 6: Accept the License Agreement
 
 Read the license agreement on this page. click "Next."
 
-   ![License](/blog/win/custom/windows-revios/License.png)
+   ![License](./License.png)
 
 Click "Agree."
 
-   ![License-2](/blog/win/custom/windows-revios/License-2.png)
+   ![License-2](./License-2.png)
 
 ## Step 7: Customize Features (Optional)
 
 ReviOS offers several customization features in this step. If you don't wish to customize, simply click "Next." However, let's explore the options. Click "Select Features."
 
-   ![Select features](/blog/win/custom/windows-revios/Select-features.png)
+   ![Select features](./Select-features.png)
 
 The first feature allows you to choose your preferred browser.
 
-   ![Select features 2](/blog/win/custom/windows-revios/Select-features-2.png)
+   ![Select features 2](./Select-features-2.png)
 
 Select the components you want to install or remove. It's recommended to select all components. Once done, click "OK."
 
-   ![Select features 3](/blog/win/custom/windows-revios/Select-features-3.png)
+   ![Select features 3](./Select-features-3.png)
 
 After confirming your choices, click "Next."
 
-   ![Select features 4](/blog/win/custom/windows-revios/Select-features-4.png)
+   ![Select features 4](./Select-features-4.png)
 
 ## Step 8: Apply Changes
 
@@ -107,29 +107,29 @@ Wait for the playbook to complete the process. The option to automatically resta
 
 > **Note**: Do not perform any actions until the process completes. Be patient in case of any unexpected issues.
 
-   ![apply](/blog/win/custom/windows-revios/apply.png)
-   ![apply 2](/blog/win/custom/windows-revios/apply-2.png)
-   ![apply 3](/blog/win/custom/windows-revios/apply-3.png)
+   ![apply](./apply.png)
+   ![apply 2](./apply-2.png)
+   ![apply 3](./apply-3.png)
 
 ## Step 9: Completion
 
 After restarting your system, you'll notice the changes, including the new wallpaper!
 
-   ![finish](/blog/win/custom/windows-revios/finish.png)
+   ![finish](./finish.png)
 
 ### Process Optimization
 
 Check Task Manager to observe the reduced number of running processes. ReviOS dramatically reduces the count; originally, there could be up to 130 processes. The reduction ratio is approximately 2.28, meaning the program has halved the number of processes.
 
-   ![Processes](/blog/win/custom/windows-revios/Processes.png)
+   ![Processes](./Processes.png)
 
 ### Revision Tool
 
 After installing ReviOS, you'll find a program called Revision Tool. This tool allows further customization, such as enabling updates and Windows Defender. These settings are entirely up to you.
 
-   ![Revision Tool](/blog/win/custom/windows-revios/Revision%20Tool.png)
-   ![Revision Tool-2](/blog/win/custom/windows-revios/Revision%20Tool-2.png)
-   ![Revision Tool-3](/blog/win/custom/windows-revios/Revision%20Tool-3.png)
+   ![Revision Tool](./Revision%20Tool.png)
+   ![Revision Tool-2](./Revision%20Tool-2.png)
+   ![Revision Tool-3](./Revision%20Tool-3.png)
 
 ## Is ReviOS Recommended?
 

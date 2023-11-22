@@ -39,7 +39,7 @@ These packages will provide the components required to create a virtual TPM for 
 
 i'm lazy...
 
-![TLS tpm](/blog/linux/dual-gpu-passthrough/part8/tls-tpm.png)
+![TLS tpm](./tls-tpm.png)
 
 ## Conclusion
 
