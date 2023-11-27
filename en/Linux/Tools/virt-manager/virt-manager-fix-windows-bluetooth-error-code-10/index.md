@@ -1,7 +1,7 @@
 ---
 author: "Arcsly"
 title: "Troubleshooting Windows Intel AX211 Bluetooth Error Code 10 in Virt-Manager"
-description: ""
+description: "Encounter error code 10 with your Intel AX211 Bluetooth in Virt-Manager on Windows? This guide walks you through troubleshooting steps to resolve the issue and get your Bluetooth device working seamlessly."
 tags: ["virt-manager", "qemu/kvm", "Bluetooth"]
 date: 2023-11-27T10:13:50+0800
 ---
