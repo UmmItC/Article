@@ -5,6 +5,7 @@ description: "Enhance your online privacy by configuring DNS Over HTTPS (DoH) on
 tags: ["DoH", "DNS"]
 date: 2023-11-27T12:26:50+0800
 thumbnail: https://www.itechtics.com/wp-content/uploads/2020/05/DNS-over-HTTPS-featured.jpg
+lastmod: 2023-12-03T11:05:02+0800
 ---
 
 ## Introduction
@@ -139,9 +140,51 @@ This steps only works on a systemd init based Linux system. such as arch linux.
     Data was acquired via local or encrypted transport: yes
     ```
 
-## Step-by-Step Guide on Windows
+## Step-by-step instructions on Windows
 
-coming soon ...
+On Windows, you do not need to use the command line to complete the process. Windows already has a GUI for this process.
+
+1. **Accessing Settings:** 
+Open the Settings menu on your Windows system.
+   ![Settings](./win11/Setting%20open.png)
+
+2. **Navigating to Network & Internet Settings:** 
+In the Settings menu, locate and click on `Network & Internet.`
+     ![Network & Internet](./win11/Setting-network.png)
+
+3. **Selecting Your Network:** 
+Under `Network & Internet`, choose your preferred network, typically labeled as Ethernet for wired connections.
+     ![Ethernet](./win11/Ethernet.png)
+
+4. **Editing DNS Settings:** 
+Click on the `Edit` option for IP settings, specifically focusing on the IPv4 DNS Server.
+     ![Edit](./win11/Edit-all.png)
+
+5. **Switching to Manual DNS Configuration:** 
+Change the DNS configuration from `Automatic` to `Manual.`
+     ![Manual](./win11/Manual.png)
+
+6. **Setting Preferred DNS:** 
+Update the "Preferred DNS" section with your chosen DNS address. For Windows, use one of the following Mullvad DoH addresses:
+     - 194.242.2.2 - [dns.mullvad.net/dns-query](https://dns.mullvad.net/dns-query)
+     - 194.242.2.3 - [adblock.dns.mullvad.net/dns-query](https://adblock.dns.mullvad.net/dns-query)
+     - 194.242.2.4 - [base.dns.mullvad.net/dns-query](https://base.dns.mullvad.net/dns-query)
+     - 194.242.2.5 - [extended.dns.mullvad.net/dns-query](https://extended.dns.mullvad.net/dns-query)
+     - 194.242.2.9 - [all.dns.mullvad.net/dns-query](https://all.dns.mullvad.net/dns-query)
+
+7. **Activating DNS Over HTTPS:** 
+Enable the DNS over HTTPS option.
+
+8. **Saving Changes and Adding Alternate DNS:** 
+Save your changes. Optionally, you can add an `Alternate DNS` using a different address for redundancy.
+     ![edit-all](./win11/example.png)
+
+9. **Confirming Encryption:** 
+After editing, ensure that the "IPv4 DNS Server" displays as `encrypted.`
+     ![done](./win11/Done.png)
+
+10. **Verification:** 
+Check the DNS status on [Mullvad DNS](https://mullvad.net/en/check) to confirm that your DNS results are no leaked.
 
 ## Step-by-Step Guide on Android
 
@@ -149,7 +192,7 @@ coming soon ...
 
 ## Conclusion
 
-By following these steps, you've configured DNS Over HTTPS using systemd-resolved on your Linux system, enhancing your privacy and securing your DNS queries. If you encounter issues, try the opportunistic DoH setting or experiment with different DNS server options.
+By following these steps, you've configured DNS Over HTTPS using systemd-resolved on your system, enhancing your privacy and securing your DNS queries. If you encounter issues, try the opportunistic DoH setting or experiment with different DNS server options.
 
 ## References
 
