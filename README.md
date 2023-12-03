@@ -2,4 +2,6 @@
 
 Here are the original files of all the markdown articles. (blowfish-theme)
 
-All articles are under WTFPL License. See [Here](./LICENSE.md).
+## License
+
+All articles are under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) License. See [Here](./LICENSE.md).
