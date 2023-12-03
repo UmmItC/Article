@@ -186,9 +186,25 @@ After editing, ensure that the "IPv4 DNS Server" displays as `encrypted.`
 10. **Verification:** 
 Check the DNS status on [Mullvad DNS](https://mullvad.net/en/check) to confirm that your DNS results are no leaked.
 
-## Step-by-Step Guide on Android
+## Step-by-step guide for Android
 
-coming soon ...
+Android is easier. Also has a GUI for it.
+
+1. Start `Settings` and click on `Connections`:
+
+![Settings](./android/Settings.png)
+
+2. In `Connections` click on `More Connection Settings`.
+
+![More Connection Settings](./android/More%20Connection%20Settings.png)
+
+3. Click `Private DNS`, default is `Automatic`.
+
+![Private DNS](./android/Private%20DNS.png)
+
+4. Enter your preferred hostname. In this case I will use `base.dns.mullvad.net`.
+
+![Enter hostname](./android/Enter%20host%20name.png)
 
 ## Conclusion
 
