@@ -122,8 +122,10 @@ Replace `user` and `group` with your actual username and group. This adjustment 
 ## Conclusion
 
 Automounting your hard disk on Linux ensures convenient access to your storage space without manual intervention. This process allows you to seamlessly integrate additional storage capacity into your system.
+
 ## References
 
 - [How to mount disk and partition in Linux](https://www.simplified.guide/linux/disk-mount)
 - [How To Automount File Systems on Linux](https://www.linuxbabe.com/desktop-linux/how-to-automount-file-systems-on-linux)
 - [mount: wrong fs type, bad option, bad superblock](https://unix.stackexchange.com/questions/315063/mount-wrong-fs-type-bad-option-bad-superblock)
+- [How to Mount a Hard Drive in Linux on Startup](https://onion.tube/watch?v=JS0Jd_DNXdg)
