@@ -4,6 +4,7 @@ title: "Mounting Your Internal Disk on your Linux System"
 description: ""
 tags: ["Harddisk", "Linux"]
 date: 2023-12-07T21:53:02+0800
+lastmod: 2023-12-08T21:39:20+0800
 ---
 
 ## Introduction
@@ -107,6 +108,16 @@ After adding this entry to your `/etc/fstab` file, you can either reboot your sy
 A Simple way, back to your directory `/mnt/4tbhdd`, and you should see your hard disk has been mounted. Right-click the directory and verify the free space (`4.0 TB Free`).
 
 ![done](./done.png)
+
+## Step 6: Adjusting Permissions
+
+After successfully auto-mounting the disk, you might notice that the ownership is restricted to the root user. This means you cannot use a regular user to create directories or manipulate files on the mounted disk. To address this, use the `chown` command to set permissions, allowing your user and group to access all items:
+
+```shell
+sudo chown user:group /mnt/4tbhdd
+```
+
+Replace `user` and `group` with your actual username and group. This adjustment ensures that you, as a regular user, have the necessary permissions to interact with the mounted disk.
 
 ## Conclusion
 
