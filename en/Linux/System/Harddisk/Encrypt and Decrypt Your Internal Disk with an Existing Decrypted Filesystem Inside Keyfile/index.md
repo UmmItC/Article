@@ -10,7 +10,9 @@ date: 2023-12-08T10:10:02+0800
 
 In the previous article, I demonstrated how to auto-mount an internal disk during system boot-up. In this article, I'll guide you through the process of encrypting your internal disk using LUKS. This method involves decrypting your first disk, locating the keyfile on that disk, and using it to decrypt subsequent disks. Thus, you'll need to decrypt the first disk to decrypt your internal disk. This ensures that the keyfile is stored on your first disk, preventing them from being separated.
 
-If you're unfamiliar with fully encrypting your entire disk, refer to this article: [LUKS Full Encryption](LUKS).
+If you're unfamiliar with fully encrypting your entire disk, refer to this article:
+
+>[Complete Guide to Installing Arch Linux with LUKS Encryption and GNOME Desktop Environment ](/posts/en/linux/distribution/archlinux/archlinux-luks-encryption-fully-install-systemd/).
 
 In summary, this method uses both a passphrase and a keyfile for disk decryption. The keyfile is stored on your system.
 
@@ -75,18 +77,20 @@ YES
 
 ## Step 5: Decrypt LUKS
 
-This command will encrypt the disk and map it to a name, such as `storage4tb`.
+This command will encrypt the disk and map it to a name, such as `4tbhdd`.
 
 ```shell
-cryptsetup open /dev/sda1 storage4tb
+cryptsetup open /dev/sda1 4tbhdd
 ```
+
+When using the cryptsetup luksOpen command to unlock the LUKS encryption device, the `/dev/mapper/` name assigned to the mapped device is determined by the `open` command. and the name can be changed as needed.
 
 ## Step 6: Create File System
 
-As we have created a new mapper for the encrypted disk (`storage4tb`), we also need to create a file system on this mapper. Execute the following command to accomplish this:
+As we have created a new mapper for the encrypted disk (`4tbhdd`), we also need to create a file system on this mapper. Execute the following command to accomplish this:
 
 ```shell
-mkfs.btrfs /dev/mapper/storage4tb
+mkfs.btrfs /dev/mapper/4tbhdd
 ```
 
 This command initializes a Btrfs file system on the specified mapper, ensuring that the encrypted disk is ready for use.
@@ -123,28 +127,58 @@ Retrieve the UUID of the LUKS device for the next steps by running the following
 cryptsetup luksUUID /dev/sda1
 ```
 
-## Step 11: Add to crypttab
+### Add to crypttab
 
 Add the UUID and related content to the `crypttab`. This file is crucial for loading the key during the system boot-up without requiring a passphrase.
 
 ```shell
 nvim /etc/crypttab
 
-4tbhdd          /dev/disk/by-uuid/<uuid>  /root/keyfile   luks
+4tbhdd          /dev/disk/by-uuid/<uuid-of-luks>  /root/keyfile   luks
 ```
 
-## Step 12: Add to fstab
+The `crypttab` entry you provided essentially automates the process of unlocking and mapping the LUKS-encrypted device during the system boot. The entry specifies the necessary details, such as the device path, the keyfile, and the desired mapping name (`4tbhdd`). This way, you don't need to manually run the `cryptsetup luksOpen` command during each boot.
 
-In the `/etc/fstab` file, include an entry for mounting the mapper during system boot-up:
+Here's the breakdown:
+
+- The system reads the `/etc/crypttab` file during the boot process.
+- It identifies the `4tbhdd` entry.
+- It automatically runs a command similar to this:
+
+```bash
+cryptsetup luksOpen /dev/disk/by-uuid/<UUID> 4tbhdd --key-file /root/keyfile
+```
+
+- The LUKS-encrypted device is then mapped to `/dev/mapper/4tbhdd`, and you can access it using this mapped device name.
+
+This automation is convenient for managing encrypted devices, especially when dealing with multiple LUKS-encrypted partitions or disks. It simplifies the process of unlocking and mapping during system startup.
+
+## Step 12: Get the UUID of mapper
+
+Copy the UUID of the mapper for further use:
+
+```shell
+blkid /dev/mapper/4tbhdd >> /etc/fstab
+```
+
+### Add to fstab
+
+Edit the `/etc/fstab` file and add an entry for mounting the mapper during system boot-up:
 
 ```shell
 nvim /etc/fstab
 
-# /dev/mapper/storage4tb 4TB HDD
-/dev/mapper/storage4tb  /mnt/4tbhdd     btrfs       defaults        0 0
+# /dev/mapper/4tbhdd 4TB HDD
+UUID=<UUID-of-mapper>  /mnt/4tbhdd     btrfs       defaults        0 0
 ```
 
-## Step 13: Create Mounting Point
+Explanation:
+
+- The `blkid` command is used to retrieve the UUID of the mapper (`4tbhdd`).
+- The obtained UUID is then appended to the `/etc/fstab` file, ensuring that the mapper is mounted automatically during the system boot-up.
+
+
+## Step 14: Create Mounting Point
 
 Since we are targeting the mount point `/mnt/4tbhdd`, let's create this directory using the following command:
 
@@ -154,13 +188,37 @@ mkdir /mnt/4tbhdd
 
 This directory will serve as the mount point for our encrypted internal disk.
 
-## Step 14: Adjusting Permissions
+## Step 15: Adjusting Permissions
 
 Because the permissions are set to root only, use `chown` to allow a regular user to perform any action.
 
 ```shell
-chown user:group /mnt/4tbhdd
+chown user:group /mnt/4tbhdd/
 ```
+
+## Step 16: Reboot
+
+Now, reboot your system. After the reboot, you should notice that you are not required to enter any passphrase manually. Use the `lsblk` command to verify that your encrypted internal disk has been successfully mounted:
+
+```shell
+lsblk
+NAME           MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+sda              8:0    0   3.6T  0 disk  
+└─sda1           8:1    0   3.6T  0 part  
+  └─4tbhdd     254:4    0   3.6T  0 crypt /mnt/4tbhdd
+```
+
+Your internal disk, named `4tbhdd`, is now mounted at `/mnt/4tbhdd` and is automatically decrypted during the boot process.
+
+## Step 17: Double Verify Status
+
+To double-check the status of the encrypted device, you can use the `cryptsetup status` command. This will provide detailed information about the LUKS device:
+
+```shell
+cryptsetup status /dev/mapper/4tbhdd
+```
+
+The output should confirm that `/dev/mapper/4tbhdd` is active, and it is in read/write mode.
 
 ## Conclusion
 
@@ -170,4 +228,4 @@ Congratulations! You've successfully encrypted and set up an internal disk for d
 
 - [How to encrypt a drive and mount it automatically at boot / no prompt](https://onion.tube/watch?v=UXJrSji-nNo)
 - [How to automatically mount an encrypted volume at boot?](https://discussion.fedoraproject.org/t/how-to-automatically-mount-an-encrypted-volume-at-boot/71271/1)
-- [https://access.redhat.com/solutions/230993](https://access.redhat.com/solutions/230993)
+- [How to add a passphrase, key, or keyfile to an existing LUKS device](https://access.redhat.com/solutions/230993)
