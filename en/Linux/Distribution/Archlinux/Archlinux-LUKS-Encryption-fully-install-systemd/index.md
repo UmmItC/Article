@@ -5,6 +5,7 @@ description: "Step-by-step tutorial for installing Arch Linux with LUKS encrypti
 tags: ["Arch Linux", "LUKS", "GNOME"]
 date: 2023-08-10T02:08:10+0800
 thumbnail: https://i.ytimg.com/vi/KYwdUKYQjII/maxresdefault.jpg
+lastmod: 2023-12-10T22:10:25+0800
 ---
 
 ## Setting Up LUKS Encryption
@@ -120,11 +121,11 @@ In this step, we will format and mount the partitions necessary for the Arch Lin
 
 #### 5.1 Format Root and Home Volumes
 
-The `root` and `home` volumes play distinct roles in your Arch Linux installation. Understanding their functions will help you make informed decisions about their formatting.
+- The `root` and `home` volumes play distinct roles in your Arch Linux installation. Understanding their functions will help you make informed decisions about their formatting.
 
-Root Volume (`/`): The `root` volume serves as the core filesystem of your Arch Linux installation. It contains the essential system files and directories, including the operating system itself. Formatting the `root` volume is a critical step that determines the filesystem type you'll use for the main system.
+- Root Volume (`/`): The `root` volume serves as the core filesystem of your Arch Linux installation. It contains the essential system files and directories, including the operating system itself. Formatting the `root` volume is a critical step that determines the filesystem type you'll use for the main system.
 
-Home Volume (`/home`): The `home` volume is where user-specific data and configurations are stored. By separating the `home` directory from the `root` filesystem, you can preserve your personal data and settings even if you need to reinstall or update the operating system.
+- Home Volume (`/home`): The `home` volume is where user-specific data and configurations are stored. By separating the `home` directory from the `root` filesystem, you can preserve your personal data and settings even if you need to reinstall or update the operating system.
 
 To format the `root` and `home` volumes with the Btrfs filesystem, execute the following commands:
 
@@ -172,6 +173,16 @@ mkdir /mnt/home
 mount /dev/vol/home /mnt/home
 ```
 
+#### 5.4 Create UEFI System and Mount EFI System Partition
+
+Now, we'll create and mount the EFI system partition. Execute the following command:
+
+```shell
+mount --mkdir /dev/vda1 /mnt/boot
+```
+
+Ensure that the boot directory is located at the top of the /mnt directory, providing the necessary structure for UEFI system files.
+
 Through careful partitioning and mounting, you've prepared the groundwork for a successful Arch Linux installation. The next steps involve essential package installation, generating configuration files, and transitioning to the new environment using the chroot command. This comprehensive approach ensures a well-structured and efficient Arch Linux installation tailored to your needs.
 
 ## Installing Essential Packages and System Configuration
@@ -181,24 +192,20 @@ Through careful partitioning and mounting, you've prepared the groundwork for a 
 As you proceed with the Arch Linux installation, the installation of essential packages plays a pivotal role in shaping the capabilities and functionalities of your new system. Each package contributes to specific aspects of your Arch Linux environment. Let's explore some of the key packages included in the installation and understand their roles:
 
 ```shell
-pacstrap -i /mnt base base-devel linux linux-lts linux-firmware linux-headers lvm2 nano neofetch git dhcpcd networkmanager pipewire
+pacstrap -i /mnt base base-devel linux linux-firmware linux-headers lvm2 nano dhcpcd networkmanager pipewire
 ```
 
 1. base, base-devel: These packages provide a foundational set of tools and libraries that form the core of your Arch Linux system. They include essential utilities, libraries, and compilers necessary for software development and system management.
 
-2. linux, linux-lts, linux-firmware, linux-headers: The Linux kernel is at the heart of your operating system, managing hardware resources and providing essential system functions. By installing both the mainline and LTS (Long-Term Support) kernels along with firmware and headers, you ensure optimal hardware compatibility and stability.
+2. linux, linux-firmware, linux-headers: The Linux kernel is at the heart of your operating system, managing hardware resources and providing essential system functions. By installing both the mainline and LTS (Long-Term Support) kernels along with firmware and headers, you ensure optimal hardware compatibility and stability.
 
 3. lvm2: The Logical Volume Manager (LVM) allows for flexible management of storage devices, enabling tasks like resizing partitions and creating logical volumes for enhanced data organization.
 
 4. nano: Nano is a user-friendly text editor that provides an intuitive interface for editing configuration files and documents.
 
-5. neofetch: Neofetch is a command-line utility that displays system information and hardware details in a visually appealing way, giving you a quick overview of your system specifications.
+5. dhcpcd, networkmanager: These packages provide network management tools, allowing you to establish and manage network connections seamlessly.
 
-6. git: Git is a version control system that enables efficient tracking of changes to files and collaborative software development.
-
-7. dhcpcd, networkmanager: These packages provide network management tools, allowing you to establish and manage network connections seamlessly.
-
-8. pipewire: PipeWire is a multimedia framework that enhances audio and video capabilities on your system, ensuring smooth multimedia playback and recording.
+6. pipewire: PipeWire is a multimedia framework that enhances audio and video capabilities on your system, ensuring smooth multimedia playback and recording.
 
 By installing these packages, you're laying the foundation for a powerful and versatile Arch Linux environment that can handle diverse tasks and meet your computing needs. As you progress, you'll delve deeper into utilizing and customizing these components to create a personalized and efficient system.
 
@@ -566,3 +573,13 @@ As you embark on your journey with Arch Linux, keep in mind that this versatile 
 Whether you're delving into programming, multimedia production, or simply enjoying the seamless Arch Linux experience, you're equipped with the knowledge and tools to make the most of your system.
 
 Thank you for following this guide, and happy computing with your newly installed Arch Linux system!
+
+## References
+
+- [No mkinitcpio preset present](https://unix.stackexchange.com/questions/571124/no-mkinitcpio-preset-present)
+- [Installation guide](https://wiki.archlinux.org/title/Installation_guide)
+- [How to Dual Boot Arch Linux and Windows 11/10](https://onion.tube/watch?v=JRdYSGh-g3s)
+- [Como instalar ArchLinux com UEFI criptografia LUKS](https://onion.tube/watch?v=K4pcd0B_eGk)
+- [[1d] | Arch Linux Base Install on UEFI with LUKS Encryption](https://onion.tube/watch?v=XNJ4oKla8B0)
+- [How to install Gnome on Arch Linux](https://onion.tube/watch?v=8nlo7LewC5Q)
+- [Create LUKS encrypted root and efi boot partitions for Arch Linux](https://onion.tube/watch?v=cxMYR617a5E)
