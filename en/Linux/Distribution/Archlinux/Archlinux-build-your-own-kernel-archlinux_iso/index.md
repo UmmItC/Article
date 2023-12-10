@@ -5,6 +5,7 @@ description: "Explore the process of creating a personalized Arch Linux ISO usin
 tags: ["Arch Linux"]
 date: 2023-08-27T18:54:30+0800
 thumbnail: https://opengraph.githubassets.com/0cb167023d20d8a4151b99b82aee96c66944008f8328ecc071a7a1b39bfa2263/archlinux/archiso
+lastmod: 2023-12-10T19:45:20+0800
 ---
 
 ## What is Archiso?
@@ -54,7 +55,7 @@ Creating a personalized Arch Linux ISO begins with Archiso installed on your sys
    Open the `packages.x86_64` file using a text editor such as `nano` to define the packages you want to include by default:
 
    ```shell
-   nano archlive/packages.x86_64
+   nvim archlive/releng/packages.x86_64
    ```
 
    Edit the list of packages to align with your ISO's intended purpose. Whether you require specific tools, applications, or libraries, you can curate the package list to create an environment tailored to your needs.
@@ -78,6 +79,12 @@ After refining your custom Arch Linux environment, it's time to transform it int
     ```shell
     mkdir work
     ```
+
+3. **Navigate to the directory:**
+
+      ```shell
+      cd archlive
+      ```
 
 ### 3. Initiate the ISO Build Process
 
