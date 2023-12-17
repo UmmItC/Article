@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Manually Updating Windows with PowerShell: A Quick Guide"
 description: "Discover the power of PowerShell in managing Windows updates. This quick guide provides step-by-step instructions on how to manually update your Windows system."
 tags: ["Windows", "Powershell", "Update"]

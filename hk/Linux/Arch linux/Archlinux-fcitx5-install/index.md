@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Arch Linux 安裝 fcitx5 速成輸入法 - Quick Classic"
 description: "於 Arch linux 內安裝中文輸入法 Fcitx5 並配置 速成 Classic."
 tags: ["Arch Linux", "Fcitx", "KDE"]

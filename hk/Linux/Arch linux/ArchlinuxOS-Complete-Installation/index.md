@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "教你由零開始裝 Arch linux distro"
 description: "教你點樣由零開始裝 Arch linux"
 tags: ["Arch Linux"]

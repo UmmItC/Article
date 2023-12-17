@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Oh my zsh: Installing Powerlevel10k Theme"
 description: "Elevate your command-line experience with the Powerlevel10k theme for Oh My Zsh. Follow our step-by-step guide to seamlessly install and customize this powerful theme, making your terminal both visually appealing and highly functional."
 tags: ["Linux", "zsh", "Powerlevel10k"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Creating a Bootable USB Drive for Your Linux Installation"
 description: "Crafting a Bootable USB Drive with 'dd': Your Gateway to Linux Installation"
 tags: ["Linux"]

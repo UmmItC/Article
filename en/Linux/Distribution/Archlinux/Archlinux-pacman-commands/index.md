@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 Title: "The Ultimate Guide to Pacman Package Manager Commands on Arch Linux"
 Description: "Learn the essential Pacman commands for installing, updating, and managing packages on your Arch Linux system. Master the art of software management with this comprehensive guide to Pacman, the powerhouse package manager."
 tags: ["Arch Linux", "Pacman", "Package Manager"]

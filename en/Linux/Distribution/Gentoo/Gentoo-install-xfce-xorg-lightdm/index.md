@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Comprehensive Guide to Gentoo Linux: Installing XORG, XFCE and LightDM with OpenRC"
 description: "Gentoo Linux of installing XORG, XFCE and LightDM with the OpenRC init system. Dive into the realm of open-source customization and create a powerful and tailored desktop environment on your Gentoo system."
 tags: ["Open-RC", "Gentoo", "Linux", "XFCE", "XORG"]

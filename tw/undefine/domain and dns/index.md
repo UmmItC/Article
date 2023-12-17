@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "建立子網域和了解子網域"
 description: "DNS and DOMAIN."
 tags: ["DNS", "DOMAIN"]

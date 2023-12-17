@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Complete Guide to Installing Arch Linux with LUKS Encryption and GNOME Desktop Environment"
 description: "Step-by-step tutorial for installing Arch Linux with LUKS encryption and GNOME desktop environment for enhanced security and user-friendly experience."
 tags: ["Arch Linux", "LUKS", "GNOME"]

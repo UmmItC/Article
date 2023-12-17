@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guided Part 4 - Passthrough the Second GPU"
 description: "Learn how to configure GPU passthrough for your virtual machine's second GPU in this step-by-step guide, unlocking advanced virtualization capabilities and boosting performance."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]

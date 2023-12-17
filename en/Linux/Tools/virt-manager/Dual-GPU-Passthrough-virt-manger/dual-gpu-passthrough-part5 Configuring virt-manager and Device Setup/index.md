@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guide Part 5 - Configuring virt-manager and Device Setup"
 description: "Unveil the potential of virt-manager, a crucial instrument for seamless GPU passthrough. Effortlessly seize command over your PCI devices and experience a realm of limitless possibilities."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]

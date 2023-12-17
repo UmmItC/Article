@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Enhancing Your Gentoo Linux Installation: Post-Installation"
 description: "Take your Gentoo Linux system to the next level with user management, sudo, system logging, NTP time synchronization, CPU optimization, Neofetch, Wi-Fi support. and Others."
 tags: ["Open-RC", "Gentoo", "Linux"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Resolving ntfs-3g Mounting Issue on your Linux"
 description: "fix the 'unknown filesystem type ntfs' error and enable successful mounting of NTFS partitions on your Linux system."
 tags: ["Linux", "NTFS"]

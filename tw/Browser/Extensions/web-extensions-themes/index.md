@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "推薦幾個可以美化你的瀏覽器推薦 - Themes"
 description: "美化你的瀏覽器！"
 tags: ["Browser", "Extensions"]

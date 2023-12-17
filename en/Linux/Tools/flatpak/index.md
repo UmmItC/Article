@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Installing Flatpak on Your Linux System: One Universal Platform for Apps and a Secure, Cross-Distro Sandbox"
 description: "Flatpak, a universal platform for Linux applications, and benefit from a secure, cross-distribution sandboxed environment. Simplify software management and ensure compatibility of popular applications on your Linux system."
 tags: ["Flatpak", "Linux"]

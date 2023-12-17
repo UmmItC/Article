@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Configuring DNS Over HTTPS (DoH) on your system"
 description: "Enhance your online privacy by configuring DNS Over HTTPS (DoH) on any system. This step-by-step guide ensures encrypted DNS traffic, preventing eavesdropping and manipulation, providing a more secure online experience. Follow these instructions to fortify your DNS queries and enjoy a safer browsing environment."
 tags: ["DoH", "DNS"]

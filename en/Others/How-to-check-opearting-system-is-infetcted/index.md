@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "How to Ensure Your Operating System Stays Infection-Free"
 description: "Explore essential steps to safeguard your operating system from viruses, malware, and more. Learn how to detect and prevent potential threats effectively."
 tags: ["Lore", "How"]

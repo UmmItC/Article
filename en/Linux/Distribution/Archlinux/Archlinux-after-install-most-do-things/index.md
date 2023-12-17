@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "After installed Arch Linux 10 key actions"
 description: "top 10 crucial tasks to perform after installing Arch Linux for an optimized and enriched experience."
 tags: ["Arch Linux"]

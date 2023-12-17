@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Step-by-Step Guide: Creating a Swap File on Your Linux VPS"
 description: "Enhance your Linux VPS's performance and memory management by adding a swap file. Follow our detailed walkthrough to learn how to create a swap file on your Linux VPS."
 tags: ["VPS", "SSH", "Linux", "Swap"]

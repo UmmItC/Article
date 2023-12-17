@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "推薦一些方便軟體工程師的的瀏覽器插件"
 description: "對於軟體工程師來說實用的一些瀏覽器插件。"
 tags: ["Browser", "Extensions"]

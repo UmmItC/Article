@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Unleash the Power of Oh My Zsh: Must-Have Plugins for a Revolutionary Terminal Experience!"
 description: "Discover the transformative magic of Oh My Zsh, the acclaimed shell customization framework that elevates both the functionality and aesthetics of your terminal."
 tags: ["Linux", "zsh"]

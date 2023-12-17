@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Firefox: Customizing the Default Search Engine on Desktop version"
 description: "Unlock a world of personalized browsing in Firefox with our step-by-step guide. Learn how to easily customize your default search engine on the desktop version."
 tags: ["Browser", "firefox"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Effortless Integration: A Step-by-Step Guide to Creating and Merging the 'main' Branch into 'dev'"
 description: "Discover a streamlined approach to maintaining a seamless development history.  comprehensive guide on effortlessly creating a 'main' branch and seamlessly merging it with 'dev'."
 tags: ["Git"]

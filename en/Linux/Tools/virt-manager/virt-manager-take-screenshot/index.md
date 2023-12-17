@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "A Step-by-Step Guide Capturing Screenshots in Virt-Manager QEMU/KVM"
 description: "Learn how to easily capture screenshots within Virt-Manager when using QEMU/KVM virtualization. Follow our step-by-step guide to master this handy feature."
 tags: ["virt-manager", "QEMU/KVM", "Screenshot"]

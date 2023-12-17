@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Codeberg Pages: A Guide to Hosting Static Websites for free and Custom Domain Setup"
 description: "Learn how to using Codeberg Pages to host static websites for free and seamlessly integrate your custom domain. Explore the power of hassle-free web hosting with this comprehensive guide."
 tags: ["Git", "Codeberg", "Web"]

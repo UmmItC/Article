@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Enabling Secure Boot with Your Self-Certified Keys (Linux): A Step-by-Step Guide"
 description: "Unlock the full potential of your Linux system by enabling Secure Boot with your own self-certified keys. This step-by-step guide walks you through the process, ensuring a secure and seamless boot experience."
 tags: ["Linux", "UEFI", "Secure-Boot"]

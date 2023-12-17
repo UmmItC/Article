@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Mastering the rm Command: Effective File and Directory Removal in Linux"
 description: "Explore the versatile rm command in Linux, and learn various options and precautions to safely and efficiently remove files and directories from your system."
 tags: ["Linux", "rm"]

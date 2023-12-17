@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Microsoft Activation Scripts (MAS): A Safe way to Active your windows and office without 3rd-party unknown software"
 description: "Using unknown software to activate your windows or office may cause your computer to become infected. In this article, we will introduce a tool called Microsoft Activation Scripts."
 tags: ["Windows", "MAS"]

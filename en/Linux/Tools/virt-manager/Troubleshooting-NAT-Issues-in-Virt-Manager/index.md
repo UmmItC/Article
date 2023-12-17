@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Troubleshooting NAT Issues in Virt-Manager: Solutions and Workarounds"
 description: "Explore common Network Address Translation (NAT) problems in Virt-Manager and learn how to resolve them with helpful solutions and workarounds."
 tags: ["Linux", "virt-manager", "NAT"]

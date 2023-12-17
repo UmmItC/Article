@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "ALL Tips to Secure your linux VPS server"
 description: "Learn how to effortlessly secure your VPS server with just a few essential steps. This blog will guide you through the process."
 tags: ["VPS", "SSH", "Linux"]

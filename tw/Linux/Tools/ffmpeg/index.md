@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "FFMPEG 實用指令"
 tags: ["ffmpeg"]
 date: 2021-12-11T03:44:40+0800

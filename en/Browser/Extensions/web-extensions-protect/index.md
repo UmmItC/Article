@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Best 10 Browser extensions can definitely help protect you while browsing the website!"
 description: "Explore the top 10 browser extensions that are essential for safeguarding your online privacy and security while browsing the website."
 tags: ["Browser", "Extensions"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Exploring GNOME OS: Your Gateway to the Latest GNOME Software"
 description: "Discover the GNOME OS, your ultimate destination to experience the latest and most innovative GNOME software. Dive into the cutting-edge of the GNOME desktop environment, explore new features."
 tags: ["GNOME", "Linux", "GNOME OS"]

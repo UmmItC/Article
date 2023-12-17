@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Upgrading My Computer with a New HDD: A Beginner's Guide"
 description: ""
 tags: ["Harddisk" ]

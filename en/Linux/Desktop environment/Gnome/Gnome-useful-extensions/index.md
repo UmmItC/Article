@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Discover the Top 10 Essential Gnome Extensions"
 description: "Unlock the Power of Gnome with These Must-Have Extensions!"
 tags: ["GNOME", "Linux"]

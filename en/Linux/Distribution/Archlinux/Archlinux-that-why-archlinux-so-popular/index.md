@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 Title: "The Reason Why Arch linux So Popular And Why I Choice Arch linux"
 Description: "Exploring the Reasons Behind My Affection for Arch Linux: Unveiling the Charms of Arch Linux"
 tags: ["Arch Linux", "Pacman", "Package Manager"]

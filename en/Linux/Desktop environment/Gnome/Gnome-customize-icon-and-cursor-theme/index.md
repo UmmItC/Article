@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Customizing Your GNOME Desktop: Installing Icon and cursor themes"
 description: "Personalize your GNOME desktop on Linux by installing icon and cursor themes. Easily transform your desktop's appearance using the GNOME Tweaks tool."
 tags: ["GNOME", "Linux"]

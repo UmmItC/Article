@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Checking Home and Server vulnerability with Nmap: A Comprehensive Guide"
 description: "Explore the world of cybersecurity and learn how to checking your home network and server using Nmap. Dive into the network scanning and vulnerability detection in this comprehensive guide."
 tags: ["nmap", "Security"]

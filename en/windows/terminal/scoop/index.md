@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Scoop: Empowering Your Windows Terminal with Essential Tools and a Package Manager"
 description: "Enhance Your Terminal Efficiency with Scoop – Discover How to Install and Utilize this Windows Package Manager!"
 tags: ["Windows", "scoop", "Package Manager"]

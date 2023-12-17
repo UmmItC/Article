@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Mastering File Ownership with chown: Exploring Permissions and the Recursive Option"
 description: "Learn the ins and outs of the chown command in Linux, and understand how to change file ownership. and Discover how to use the -R option to apply ownership changes recursively throughout directories."
 tags: ["Linux", "chown"]

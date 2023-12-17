@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Installing Oh My Zsh and Customizing Themes: A Step-by-Step Guide"
 description: "Oh My Zsh is a popular and powerful shell customization framework that enhances the functionality and aesthetics of your terminal. it allows you to personalize your command-line experience to suit your preferences."
 tags: ["Linux", "zsh"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Comprehensive Guide to Installing Gentoo Linux with OpenRC"
 description: "Explore this in-depth guide to installing Gentoo Linux using OpenRC, focusing on Linux installation without Windows and Desktop Environments (DE)."
 tags: ["Open-RC", "Gentoo", "Linux"]

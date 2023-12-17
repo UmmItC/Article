@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guided Part 6 - Download Needed ISO"
 description: "Elevate your GPU passthrough experience with the sixth installment of our guided series, as we delve into the realm of ISO file acquisition. This critical phase involves obtaining the essential ISO files necessary for your setup's success."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Navigating Linux Kernel Variants: Performance, Stability, Security, and Innovation"
 description: "Discover the diverse landscape of Linux kernel variants, from optimizing performance and ensuring stability to enhancing security and embracing innovation."
 tags: ["Linux", "Kernel"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guided Part 2 - Enabling Virtualization in BIOS"
 description: "Unlock the full potential of your virtual machine setup by learning how to enable virtualization in your BIOS settings. This essential step will pave the way for seamless dual GPU passthrough and enhanced performance."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]

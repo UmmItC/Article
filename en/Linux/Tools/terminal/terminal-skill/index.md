@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Super Handy Linux Command Tips That Will Transform Your Terminal Experience"
 description: "Unlock the true potential of the Linux terminal with these 21 command tips that can revolutionize your productivity and efficiency."
 tags: ["Linux", "Terminal"]

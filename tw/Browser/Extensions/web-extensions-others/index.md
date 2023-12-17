@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "推薦一些方便用戶的的瀏覽器插件 - UX"
 description: "對於用戶來說實用的一些瀏覽器插件。"
 tags: ["Browser", "Extensions"]

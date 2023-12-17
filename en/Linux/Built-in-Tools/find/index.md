@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Mastering the Find Command: A Guide to Locating Specific File Extensions"
 description: "Dive deep into locating specific file extensions with find commnad and learn how to harness this versatile tool for your file management needs. searching for files with precision or looking to streamline your tasks."
 tags: ["find", "Linux", "tree"]

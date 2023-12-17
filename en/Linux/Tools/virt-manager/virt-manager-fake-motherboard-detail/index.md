@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Virt-Manager: Adding Fake Motherboard Details Fixes Driver Error"
 description: "Learn how to transform your virtual machine into a fully functional system by adding fake motherboard details in Virt-Manager. This guide provides step-by-step instructions to fix driver errors and optimize your virtual environment."
 tags: ["virt-manager", "qemu/kvm", "bypass"]

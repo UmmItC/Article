@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Windows Terminal: A Guide to Installing Oh My Posh and Customize"
 description: "Transform your Windows terminal experience with Oh My Posh! Follow this guide to learn how to install and customize this sleek and powerful prompt framework."
 tags: ["Windows", "oh my posh"]

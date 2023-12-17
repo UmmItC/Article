@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "dlopen() Error: Resolving Shared Library Issues on Arch Linux"
 description: "Discover effective solutions to tackle the elusive dlopen() error on Arch Linux. Learn how to troubleshoot shared library loading problems, fix application launch issues, and restore your system's stability."
 tags: ["Arch Linux", "Appimage"]

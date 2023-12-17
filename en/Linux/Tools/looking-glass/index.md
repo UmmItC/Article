@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "KVM: High-Performance Graphics for Virtual Machines with Looking Glass"
 description: "Looking Glass, a groundbreaking technology that brings the power of physical GPUs to your virtual machines. Learn how to install, configure, and make the most of this open-source gem for unmatched graphics performance in your VMs."
 tags: ["looking-glass", "virt-manager"]

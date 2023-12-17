@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guided : Installing Different Operating Systems Requirements"
 description: "Set up QEMU/KVM virtualization and install Windows 10, Windows 11,  macOS and Linux. Explore the distinct requirements for each OS."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]

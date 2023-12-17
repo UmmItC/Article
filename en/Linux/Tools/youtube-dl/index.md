@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Exploring yt-dlp: Command Line Tools for Advanced Video Downloading"
 description: "Discover the power of yt-dlp's command line tools, your gateway to an enhanced video downloading experience. Dive into this guide to learn how to use yt-dlp's capabilities."
 tags: ["youtube-dl", "yt-dlp"]

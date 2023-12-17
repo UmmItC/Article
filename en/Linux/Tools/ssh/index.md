@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Efficient and Secure File Transfer with SCP: A Comprehensive Guide"
 description: "Discover the power of secure and efficient file transfers using SCP (Secure Copy) and learn how to seamlessly manage remote server access with SSH login methods. "
 tags: ["Linux", "scp", "SSH"]

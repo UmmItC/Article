@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "FFEMPG 下載 Jable.tv 影片教學"
 description: "教你點用 FFMPEG 下載 HLS 既片。"
 tags: ["ffmpeg"]

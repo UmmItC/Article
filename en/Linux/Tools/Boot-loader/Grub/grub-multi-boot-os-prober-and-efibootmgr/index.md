@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Grub and os-prober: Creating a Multi-OS Boot Menu"
 description: "Learn how to set up a multi-OS boot menu using Grub and os-prober, ensuring hassle-free switching between different operating systems on your computer."
 tags: ["grub", "Linux", "Multi-Boot", "efibootmgr", "os-prober"]

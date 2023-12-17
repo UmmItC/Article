@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Set Up SearXNG on Your SSH VPS Server with Docker: A Quick and Private Metasearch"
 description: "Set up your private SearXNG metasearch engine on an SSH VPS server using Docker. Follow this concise guide to quickly install, customize, and maintain SearXNG."
 tags: ["Self-host"]

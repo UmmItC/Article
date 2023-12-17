@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Converting VirtualBox VDI to QEMU QCOW2 with Virt-Manager QEMU/KVM"
 description: "Learn how to seamlessly convert your VirtualBox VDI files into QEMU QCOW2 format using Virt-Manager QEMU/KVM for efficient virtual machine migration."
 tags: ["virt-manager", "QEMU/KVM", "VirtualBox", "vdi to qcow2"]

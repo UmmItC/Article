@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Gentoo Linux: Some common problem with package installing"
 description: "In this article, we're going to talk about how to solve package installation problems on gentoo, such as package.use this common problem."
 tags: ["Open-RC", "Gentoo", "Linux"]

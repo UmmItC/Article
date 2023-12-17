@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Navigating the Linux Terminal: A Guide to TTY"
 description: "Explore the power of the Linux terminal with this comprehensive guide to TTY (teletypewriter) sessions. Learn how to navigate between virtual terminals, manage multiple sessions, troubleshoot graphical interface issues."
 tags: ["TTY", "Terminal", "Linux"]

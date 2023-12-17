@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Unlocking a Linux User After Too Many Failed Login Attempts"
 description: "Discover how to regain access to a locked Linux user account by using the faillock command to reset failed login attempts. Explore the steps to effectively manage account lockouts for enhanced security and system maintenance."
 tags: ["faillock", "Linux"]

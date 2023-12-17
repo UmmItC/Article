@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Exploring Some Bootable USB Tools: What are they different?"
 description: "Discover the distinctions between various bootable USB tools and find the right one for your needs. including YUMI, Rufus and BalenaEtcher."
 tags: ["USB"]

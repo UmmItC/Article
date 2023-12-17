@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "League of Legends: A step-by-step guide to customizing skins using CSLOL Manager"
 description: "Discover how to relive the nostalgia of old-school League of Legends by customizing your skins with CSLOL Manager. Follow these simple steps to transform your gaming experience."
 tags: ["League of Legends", "Games"]

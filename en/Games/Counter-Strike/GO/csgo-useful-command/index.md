@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Enhance Your CS:GO Gameplay with These Useful Commands!"
 description: "Unlock the full potential of your CS:GO gameplay with these essential commands! From optimizing your crosshair to performing quick actions, these commands can give you the edge you need to succeed in the game."
 tags: ["csgo", "Games"]

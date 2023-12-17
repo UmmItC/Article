@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Mastering Efficiency with the Screen Command for Server Management"
 description: "Discover the power of the screen command in Linux for effective server management, remote sessions, and persistent terminal sessions. Learn how to install, use, and maximize your productivity with this versatile tool."
 tags: ["Linux", "screen"]

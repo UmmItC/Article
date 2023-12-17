@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "電腦版 Firefox 上自訂您的預設搜尋引擎"
 description: "了解如何在 Firefox 桌面版上自訂您的預設搜尋引擎。"
 tags: ["Browser", "firefox"]

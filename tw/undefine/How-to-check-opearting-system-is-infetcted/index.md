@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "如何檢查你的電腦有沒有中毒"
 description: "你的電腦是否中毒了？在這篇文章中我們將會教你如何查看你的電腦並以最簡單明確的方式了解你的電腦有沒有被入侵。"
 tags: ["Lore", "How"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Mastering Multimedia: A Comprehensive Guide to FFmpeg"
 description: "Unlock the full potential of FFmpeg, the versatile multimedia toolkit. Explore essential commands and techniques for video and audio manipulation, conversion, and more."
 tags: ["FFMPEG"]

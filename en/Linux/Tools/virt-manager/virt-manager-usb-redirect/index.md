@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Virt-Manager QEMU/KVM: Redirect Your USB Devices Without USB Passthrough"
 description: "Discover how to seamlessly redirect USB devices to your virtual machines in Virt-Manager with QEMU/KVM, without the need for USB passthrough. Enhance your virtual machine experience today!"
 tags: ["virt-manager", "QEMU/KVM", "Redirect USB Device"]

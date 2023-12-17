@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guided Part 7: Installing Windows 10 and Enabling Full Passthrough"
 description: "In this section, we will guide you through the process of creating a new VM using Virt-Manager, installing the Windows 10 and enabling complete passthrough of hardware components."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Uncomplicated Firewall (UFW): Simplifying Network Security in Linux"
 description: "Discover Uncomplicated Firewall (UFW), a user-friendly tool for managing firewall rules in Linux. Learn how to secure your system, control incoming and outgoing traffic, and navigate UFW's features."
 tags: ["Linux", "ufw", "Firewall"]

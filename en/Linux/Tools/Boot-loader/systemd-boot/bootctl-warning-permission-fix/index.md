@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Fixing Security Vulnerabilities in systemd-boot (/boot) - No longer accessible to normal users: A Step-by-Step Guide"
 description: "Learn how to enhance your Linux system's security by fixing vulnerabilities in systemd-boot (/boot). Follow this step-by-step guide to restrict access, ensuring that critical boot files are no longer accessible to normal users, bolstering your system's defenses."
 tags: ["Linux", "Bootctl", "Boot-loader"]

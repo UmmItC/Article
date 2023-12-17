@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Mastering Data Synchronization with Rsync: A Comprehensive Guide"
 description: "Explore the power of rsync, a versatile tool that efficiently synchronizes data between different locations, ensuring your files are up-to-date and organized."
 tags: ["Linux", "rsync"]

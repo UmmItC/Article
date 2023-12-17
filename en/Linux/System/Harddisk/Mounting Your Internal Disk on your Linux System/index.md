@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Mounting Your Internal Disk on your Linux System"
 description: ""
 tags: ["Harddisk", "Linux"]

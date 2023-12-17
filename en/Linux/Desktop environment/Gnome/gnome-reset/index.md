@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Resetting GNOME Settings with a Single Command: A Quick Guide"
 description: "Explore this quick guide to learn how to effortlessly reset all your GNOME settings using a simple terminal command—restoring your Linux desktop to its default configurations in no time"
 tags: ["GNOME", "Linux"]

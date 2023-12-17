@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guided Part 3 - Empowering Virtualization on Your Linux System"
 description: "Learn how to enable virtualization on your Linux system for a seamless dual GPU passthrough setup. Unlock the potential of virtualization and optimize your computing experience."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]

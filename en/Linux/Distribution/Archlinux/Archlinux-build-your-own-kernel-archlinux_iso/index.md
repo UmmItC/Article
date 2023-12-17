@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Building Your Own Custom Arch Linux ISO with Archiso"
 description: "Explore the process of creating a personalized Arch Linux ISO using the official tool called Archiso to craft your own customized Arch Linux ISO."
 tags: ["Arch Linux"]

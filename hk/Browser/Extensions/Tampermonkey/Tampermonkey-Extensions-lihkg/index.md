@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Tampermonkey LIHKG 插件推薦 - UX/UI"
 description: "由一眾連登巴絲打編寫的連登專用插件。"
 tags: ["Browser", "Extensions", "Tampermonkey"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Tampermonkey 插件推薦"
 description: "由一眾連登巴絲打編寫的連登專用插件。"
 tags: ["Browser", "Extensions", "Tampermonkey"]

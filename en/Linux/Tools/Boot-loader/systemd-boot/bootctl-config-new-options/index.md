@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Using Different Linux Kernel Versions with systemd-boot and Bootctl"
 description: "Exploring the process of seamlessly switching between Linux kernel versions using systemd-boot and Bootctl for enhanced system performance and flexibility."
 tags: ["Linux", "Bootctl", "Boot-loader"]

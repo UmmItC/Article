@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Exploring DNS Records: Navigating Name Servers and Understanding DNS Operations"
 description: "Discover the world of DNS records and name servers, unraveling the magic behind domain-to-IP translation and enriching your digital understanding."
 tags: ["Linux", "Nameserver", "DNS"]

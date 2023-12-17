@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guided Part 1 - Hardware Preparations"
 description: "in this tutorial, you'll gain comprehensive insights into preparing your hardware for GPU passthrough. Learn the crucial steps and requirements that pave the way for a successful setup."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]

@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "The Ultimate Guide to Setting Up a Complete CS 1.6 Server: From Zero to Zombie Plague Server (Play with yapb bot) - Let the People Come!"
 description: "Learn how to set up a Counter Strike 1.6 server on an Ubuntu Virtual Private Server (VPS) with this comprehensive guide, Also learn how to install yapb bot."
 tags: ["Games", "Counter-Strike 1.6"]

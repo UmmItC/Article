@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "關於我當年玩 CSO 嘅美好回憶同一啲經歷"
 description: "講下當年我玩 CSO 既故仔，喺細個笑住咁玩。雖然呢段故仔已經變成回憶。望返而加既 CSO 已經笑唔出，同埋你一定會覺得你係玩緊廿年後既 game 但係廿年前既畫質。如果有日 CSO 執左，你都會覺得佢執唔係冇原因。曾經紅到國際既 Game 'Counter Strike Online'."
 tags: ["Counter Strike Online", "Games"]

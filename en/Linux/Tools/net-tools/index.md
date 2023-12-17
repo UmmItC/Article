@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Mastering Network Management with Net-tools: A Comprehensive Guide"
 description: "Explore the essential network management tools provided by the net-tools package, including ifconfig, route, and more. Network configuration and troubleshoot connectivity issues."
 tags: ["Linux", "net-tools"]

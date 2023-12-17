@@ -1,5 +1,5 @@
 ---
-author: "Arcsly"
+author: "UmmIt"
 title: "Dual GPU Passthrough Guided Part 8: Installing Windows 11"
 description: "Set up a Windows 11 virtual machine using QEMU/KVM and enable a virtual Trusted Platform Module (TPM) for successful installation, even on systems without native TPM support."
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager", "win11"]
