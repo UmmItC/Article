@@ -26,6 +26,17 @@ Execute the following command in your terminal to install these packages:
 sudo pacman -S virt-manager qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf dmidecode
 ```
 
+## Update: 20th December 2023
+
+Today i just reinstall my arch linux and switched to Hyprland WM. and i try to installing the qemu/kvm setup by following my article. I noticed that the package has been updated and split. Now you need also need to download more package.
+
+```shell
+    sudo pacman -S qemu-hw-display-qxl qemu-hw-display-virtio-vga qemu-hw-usb-redirect qemu-audio-spice
+```
+
+This package includes the display QXL, VGA, USB redirection, and audio spice. Without them, you might encounter errors during the installation process.
+
+
 ## Step 2: Configure libvirtd.conf for Permissions and Logging
 
 ### 2.1 Adjust Permissions for virt-manager
