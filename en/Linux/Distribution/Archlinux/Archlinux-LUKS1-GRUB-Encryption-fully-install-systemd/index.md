@@ -71,7 +71,7 @@ Now, proceed with the essential package installations:
 
 ```shell
 pacstrap -i /mnt base base-devel linux linux-firmware linux-headers lvm2 nano dhcpcd networkmanager pipewire
-``The process of installing Arch Linux is the same as that of ArchLinux. If you are unfamiliar with the process, please refer to this article: [Complete Guide to Installing Arch Linux with LUKS Encryption and GNOME Desktop Environment](/posts/en/linux/distribution/archlinux/archlinux-luks-encryption-fully-install-systemd/). `
+```
 
 Generate the `/etc/fstab` file:
 
