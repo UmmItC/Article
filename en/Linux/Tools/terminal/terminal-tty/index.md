@@ -5,6 +5,7 @@ description: "Explore the power of the Linux terminal with this comprehensive gu
 tags: ["TTY", "Terminal", "Linux"]
 date: 2023-11-19T00:28:05+0800
 thumbnail:  https://itsfoss.com/content/images/wordpress/2021/11/ubuntu-terminal-tty-command.png
+lastmod: 2023-12-22T01:01:20+0800
 ---
 
 ## Introduction
@@ -22,6 +23,10 @@ Each virtual terminal represents a separate terminal session. You can have multi
 ### Logging In
 
 Once you access a TTY session, you'll be prompted to log in with your username and password. After successful authentication, you'll have a command-line interface to interact with your Linux system.
+
+### Switching TTY
+
+Use `Alt` + `left` and `right` arrow keys to quickly switch between tty sessions.
 
 ### Exiting TTY
 
