@@ -5,7 +5,7 @@ description: "Unveil the potential of virt-manager, a crucial instrument for sea
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]
 date: 2023-05-13T05:58:00+0800
 thumbnail: https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/virt-manager-icon.png
-lastmod: 2023-09-09T10:20:50+0800
+lastmod: 2023-12-2T01:11:00+0800
 ---
 
 ## Step 1: Install Required Packages
@@ -47,9 +47,9 @@ Fine-tune your system for optimal virt-manager usage without the need for consta
 ```shell
 sudo nano /etc/libvirt/libvirtd.conf
 ```
-2. Within this file, locate the entries for `unix_sock_group` and `unix_sock_rw_perms`.
+2. Within this file, locate the entries for `unix_sock_group` and `unix_sock_rw_perms`, you need to uncomment them and set the correct value.
 
-3. Update the `unix_sock_group` entry to specify the group "libvirt" for better control:
+3. Update the `unix_sock_group` entry to specify the group `libvirt`:
    ```plaintext
    unix_sock_group = "libvirt"
    ```
@@ -132,21 +132,28 @@ Ensuring that QEMU processes run securely within your user permissions is crucia
    group = "libvirt"
    ```
 
-3. Replace `"libvirt"` with your actual username on both lines. This simple adjustment ensures that all QEMU processes will execute with your user's privileges.
+3. Replace `"libvirt"` with your actual username on both lines. This simple adjustment ensures that all QEMU processes will execute with your user's privileges. For instances:
+
+   ```shell
+        user = "username"
+        group = "username"
+   ```
 
 By following these steps, you guarantee that QEMU processes operate securely within the realm of your user permissions, leading to an optimized and efficient virtualization environment.
 
 ## Step 6: Restart libvirtd Service
 
 Apply the changes you've made by restarting the `libvirtd` service using the command:
+
 ```shell
 sudo systemctl restart libvirtd
 ```
 
-## Optional: Start virsh Network Automatically
+### Start virsh Network Automatically
 
 If you wish to have the virsh network start automatically, you can execute the following command:
 > Note: If the virsh network isn't needed, you can skip this step.
+
 ```shell
 sudo virsh net-autostart default
 ```
