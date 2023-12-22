@@ -1,27 +1,30 @@
 ---
 author: "UmmIt"
-title: "Creating a Bootable USB Drive for Your Linux Installation"
+title: "Crafting a Bootable USB Drive with dd and for Your Linux Installation"
 description: "Crafting a Bootable USB Drive with 'dd': Your Gateway to Linux Installation"
-tags: ["Linux"]
+tags: ["Linux","Built-in", "Bootable"]
 date: 2023-08-11T08:00:50+0800
 thumbnail: https://4.bp.blogspot.com/-WOe_jqAf8GU/UpmIwmL9WnI/AAAAAAAAAPY/qY6A7m1sOwc/s1600/Bootable+USB.jpg
+lastmod: 2023-12-22T11:13:10+0800
 ---
 
-## Crafting a Bootable USB Drive with  `dd`
+## Introduction
 
-When embarking on a new Linux adventure, having a reliable bootable USB drive is your trusty companion. It's the key that unlocks the door to a world of new possibilities and operating systems. In this guide, we'll walk you through the process of creating a bootable USB drive using the powerful and versatile ``dd`` command. While there are other tools like `BalenaEtcher` and `Brasero` available, this blog focuses on the nitty-gritty details of ``dd``, providing you with a solid foundation to kickstart your Linux installation journey.
+When embarking on a new Linux adventure, having a reliable bootable USB drive is your trusty companion. It's the key that unlocks the door to a world of new possibilities and operating systems. In this guide, we'll walk you through the process of creating a bootable USB drive using the powerful and versatile `dd` command. While there are other tools like `BalenaEtcher` and `Brasero` available, but in this blog focuses on the nitty-gritty details of `dd`, dd are available with most of the distribution, that means are built-in tool!, providing you with a solid foundation to kickstart your Linux installation journey.
 
 Creating a bootable USB drive is an essential skill for any Linux enthusiast. Whether you're starting a fresh Linux installation, rescuing a system, or trying out a new distribution, having a bootable USB drive at your disposal is incredibly useful. In this guide, we'll walk you through the process of creating a bootable USB drive using the `dd` command, one of the most straightforward and versatile methods.
 
-### Step 1: Gather Your Materials
+>**This method only works with Linux distributions. Windows is not supported.**
 
-Before we begin, make sure you have the following:
+### Prerequisites
+
+Before we begin our step on how to make a bootable pen drive, Please backup your existing data on your pen drive as the dd command will overwrite your existing data, and make sure you have the following:
 
 - A USB flash drive with sufficient capacity (8GB or more is recommended)
-- The Linux distribution ISO file you want to install or use
-- Access to a terminal on your Linux machine
+- Down Linux distribution ISO file you want to install or use (Ubuntu, linux mint, manjaro ... etc)
+- **Backup your DATA!!!!**
 
-### Step 2: Identify Your USB Drive
+### Step 1: Identify Your USB Drive
 
 First, you need to identify the device name of your USB drive. Open a terminal and use the `lsblk` command to list all available block devices:
 
@@ -36,24 +39,22 @@ Identify your USB drive based on its size and storage capacity. It will typicall
 Before creating the bootable USB, make sure the USB drive is unmounted. You can use the `umount` command followed by the device name to unmount any existing partitions on the USB drive. Replace `/dev/sdX` with your USB drive's device name:
 
 ```shell
-sudo umount /dev/sdX*
+sudo umount /dev/sdX
 ```
 
 ### Step 4: Write the ISO File to the USB Drive
 
 With the USB drive properly formatted and ready, it's time to transfer the Linux distribution ISO file onto it. To accomplish this, we will use the ``dd`` command, a powerful yet potentially risky tool. Pay close attention and follow the instructions carefully to avoid accidental data loss.
 
-Here's how to execute the `dd` command:
+>Note: Please direct to use `SDA` or other name! . Not part of this partition. You do not need to create a file system on this pen drive. The next step of copying all the files to the pen-drive will do all the things automatically.
 
-1. Open your terminal.
+1. Replace `path/to/iso` in the command below with the actual file path of the downloaded Linux distribution ISO file.
 
-2. Replace `path/to/iso` in the command below with the actual file path of the downloaded Linux distribution ISO file.
+2. Identify the correct device name of your USB drive. Ensure this is accurate, as the ``dd`` command will overwrite the designated device. To identify the correct device name, you can use the `lsblk` command.
 
-3. Identify the correct device name of your USB drive. Ensure this is accurate, as the ``dd`` command will overwrite the designated device. To identify the correct device name, you can use the `lsblk` command.
+3. Replace `/dev/sdX` in the command below with the correct device name of your USB drive. Triple-check this to avoid any mistakes.
 
-4. Replace `/dev/sdX` in the command below with the correct device name of your USB drive. Triple-check this to avoid any mistakes.
-
-5. Execute the command:
+4. Execute the command:
 
     ```shell
     sudo dd bs=4M if=path/to/iso of=/dev/sdX status=progress oflag=sync
@@ -67,11 +68,11 @@ Here's how to execute the `dd` command:
    - `status=progress`: Displays the progress of the data transfer.
    - `oflag=sync`: Flushes data to the output file after each write operation.
 
-6. Wait for the process to complete. The terminal will display the progress as the ISO file is written to the USB drive.
+5. Wait for the process to complete. The terminal will display the progress as the ISO file is written to the USB drive.
 
-7. Once the process is finished, the terminal will display the final summary, and you'll be returned to the command prompt.
+6. Once the process is finished, the terminal will display the final summary, and you'll be returned to the command prompt.
 
-Remember, the ``dd`` command has the potential to overwrite data irreversibly. Double-check your command, ensuring the correct paths and device names are used. It's always a good practice to disconnect any other external drives to minimize the risk of accidentally overwriting the wrong drive.
+Remember, the `dd` command has the potential to overwrite data irreversibly. Double-check your command, ensuring the correct paths and device names are used. It's always a good practice to disconnect any other external drives to minimize the risk of accidentally overwriting the wrong drive.
 
 By following these steps, you'll successfully write the Linux distribution ISO to your USB drive, transforming it into a bootable medium ready for your Linux installation journey.
 
