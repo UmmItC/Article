@@ -35,11 +35,11 @@ Visit the [ReviOS website](https://revi.cc/revios/download) and download two ess
 
 1. **AME Wizard**: Click the download button on the [AME Wizard page](https://ameliorated.io/).
    
-   ![AME Wizard](./Download-Tools/AME%20Wizard.png)
+   ![AME Wizard](./Download-tools/AME%20Wizard.png)
 
 2. **ReviOS Playbook**: Download the `apbx` file from the [ReviOS Playbook GitHub release page](https://github.com/meetrevision/playbook/releases).
    
-   ![ReviOS playbook](./Download-Tools/ReviOS-playbook.png)
+   ![ReviOS playbook](./Download-tools/ReviOS-playbook.png)
 
 AME Wizard acts as an injector, allowing you to modify your Windows system. ReviOS is the program you'll inject into it. Now, let's move on to the installation steps.
 
@@ -49,7 +49,7 @@ Start the AME Wizard program. You might need administrative permissions, so clic
 
 > **Note**: Windows Defender might flag this program as harmful, leading to its closure. To proceed, disable all antivirus settings. You will also be asked to close the antivirus during the next step. Whether you do it now or later doesn't matter; just ensure it's closed before continuing.
 
-   ![select playbook](./Download-Tools/Select-playbook.png)
+   ![select playbook](./Download-tools/Select-playbook.png)
 
 ## Step 3: Inject ReviOS Playbook into AME Wizard
 
@@ -129,7 +129,7 @@ After installing ReviOS, you'll find a program called Revision Tool. This tool a
 
    ![Revision Tool](./Revision-Tools/Revision%20Tool.png)
    ![Revision Tool-2](./Revision-Tools/Revision%20Tool-2.png)
-   ![Revision Tool-3](./RRevision-Tools/Revision%20Tool-3.png)
+   ![Revision Tool-3](./Revision-Tools/Revision%20Tool-3.png)
 
 ## Is ReviOS Recommended?
 
