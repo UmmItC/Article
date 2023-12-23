@@ -4,7 +4,6 @@ title: "Enabling Folder Sharing Between Host and Virtual Machine in Virt-Manager
 description: "Learn how to effortlessly share files between your host and virtual machine using Virt-Manager, a comprehensive guide for seamless folder sharing in your virtualized environment."
 tags: ["virt-manager", "QEMU/KVM", "Folder Sharing"]
 date: 2023-09-28T20:31:10+0800
-thumbnail: ./create-1.png
 ---
 
 ## Introduction

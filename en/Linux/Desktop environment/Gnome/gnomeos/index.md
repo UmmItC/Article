@@ -4,7 +4,6 @@ title: "Exploring GNOME OS: Your Gateway to the Latest GNOME Software"
 description: "Discover the GNOME OS, your ultimate destination to experience the latest and most innovative GNOME software. Dive into the cutting-edge of the GNOME desktop environment, explore new features."
 tags: ["GNOME", "Linux", "GNOME OS"]
 date: 2023-09-15T10:46:30+0800
-thumbnail: ./gnomeos.png
 ---
 
 ## Why this article?

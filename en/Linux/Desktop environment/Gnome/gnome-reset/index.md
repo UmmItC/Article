@@ -4,7 +4,7 @@ title: "Resetting GNOME Settings with a Single Command: A Quick Guide"
 description: "Explore this quick guide to learn how to effortlessly reset all your GNOME settings using a simple terminal command—restoring your Linux desktop to its default configurations in no time"
 tags: ["GNOME", "Linux"]
 date: 2023-11-18T21:34:55+0800
-thumbnail: https://i.pinimg.com/originals/69/43/b1/6943b17e19b4e857e7dfd9ce6239d052.jpg
+thumbnail: https://www.gnome.org/wp-content/uploads/2023/09/GNOME45-splash.webp
 ---
 
 ## Introduction

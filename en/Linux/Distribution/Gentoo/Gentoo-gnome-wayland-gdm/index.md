@@ -4,7 +4,6 @@ title: "Comprehensive Guide to Gentoo Linux: Installing GNOME, Wayland and GDM w
 description: "Learn how to set up GNOME on your Gentoo system with Wayland and the GDM display manager. Follow these steps to configure your environment for a seamless GNOME experience."
 tags: ["Open-RC", "Gentoo", "Linux", "GNOME", "Wayland"]
 date: 2023-09-26T21:22:21+0800
-thumbnail: /blog/linux/Gentoo/Gentoo-gnome-wayland-gdm/neofetch.png
 lastmod: 2023-09-27T17:10:50+0800
 ---
 

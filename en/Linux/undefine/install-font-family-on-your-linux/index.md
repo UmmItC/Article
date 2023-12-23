@@ -4,7 +4,6 @@ title: "How to Install Custom Font Families in your Linux system"
 description: "Learn how to install custom font families on your Linux system using command-line methods. Personalize your environment for a unique and visually appealing experience."
 tags: ["Linux", "font-family"]
 date: 2023-08-12T13:03:40+0800
-thumbnail: /blog/linux/install-font-family-on-your-linux/sc1.png
 ---
 
 ## Introduction

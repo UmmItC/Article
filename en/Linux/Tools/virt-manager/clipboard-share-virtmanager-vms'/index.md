@@ -4,7 +4,6 @@ title: "Enabling Clipboard Sharing Between Host and Virtual Machine in Virt-Mana
 description: "Streamline VM workflow with clipboard sharing between host and guest using Virt-Manager's Spice agent. Boost productivity and efficiency. Learn how in this guide."
 tags: ["virt-manager", "QEMU/KVM", "Clipboard"]
 date: 2023-08-20T19:02:15+0800
-thumbnail: /blog/linux/linux-tools/virt-manager/add.png
 ---
 
 ## Why enable clipboard sharing?

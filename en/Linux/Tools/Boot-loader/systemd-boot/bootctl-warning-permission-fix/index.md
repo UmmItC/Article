@@ -4,7 +4,6 @@ title: "Fixing Security Vulnerabilities in systemd-boot (/boot) - No longer acce
 description: "Learn how to enhance your Linux system's security by fixing vulnerabilities in systemd-boot (/boot). Follow this step-by-step guide to restrict access, ensuring that critical boot files are no longer accessible to normal users, bolstering your system's defenses."
 tags: ["Linux", "Bootctl", "Boot-loader"]
 date: 2023-11-07T13:18:30+0800
-thumbnail: https://logos-world.net/wp-content/uploads/2020/09/Linux-Logo-1996-present.png
 ---
 
 ## Introduction

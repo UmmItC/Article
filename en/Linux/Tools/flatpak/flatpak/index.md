@@ -4,7 +4,6 @@ title: "Installing Flatpak on Your Linux System: One Universal Platform for Apps
 description: "Flatpak, a universal platform for Linux applications, and benefit from a secure, cross-distribution sandboxed environment. Simplify software management and ensure compatibility of popular applications on your Linux system."
 tags: ["Flatpak", "Linux"]
 date: 2023-09-16T11:39:50+0800
-thumbnail: ./flatpak-software.png
 ---
 
 ## Introduction
@@ -19,11 +18,11 @@ in addition, Flatpak packages are sandboxed. The primary goal of Flatpak is to p
 
 ## Installing Flatpak on Different Linux Distributions
 
-**1. **Arch Linux (GNOME Users)**
+**1. Arch Linux (GNOME Users)**
 
 For Arch Linux GNOME users Flatpak is included by default in the GNOME Software application. Simply open the GNOME Software Center, search for the application you want to install, and click the "Install" button. GNOME Software will handle the installation of the Flatpak package for you.
 
-**2. **Other Distributions**
+**2. Other Distributions**
 
 For users of other Linux distributions, you may need to install Flatpak manually. Here's how to do it for some popular distributions:
 
