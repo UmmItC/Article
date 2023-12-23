@@ -1,7 +1,7 @@
-## Article
+## 關於
 
-Here are the original files of all the markdown articles. (blowfish-theme)
+如無意外，呢個 Branch 嘅文應該只會得廣東話，同埋唔會有英文 or 正正經經嘅文，放喺度嘅文都只會好似 CSO 個篇咁，只會係可能講我自已細個嘅一啲經歷，所以呢邊就唔加 License lu, 自已小學經歷我諗唔會有人偷黎改掛 LMAO :pp
 
-## License
+Btw, 你有心撳到入黎睇我啲故仔都幾好 :3
 
-All articles are under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) License. See [Here](./LICENSE.md).
+未來嘅文章都只會寫全英文, `zh_TW` 同 `zh_HK` 應該唔會再更新，可能永遠 keep 住喺呢個 `git status`. Thank you.
