@@ -70,7 +70,7 @@ mount /dev/sda1 --mkdir /mnt/boot/efi
 Now, proceed with the essential package installations:
 
 ```shell
-pacstrap -i /mnt base base-devel linux linux-firmware linux-headers lvm2 nano dhcpcd networkmanager pipewire
+pacstrap -i /mnt base base-devel linux linux-firmware linux-headers lvm2 neovim dhcpcd networkmanager pipewire
 ```
 
 Generate the `/etc/fstab` file:
