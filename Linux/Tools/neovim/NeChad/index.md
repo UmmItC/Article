@@ -66,6 +66,14 @@ Use `Space` + `f` + `f` to search for files.
 
 Access the NvChad cheatsheet with `Space` + `c` + `h`.
 
+## Result
+
+I can't think of any other word. Its just wondeful.
+
+>What are the reasons need vscode? Just Deleteing VSCode lmfao
+
+![Result](./Result.png)
+    
 ## References
 
 - [Turn VIM into a full featured IDE with only one command](https://yt.cdaut.de/watch?v=Mtgo-nP_r8Y)
