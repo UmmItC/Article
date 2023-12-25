@@ -65,3 +65,8 @@ Use `Space` + `f` + `f` to search for files.
 ## Cheatsheet
 
 Access the NvChad cheatsheet with `Space` + `c` + `h`.
+
+## References
+
+- [Turn VIM into a full featured IDE with only one command](https://yt.cdaut.de/watch?v=Mtgo-nP_r8Y)
+- [NvChad](https://nvchad.com/)
