@@ -69,9 +69,9 @@ Click the search input method icon in the lower right corner to open the input m
 
 #### For KDE Users
 
-Search Input Method on your KDE. and Press `+ Add Input Method` in the lower right corner, find the desired input method, and press `ADD`.
+Press `+ Add Input Method` in the lower right corner, find the desired input method, and press `ADD`.
 
-If you're using Quick, Please search Quick Classic in the textbox. 
+>Note: If you're using Quick, Please search Quick Classic in the textbox. 
 
 ![add input method for KDE](./add%20input%20type-2.png)
 
@@ -115,7 +115,7 @@ sudo pacman -S wqy-zenhei
 
 ![font fix](./install%20font-family%20fix.png)
 
-After logging in again, you should see improved character rendering without garbled text.
+After installed the package, you need to reboot again to apply the fonts, then you should see the improved character rendering without garbled text! :D
 
 # References
 
