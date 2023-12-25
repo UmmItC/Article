@@ -35,7 +35,7 @@ NvChad provides various themes. To access them, press `Space` + `t` + `h` in Neo
 For language syntax highlighting, manually install supported languages. In Neovim, use:
 
 ```shell
-TSInstall css html javascript
+:TSInstall css html javascript
 ```
 
 This example installs support for CSS, HTML, and JavaScript.
@@ -43,7 +43,7 @@ This example installs support for CSS, HTML, and JavaScript.
 Check installed syntax highlighting using:
 
 ```shell
-TsInstallInfo
+:TsInstallInfo
 ```
 
 ## File Tree and Shortcuts
