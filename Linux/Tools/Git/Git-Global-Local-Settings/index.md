@@ -15,22 +15,22 @@ When working with Git, managing configurations is crucial for a seamless develop
 Global configurations apply to all repositories on your machine. They are useful for providing default identities for repositories without a local configuration. Set up global configurations with the following commands:
 
 ```shell
-git config --global user.name `Your Global Username`
-git config --global user.email `your.global@email.com`
+git config --global user.name "Username"
+git config --global user.email "email@email.com"
 ```
 
-Replace `Your Global Username` and `your.global@email.com` with the desired global username and email address.
+Replace `Username` and `email@email.com` with the desired global username and email address.
 
 ## Local Configuration
 
 Local configurations are specific to a particular Git repository. To set up a local configuration for a repository, navigate to the repository's directory and run the following commands:
 
 ```shell
-git config --local user.name `Your Local Username`
-git config --local user.email `your.local@email.com`
+git config --local user.name "Username"
+git config --local user.email "email@email.com"
 ```
 
-Replace `Your Local Username` and `your.local@email.com` with the desired local username and email address for the repository.
+Replace `Username` and `email@email.com` with the desired local username and email address for the repository.
 
 ### Verify Configurations
 
