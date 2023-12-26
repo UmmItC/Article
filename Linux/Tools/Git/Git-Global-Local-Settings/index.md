@@ -65,3 +65,7 @@ Now, when you work on a specific repository, Git will use the local configuratio
 This setup is handy when contributing to projects with different identities. Adjust the local configurations for each repository, and global configurations will serve as the default for repositories without a specific local configuration.
 
 By following these steps and referring to the full config list, you can easily manage and switch between different identities when working on multiple Git repositories.
+
+## Reference
+
+- [How can I config two different git repo with different credentials in one system?](https://stackoverflow.com/questions/43118543/how-can-i-config-two-different-git-repo-with-different-credentials-in-one-system/)
