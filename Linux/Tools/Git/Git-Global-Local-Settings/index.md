@@ -1,6 +1,6 @@
 ---
 author: "UmmIt"
-title: "Mastering Git: Wayback Commands"
+title: "Git: Configurations Settings"
 tags: ["Git"]
 date: 2023-12-27T02:21:38+08:00
 thumbnail: https://4.bp.blogspot.com/-4VNeYSOCGAY/WgqxG2nifTI/AAAAAAAAbP0/JjAPupBXh6wa6_gHCIui5xp9QM1q77kDgCLcBGAs/s1600/git-goodness.gif
