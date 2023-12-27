@@ -90,4 +90,5 @@ Ensure this commit is made with the corresponding Public Key.
 - [7.4 Git Tools - Signing Your Work](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
 - [Unable to generate a key with GnuPG (agent_genkey failed: No such file or directory)](https://superuser.com/questions/1660466/unable-to-generate-a-key-with-gnupg-agent-genkey-failed-no-such-file-or-direct)
 - [Adding a GPG key to your account](https://docs.codeberg.org/security/gpg-key/)
-- [ gnupg2: gpg: public key decryption failed: Inappropriate ioctl for device #14737](https://github.com/Homebrew/homebrew-core/issues/14737)
+- [gnupg2: gpg: public key decryption failed: Inappropriate ioctl for device #14737](https://github.com/Homebrew/homebrew-core/issues/14737)
+- [GnuPG](https://wiki.archlinux.org/title/GnuPG)
