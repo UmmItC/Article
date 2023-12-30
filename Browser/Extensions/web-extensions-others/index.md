@@ -1,6 +1,6 @@
 ---
 author: "UmmIt"
-title: "Firefox Basded: Recommended Browser Plug-ins for Enhanced Browsing"
+title: "Firefox Based: Recommended Browser Plug-ins for Enhanced Browsing"
 tags: ["Browser", "Extensions"]
 date: 2023-12-26T07:44:30+0800
 thumbnail: https://home.sophos.com/sites/default/files/2021-09/does-malware-exist.jpeg
