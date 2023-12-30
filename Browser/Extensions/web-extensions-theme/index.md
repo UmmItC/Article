@@ -1,9 +1,10 @@
 ---
 author: "UmmIt"
-title: "Optimize Browsing Plug-ins: Enhance Your Browser's Aesthetics"
+title: "Firefox Based: Optimize Browsing Plug-ins: Enhance Your Browser's Aesthetics"
 tags: ["Browser", "Extensions"]
 date: 2023-12-26T08:00:21+0800
 thumbnail: https://home.sophos.com/sites/default/files/2021-09/does-malware-exist.jpeg
+lastmod: 2023-12-30T09:15:50+0800
 ---
 
 ## Introduction

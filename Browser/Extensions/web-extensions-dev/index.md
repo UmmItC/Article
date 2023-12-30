@@ -1,9 +1,10 @@
 ---
 author: "UmmIt"
-title: "Essential Browser Plug-ins for Developers"
+title: "Firefob Based: Essential Browser Plug-ins for Developers"
 tags: ["Browser", "Extensions"]
 date: 2023-12-26T07:44:30+0800
 thumbnail: https://home.sophos.com/sites/default/files/2021-09/does-malware-exist.jpeg
+lastmod: 2023-12-30T09:15:20+0800
 ---
 
 # Introduction
