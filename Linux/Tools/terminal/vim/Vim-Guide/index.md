@@ -89,6 +89,9 @@ Unlock the full potential of vim with advanced features.
   - `:s/foo/bar/g`: Replace all occurrences of "foo" with "bar" in the current line.
   - `:%s/foo/bar/g`: Replace all occurrences in the entire file.
 
+- **Delete specific text:**
+  - `:%s/foo//g`: Deleting all occurrences of "foo" in the entire file.
+
 - **Autocomplete with Plugins:**
   - Install plugins like [coc.nvim](https://github.com/neoclide/coc.nvim) for autocompletion.
 
