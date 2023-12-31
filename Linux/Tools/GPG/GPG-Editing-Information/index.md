@@ -8,6 +8,8 @@ thumbnail: https://cdn2.iconfinder.com/data/icons/system-flat-buttons/512/gnu-10
 
 ## Introduction
 
+First of all, Happy New Year!! :3 This is the first post for the last day of 2023 :D **2023-12-31**
+
 **Updating Email, User Name, or Expiry Date**: Here's a simple guide on how to edit details like email, user name, and expiry date.
 
 >**Note:** When updating email information, ensure you add a new email before attempting to delete the old one. This maintains the key's integrity and allows for a smooth transition.
@@ -63,3 +65,7 @@ thumbnail: https://cdn2.iconfinder.com/data/icons/system-flat-buttons/512/gnu-10
 ## Conclusion
 
 This step-by-step guide you to confidently navigate the process of editing GPG key information, whether you need to update your email, user name, or expiry date.
+
+## Reference
+
+- [Can I add an email address to an existing GPG key?](https://security.stackexchange.com/questions/261467/can-i-add-an-email-address-to-an-existing-gpg-key)
