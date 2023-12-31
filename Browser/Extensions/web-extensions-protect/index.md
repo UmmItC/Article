@@ -1,10 +1,11 @@
 ---
 author: "UmmIt"
-title: "Best 10 Browser extensions can definitely help protect you while browsing the website!"
+title: "Firefox Based: Best 10 Browser extensions can definitely help protect you while browsing the website!"
 description: "Explore the top 10 browser extensions that are essential for safeguarding your online privacy and security while browsing the website."
 tags: ["Browser", "Extensions"]
 date: 2023-09-15T10:15:50+0800
 thumbnail: https://home.sophos.com/sites/default/files/2021-09/does-malware-exist.jpeg
+lastmod: 2023-12-30T09:15:40+0800
 ---
 
 ## Introduction
