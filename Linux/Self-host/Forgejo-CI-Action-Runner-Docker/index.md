@@ -104,7 +104,7 @@ git push origin -u main
 
 3. Visit your repository on Forgejo, navigate to Actions, and watch your action come to life. Within seconds, your action should complete.
 
-[done](./featured.png)
+![done](./featured.png)
 
 ## Conclusion
 
@@ -115,3 +115,7 @@ Now, with Forgejo, Docker, and your own custom runner, you're set up of CI withi
 ### What Next?
 
 Actually my next tutorial is about Codeberg Action. The Runner is already done, so all that's missing is codeberg action.
+
+## Reference
+
+- [Forgejo gets an integrated CI named Actions](https://forgejo.org/2023-02-27-forgejo-actions/)
