@@ -3,6 +3,7 @@ author: "UmmIt"
 title: "Good Bye 2023: Essential Linux Terminal Tools for Linux Geeks"
 tags: ["Linux"]
 date: 2024-01-01T04:15:29+08:00
+lastmod: 2024-01-01T05:16:29+08:00
 ---
 
 ## Good-bye 2023 :o
@@ -19,40 +20,40 @@ BTW, this post just popped into my head on 2023-12-12 at around 11:55. As a usef
 
 Viu, a terminal image viewer. Perfect for those moments when you want to sneak a quick peek at images without leaving the command line.
 
-![viu](./viu.png)
-
 ```shell
 sudo pacman -S vim
 ```
+
+![viu](./viu.png)
 
 ### 2. Htop and Btop - Task Management Unleashed
 
 Htop and btop are your dynamic duo for advanced task management. Real-time updates and an intuitive interface make monitoring and managing processes a breeze.
 
-![htop](./htop.png)
-
 ```shell
 sudo pacman -S htop btop
 ```
+
+![htop](./htop.png)
 
 ### 3. Neovim and Vim - Text Editing Wizards
 
 Neovim and Vim redefine text editing in the terminal. Packed with features and extensibility, they're more than just text editors—they're lifestyle choices.
 
-![neovim](./neovim.png)
-
 ```shell
 sudo pacman -S neovim
 ```
 
+![neovim](./neovim.png)
+
 ### 4. LF - File Navigation Bliss
 LF, your trusty file manager, simplifies navigating directories with style. Say goodbye to tedious file manipulation and hello to efficiency.
-
-![lf](./lf.png)
 
 ```shell
 sudo pacman -S lf
 ```
+
+![lf](./lf.png)
 
 ### 5. Media Magic Trio - FFMPEG, yt-dlp, Inkscape
 
@@ -79,20 +80,20 @@ sudo pacman -S kitty
 ### 8. Ncdu - Disk Space Enlightenment
 Ncdu, the disk usage analyzer, transforms complex disk statistics into an interactive and easy-to-understand display.
 
-![ncdu](./ncdu.png)
-
 ```shell
 sudo pacman -S ncdu
 ```
 
+![ncdu](./ncdu.png)
+
 ### 9. Hollywood - Terminal Fun
 Hollywood adds a touch of entertainment with cool effects inspired by movie and TV hacking scenes. It's not just about productivity; it's about having fun in the terminal.
-
-![hollywood](./hollywood.png)
 
 ```shell
 yay -S hollywood
 ```
+
+![hollywood](./hollywood.png)
 
 ## End of 2023
 
