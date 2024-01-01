@@ -2,8 +2,8 @@
 author: "UmmIt"
 title: "Good Bye 2023: Essential Linux Terminal Tools for Linux Geeks"
 tags: ["Linux"]
-date: 2024-01-01T04:15:29+08:00
-lastmod: 2024-01-01T05:16:29+08:00
+date: 2024-01-01T04:15:29+0800
+lastmod: 2024-01-01T05:16:29+0800
 ---
 
 ## Good-bye 2023 :o
