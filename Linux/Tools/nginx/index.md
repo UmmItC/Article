@@ -5,6 +5,7 @@ description: "Learn how to set up NGINX on a Linux VPS, host a website, and secu
 tags: ["NGINX", "Web"]
 date: 2023-09-11T04:00:50+0800
 thumbnail: https://c93fea60bb98e121740fc38ff31162a8.s3.amazonaws.com/wp-content/uploads/2016/04/nginx.png
+lastmod: 2024-04-27T00:34:00+0800
 ---
 
 ## Introduction
@@ -65,4 +66,22 @@ sudo systemctl enable nginx
 sudo vim /etc/nginx/conf.d/yoursite_me.conf
 ```
 
-...
+```conf
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  ssl_certificate       /etc/ssl/cert.pem;
+  ssl_certificate_key   /etc/ssl/key.pem;
+
+  location / {
+          try_files $uri $uri/ =404;
+  }
+
+  server_name yoursite_me yoursize.me;
+
+  root /var/www/yoursite_me/html;
+  index index.html;
+}
+
+```
