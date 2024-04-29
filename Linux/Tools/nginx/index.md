@@ -165,3 +165,9 @@ sudo systemctl restart nginx
 Finally, return to your Cloudflare dashboard and verify that SSL/TLS encryption mode is set to "Full (strict)" to enforce secure communication between Cloudflare and your NGINX server.
 
 With these steps completed, your website is now securely encrypted with SSL/TLS, providing enhanced security and privacy for your visitors.
+
+
+## References
+
+- [How To Host a Website Using Cloudflare and Nginx on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-22-04)
+- [How To Install Nginx on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04#step-5-setting-up-server-blocks-recommended)
