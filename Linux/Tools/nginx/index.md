@@ -5,6 +5,7 @@ description: "Learn how to set up NGINX on a Linux VPS, host a website, and secu
 tags: ["NGINX", "Web"]
 date: 2023-09-11T04:00:50+0800
 thumbnail: https://c93fea60bb98e121740fc38ff31162a8.s3.amazonaws.com/wp-content/uploads/2016/04/nginx.png
+lastmod: 2024-04-29T23:53:00+0800
 ---
 
 ## Introduction
@@ -59,10 +60,114 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 
-## Nginx configuration
+### Allow Nginx Full in Firewall
 
-```shell
+Now, need to allow traffic on the Nginx Full port. Run the following command to allow incoming traffic on port 443:
+
+```bash
+sudo ufw allow 'Nginx Full'
+```
+
+and reload the ufw firewall:
+
+```bash
+sudo ufw reload
+```
+
+This step ensures that your NGINX server can receive traffic.
+
+## Adding SSL/TLS Encryption with Cloudflare
+
+Now that you've set up NGINX to serve your website, it's time to enhance security by encrypting the connection between your server and visitors' browsers using SSL/TLS. Cloudflare offers a convenient way to manage SSL/TLS certificates and provides additional security features like DDoS protection and web application firewall (WAF). Follow these steps to integrate Cloudflare with your NGINX server:
+
+### Step 6: Sign Up for Cloudflare and Add Your Website
+
+If you haven't already, sign up for a Cloudflare account and add your website to the dashboard. Cloudflare will guide you through the process of updating your domain's DNS settings to point to their servers.
+
+### Step 7: Select SSL/TLS Encryption Mode
+
+Navigate to the SSL/TLS section in your Cloudflare dashboard and select the "Overview" tab. Choose the encryption mode that best suits your needs. For maximum security, we recommend selecting "Full (strict)" mode, which ensures end-to-end encryption between Cloudflare and your origin server.
+
+### Step 8: Generate an Origin Certificate
+
+Cloudflare provides free SSL/TLS certificates, known as Origin Certificates, for securing the connection between Cloudflare and your origin server. Follow these steps to generate an Origin Certificate:
+
+1. Log in to your Cloudflare dashboard.
+2. Go to the SSL/TLS section and click on "Origin Certificates."
+3. Select the appropriate options, such as the private key type (RSA 2048), hostnames, and certificate validity period.
+4. Click "Create Certificate" to generate the certificate.
+
+### Step 9: Install Origin Certificate on Your Server
+
+Once you've generated the Origin Certificate, you need to install it on your NGINX server. SSH into your server and follow these steps:
+
+1. Create the Origin Certificate file:
+
+```bash
+sudo vim /etc/ssl/cert.pem
+```
+
+2. Paste the Origin Certificate key into the file and save it.
+
+3. Create the Private Key file:
+
+```bash
+sudo vim /etc/ssl/key.pem
+```
+
+4. Paste your Private Key into the file and save it.
+
+### Step 10: Update NGINX Configuration
+
+Update your NGINX configuration file to use the installed SSL/TLS certificates. Open/Create the configuration file:
+
+```bash
 sudo vim /etc/nginx/conf.d/yoursite_me.conf
 ```
 
-...
+Replace the SSL certificate and key paths with the paths to your Origin Certificate and Private Key files, and ensure the `server_name` matches your directory structure:
+
+```conf
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  ssl_certificate       /etc/ssl/cert.pem;
+  ssl_certificate_key   /etc/ssl/key.pem;
+
+  location / {
+          try_files $uri $uri/ =404;
+  }
+
+  server_name yoursite_me yoursize.me;
+
+  root /var/www/yoursite_me/html;
+  index index.html;
+}
+```
+
+### Step 11: Test and Restart NGINX
+
+Before proceeding, test your NGINX configuration to ensure there are no syntax errors:
+
+```bash
+sudo nginx -t
+```
+
+If the test is successful, restart NGINX to apply the changes:
+
+```bash
+sudo systemctl restart nginx
+```
+
+### Step 12: Verify Cloudflare Settings
+
+Finally, return to your Cloudflare dashboard and verify that SSL/TLS encryption mode is set to "Full (strict)" to enforce secure communication between Cloudflare and your NGINX server.
+
+With these steps completed, your website is now securely encrypted with SSL/TLS, providing enhanced security and privacy for your visitors.
+
+
+## References
+
+- [How To Host a Website Using Cloudflare and Nginx on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-22-04)
+- [How To Install Nginx on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04#step-5-setting-up-server-blocks-recommended)

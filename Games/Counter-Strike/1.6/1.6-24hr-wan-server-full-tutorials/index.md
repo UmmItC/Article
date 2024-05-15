@@ -1,11 +1,11 @@
 ---
 author: "UmmIt"
-title: "The Ultimate Guide to Setting Up a Complete CS 1.6 Server: From Zero to Zombie Plague Server (Play with yapb bot) - Let the People Come!"
+title: "The Ultimate Guide to Setting Up a Complete Counter-Strike 1.6: From Zero to Zombie Plague Server, Play with yapb bot and Public the server on the Internet!"
 description: "Learn how to set up a Counter Strike 1.6 server on an Ubuntu Virtual Private Server (VPS) with this comprehensive guide, Also learn how to install yapb bot."
 tags: ["Games", "Counter-Strike 1.6"]
 date: 2021-12-11T00:00:00+0800
 thumbnail: https://1.bp.blogspot.com/-a7CfYOytZAU/X-dvdiiERSI/AAAAAAAAGgc/BMoWOxVPdL8l-iOcrGzbtVHqkzbbMgwwACLcBGAsYHQ/s1366/Untitled-1-1.jpg
-lastmod: 2023-09-09T08:56:00+0800
+lastmod: 2024-01-08T12:38:17+0800
 ---
 
 ## Why Choose a VPS for Hosting?
@@ -78,8 +78,6 @@ sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 ```
 
-The `update` command fetches the latest package information from the repositories, while the `upgrade` command installs newer versions of the packages already installed on your system. The `dist-upgrade` command handles dependencies and resolves conflicts during upgrades. The `-y` flag automatically confirms any prompts, streamlining the process.
-
 ### Allowing Port 22 Access
 
 Port 22 is the default port for SSH connections, allowing you to securely access your server. To ensure that you don't lock yourself out of your server on subsequent logins, you need to allow traffic on port 22.
@@ -91,8 +89,6 @@ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
 
 With this rule in place, you're granting permission for SSH traffic to enter through port 22, which means you can log in without any obstacles.
-
-By updating your system, performing upgrades, and allowing SSH access on port 22, you're creating a solid foundation for the CS 1.6 server setup that lies ahead. Now, as we move forward, you'll be equipped with a pristine environment ready to embrace the excitement of gaming. In the next sections, we'll dive deeper into the heart of the CS 1.6 setup process and explore the installation of essential components. Get ready to turn your VPS into a gaming powerhouse!
 
 ## Step 4: Allowing Server Ports with UFW
 
@@ -117,11 +113,9 @@ Now, let's grant access to port 27015, which is a common UDP port used by CS 1.6
 sudo ufw allow 27015/udp
 ```
 
-By allowing UDP traffic on port 27015, you're enabling your server to communicate with players efficiently and effectively. This step is essential for creating a smooth gaming experience.
-
 ## Step 5: Installing SteamCMD
 
-SteamCMD is your key to unlocking the world of game server management. It allows you to download and update game server files from Steam's content distribution system. In this step, we'll install SteamCMD, which is essential for setting up and maintaining your CS 1.6 server.
+SteamCMD is for Generate game server files. It allows you to download and update game server files from Steam's content distribution system. In this step, we'll install SteamCMD, which is essential for setting up and maintaining your CS 1.6 server.
 
 To get started, follow these instructions (assuming you're using Ubuntu):
 
@@ -152,8 +146,6 @@ To get started, follow these instructions (assuming you're using Ubuntu):
    sudo apt install steamcmd -y
    ```
 
-With SteamCMD installed, you now have a powerful tool at your disposal that will make managing your CS 1.6 server smoother and more efficient. You're moving closer to unleashing the gaming experience for yourself and others. In the upcoming steps, we'll delve into downloading and configuring the necessary server files to set the stage for Counter-Strike action.
-
 ## Step 6: Installing Game Server Required Files
 
 Your CS 1.6 server needs the necessary game files to function properly. In this step, we'll use SteamCMD to download and install these files.
@@ -182,7 +174,7 @@ Your CS 1.6 server needs the necessary game files to function properly. In this 
    app_update 90 validate
    ```
 
-   The number "90" corresponds to the CS 1.6 game ID. The "validate" parameter ensures that the files are validated and correctly installed. 
+   The number `90` corresponds to the CS 1.6 game ID. The `validate` parameter ensures that the files are validated and correctly installed. 
    >Notes: You might encounter an error the first time you try to run `app_update 90 validate`. Don't worry, this is a common issue with SteamCMD. Simply try the `app_update 90 validate` command again, and it should work fine.
 
 4. **Exit SteamCMD**:
@@ -193,11 +185,9 @@ Your CS 1.6 server needs the necessary game files to function properly. In this 
    exit
    ```
 
-With the game server files in place, you're well on your way to creating your very own CS 1.6 server. In the following steps, we'll set up the necessary configurations and plugins to transform your server into a bustling zombie apocalypse!
-
 ## Step 7: Testing the Server
 
-Congratulations, you've reached a significant milestone – your CS 1.6 server is set up with the basic game files. However, before you can dive into the action, you need to start the server and ensure everything is running as expected. Let's put your server to the test!
+Now, your CS 1.6 server is set up with the basic game files. However, before you can dive into the action, you need to start the server and ensure everything is running as expected. Let's put your server to the test!
 
 1. **Navigate to the Server Directory**:
    
@@ -223,10 +213,10 @@ Congratulations, you've reached a significant milestone – your CS 1.6 server i
 
    Let's break down the components of this command:
 
-   - `-dmS hlds`: This portion of the command sets up a detached screen session named "hlds" for the server process.
+   - `-dmS hlds`: This portion of the command sets up a detached screen session named `hlds` for the server process.
    - `./hlds_run`: This command starts the server program.
    - `-game cstrike`: Specifies that the game being run is Counter-Strike 1.6.
-   - `+map de_dust2`: Specifies the initial map to load, in this case, "de_dust2."
+   - `+map de_dust2`: Specifies the initial map to load, in this case, `de_dust2.`
    - `-port 27015`: Sets the server's port to 27015.
    - `+maxplayers 32`: Limits the maximum number of players in a game to 32.
    - `-insecure`: Disables Valve Anti-Cheat (VAC) for now.
@@ -285,8 +275,6 @@ To enhance your CS 1.6 server with additional features and functionalities, you'
    wget https://www.amxmodx.org/release/metamod-1.21.1-am.zip
    ```
 
-These files will allow you to expand the capabilities of your CS 1.6 server and create unique gameplay experiences. Make sure you have these files ready as we'll proceed to extract and configure them in the following steps.
-
 ## Step 9: Extract and Install AMXXModX and Metamod Files
 
 Now that you have downloaded the necessary files for AMXXModX and Metamod, let's proceed to extract and install them. Follow these steps carefully to ensure a successful installation:
@@ -325,11 +313,9 @@ Now that you have downloaded the necessary files for AMXXModX and Metamod, let's
    cp -r addons/ ~/.steam/steamapps/common/Half-Life/cstrike/
    ```
 
-These steps ensure that AMXXModX and Metamod are correctly installed and ready to be used with your CS 1.6 server.
-
 ## Step 10: Edit and Create Configuration Files
 
-Configuring your CS 1.6 server involves modifying and creating certain files to ensure the smooth operation of the server with the installed plugins. Follow these steps to make the necessary changes and create new configuration files:
+Now, these steps to make the necessary changes and create new configuration files:
 
 1. **Modify liblist.gam**:
 
@@ -342,7 +328,7 @@ Configuring your CS 1.6 server involves modifying and creating certain files to 
    Inside the file, locate the line that starts with `gamedll_linux` and change it to:
 
    ```shell
-   gamedll_linux "addons/metamod/dlls/metamod.so"
+   gamedll_linux `addons/metamod/dlls/metamod.so`
    ```
 
    After making the change, press `Ctrl + S` to save and then `Ctrl + X` to exit the `nano` editor.
@@ -362,8 +348,6 @@ Configuring your CS 1.6 server involves modifying and creating certain files to 
    ```
 
    Once again, press `Ctrl + S` to save and then `Ctrl + X` to exit the `nano` editor.
-
-By making these changes and creating the necessary configuration files, you ensure that AMXXModX and Metamod are correctly integrated into your CS 1.6 server, allowing you to utilize their features and plugins for enhanced gameplay.
 
 ## Step 11: Testing Your Server (AMXX Installation Verification)
 
@@ -407,8 +391,6 @@ Before proceeding to the next step of installing Zombie Plague, let's ensure tha
 
    If the results display a list of plugins, you're on the right track.
 
-With AMXX successfully installed and running, you're ready to move on to the exciting step of installing Zombie Plague! Let's get started.
-
 ## Step 12: Installing the Zombie Plague Mod
 
 Prepare to infuse the Zombie Plague mod into your CS 1.6 server. Follow these steps meticulously for a seamless installation:
@@ -425,8 +407,8 @@ Prepare to infuse the Zombie Plague mod into your CS 1.6 server. Follow these st
    Download the mod files directly to your server using the `wget` command. Execute these commands to fetch the essential resources and plugins:
 
    ```shell
-   wget "https://forums.alliedmods.net/attachment.php?attachmentid=136034&d=1412085945" -O zp_resources.zip
-   wget "https://forums.alliedmods.net/attachment.php?s=46bcb4236bef6c971e41f8e763a94c24&attachmentid=28817&d=1216059497" -O zp_plugins.zip
+   wget `https://forums.alliedmods.net/attachment.php?attachmentid=136034&d=1412085945` -O zp_resources.zip
+   wget `https://forums.alliedmods.net/attachment.php?s=46bcb4236bef6c971e41f8e763a94c24&attachmentid=28817&d=1216059497` -O zp_plugins.zip
    ```
 
    These commands retrieve the required files and save them as `zp_resources.zip` and `zp_plugins.zip`.
@@ -493,11 +475,9 @@ Prepare to infuse the Zombie Plague mod into your CS 1.6 server. Follow these st
 
    This command moves the compiled plugin files from the `compiled` directory to the correct location within the `plugins` directory, allowing AMX Mod X to properly load and utilize them.
 
-Following these comprehensive instructions ensures a successful integration of the Zombie Plague mod into your CS 1.6 server, amplifying your gameplay experience with thrilling zombie action.
-
 ## Step 13: Testing your Server (Zombie Plague Installation Verification)
 
-Now that you've successfully installed the Zombie Plague mod on your CS 1.6 server, it's time to verify the installation and ensure that everything is working as expected. Follow these comprehensive steps to confirm the mod's functionality:
+Now that you've successfully installed the Zombie Plague mod on your CS 1.6 server, it's time to verify the installation and ensure that everything is working as expected.
 
 1. **Restart Your Server:**
    Begin by restarting your CS 1.6 server using the `screen` command. This step ensures that any previous server instances are closed and prepares the environment for the Zombie Plague mod.
@@ -558,8 +538,6 @@ Now that you've successfully installed the Zombie Plague mod on your CS 1.6 serv
    When you successfully join the server, you should be greeted with a gameplay experience similar to the following image:
 
    ![Zombie Plague Gameplay](./zombie_plague_gameplay.png)
-
-By following these detailed steps, you can ensure that the Zombie Plague mod has been seamlessly installed and that your CS 1.6 server is now equipped with this exciting gameplay enhancement. Enjoy the immersive and action-packed experience of the zombie apocalypse mode!
 
 ## Step 14: Adding Yapb Bot to Your Zombie Plague Server
 
@@ -630,7 +608,7 @@ Congratulations on successfully installing Zombie Plague on your server! However
 
 ## HTTP Download vs. Server Download: Which Is Faster?
 
-When setting up FastDL for your Counter-Strike 1.6 server, you have the option to allow players to download custom content directly from an HTTP source or from your game server. It's important to consider the speed and efficiency of these methods.
+When setting up FastDL for your Counter-Strike 1.6 server, you have the option to allow players to download directly from an HTTP source or from your game server. It's important to consider the speed and efficiency of these methods.
 
 **HTTP Download:** 
 
@@ -699,10 +677,10 @@ To enable FastDL on your Counter-Strike 1.6 server, you'll need to configure the
 
 2. Open `server.cfg` using a text editor of your choice.
 
-3. Add the following line to the file, replacing `"http://your-fastdl-server.com/"` with the actual URL to your FastDL server directory:
+3. Add the following line to the file, replacing ``http://your-fastdl-server.com/`` with the actual URL to your FastDL server directory:
 
    ```shell
-   sv_downloadurl "http://your-fastdl-server.com/"
+   sv_downloadurl `http://your-fastdl-server.com/`
    ```
 
    This line tells your Counter-Strike 1.6 server to use the specified URL for downloading custom content.
@@ -735,19 +713,19 @@ Here's what you need to know:
 
 **2. Cloudflare's Proxy Service:** Cloudflare provides a proxy service that, by default, routes traffic through its servers. This can enable HTTPS for your domain, but it also means that all traffic is converted to HTTPS.
 
-**3. Non-Proxy (DNS Only) Status:** To ensure that players can connect to your Counter-Strike 1.6 server, you must set the custom domain to "DNS Only" status in Cloudflare. This configuration will route the traffic directly to your server without going through Cloudflare's proxy servers. This is crucial because, as mentioned, CS 1.6 doesn't support HTTPS, and forcing HTTPS through Cloudflare will result in connection issues.
+**3. Non-Proxy (DNS Only) Status:** To ensure that players can connect to your Counter-Strike 1.6 server, you must set the custom domain to `DNS Only` status in Cloudflare. This configuration will route the traffic directly to your server without going through Cloudflare's proxy servers. This is crucial because, as mentioned, CS 1.6 doesn't support HTTPS, and forcing HTTPS through Cloudflare will result in connection issues.
 
-**4. Maintaining Server Connectivity:** By setting your custom domain to "DNS Only" status in Cloudflare, you ensure that players can connect to your Counter-Strike 1.6 server without any encryption-related problems. This maintains the compatibility required for a seamless gaming experience.
+**4. Maintaining Server Connectivity:** By setting your custom domain to `DNS Only` status in Cloudflare, you ensure that players can connect to your Counter-Strike 1.6 server without any encryption-related problems. This maintains the compatibility required for a seamless gaming experience.
 
 It's essential to follow these steps to guarantee that your custom domain and Cloudflare setup don't interfere with the connectivity of your Counter-Strike 1.6 server. By prioritizing non-proxy (DNS only) status, you'll ensure that players can effortlessly join your server without encountering any obstacles related to HTTPS compatibility.
 
 ### DNS Record Configuration for Your Domain
 
-When configuring the DNS record for your domain in Cloudflare, it's crucial to set it to "DNS Only." This ensures that your domain does not go through Cloudflare's proxy service, allowing you to maintain compatibility with services like Counter-Strike 1.6 that rely on plain HTTP connections.
+When configuring the DNS record for your domain in Cloudflare, it's crucial to set it to `DNS Only.` This ensures that your domain does not go through Cloudflare's proxy service, allowing you to maintain compatibility with services like Counter-Strike 1.6 that rely on plain HTTP connections.
 
-**DNS Only (No Proxy):** For your domain's DNS record, select the option that specifies "DNS Only" or "No Proxy." This configuration ensures that traffic to your domain goes directly to your server without being routed through Cloudflare's proxy servers.
+**DNS Only (No Proxy):** For your domain's DNS record, select the option that specifies `DNS Only` or `No Proxy.` This configuration ensures that traffic to your domain goes directly to your server without being routed through Cloudflare's proxy servers.
 
-While your DNS record remains "DNS Only," you can still use HTTPS within your HTTP server for secure connections. This means that when someone accesses your website using HTTPS in their browser, your server can deliver content securely over HTTPS. However, it's important to note that your game server, like Counter-Strike 1.6, will continue to use HTTP for resource downloads.
+While your DNS record remains `DNS Only,` you can still use HTTPS within your HTTP server for secure connections. This means that when someone accesses your website using HTTPS in their browser, your server can deliver content securely over HTTPS. However, it's important to note that your game server, like Counter-Strike 1.6, will continue to use HTTP for resource downloads.
 
 By configuring your DNS record in this way, you strike a balance between maintaining compatibility with older services like Counter-Strike 1.6 and providing secure HTTPS access to your website for modern browsers. This setup allows you to ensure smooth connectivity for all users while keeping your resources accessible via HTTP for older systems.
 
@@ -755,7 +733,7 @@ By configuring your DNS record in this way, you strike a balance between maintai
 
 Congratulations! You've successfully transformed your Counter-Strike 1.6 server into an exciting Zombie Plague server complete with AI-controlled Yapb bots, Also using fastdl for HTTP download your server resources.
 
-Now, you can access your server with your custom domain, such as "cs.yourserver.io" or "download.yourserver.io." Happy gaming!
+Now, you can access your server with your custom domain, such as `cs.yourserver.io` or `download.yourserver.io.` Happy gaming!
 
 ## References
 

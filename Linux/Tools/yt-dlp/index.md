@@ -2,7 +2,7 @@
 author: "UmmIt"
 title: "Exploring yt-dlp: Command Line Tools for Advanced Video Downloading"
 description: "Discover the power of yt-dlp's command line tools, your gateway to an enhanced video downloading experience. Dive into this guide to learn how to use yt-dlp's capabilities."
-tags: ["youtube-dl", "yt-dlp"]
+tags: ["yt-dlp"]
 date: 2023-08-12T11:46:50+0800
 thumbnail: https://repository-images.githubusercontent.com/307260205/b6a8d716-9c7b-40ec-bc44-6422d8b741a0
 Lastmod: 2023-11-25T05:50:40+0800
