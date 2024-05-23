@@ -5,6 +5,7 @@ description: ""
 tags: ["Android", "FOSS", "Apps", "DE-Google"]
 date: 2024-05-16T00:23:00+0800
 thumbnail: https://www.remessaonline.com.br/blog/wp-content/uploads/2022/07/big-techs.jpg.optimal.jpg
+lastmod: 2024-05-23T16:38:46+0800
 ---
 
 ## Introduction
@@ -13,62 +14,140 @@ In today's digital age, privacy concerns are at the forefront of many discussion
 
 ![](./featured.jpg)
 
-## Apps
+## Privacy & Security Tools
 
-**1. SimpleLogin:** Protecting my email privacy has never been easier. With SimpleLogin, I create unique aliases for every service I sign up for, shielding my primary email from spam and tracking.
+### SimpleLogin
 
-**2. Mullvad VPN:** Ensuring my online activities remain private and secure, Mullvad VPN encrypts my internet connection, keeping my data safe from prying eyes.
+Protecting email privacy by creating unique aliases for every service, shielding the primary email from spam and tracking.
 
-**3. NeoStore:** A convenient interface for accessing the vast repository of FOSS apps on F-Droid
+### Mullvad VPN
 
-**4. Aurora Store:** For apps not available on traditional app stores, Aurora Store allows me to download and update apps from the Google Play Store anonymously, without the need for a Google account.
+Encrypting internet connections to keep data private and secure from prying eyes.
 
-**5. Tuta:** With end-to-end encryption and zero-tracking policies, Tuta is my go-to email service for secure communication.
+### PCAPdroid
 
-**6. Proton:** The one-stop solution for digital privacy. From encrypted email services to VPN protection, secure cloud storage with photo auto-sync, password management, and a private calendar.
+Monitoring network traffic on the device to identify connections, Just like wireshark.
 
-**7. SimpleX Chat:** Redefines secure messaging with its two-layer end-to-end encryption.
+### microG
 
-**8. Molly:** A privacy-focused fork of Signal messenger, Molly enhances push notifications and operates independently from Google Mobile Services (GMS), ensuring my messages are secure and private.
+A free and open-source reimplementation of Google’s proprietary libraries, allowing for a more privacy-respecting Android experience.
 
-**9. NewPipe:** Say goodbye to YouTube's tracking and ads. NewPipe is a lightweight YouTube client that allows me to watch videos and listen to music without compromising my privacy.
+### GrapheneOS
 
-**10. LibreTube:** Built upon the foundation of NewPipe, LibreTube fetches videos from the Piped.video API, providing a decentralized and privacy-focused platform for watching online content.
+A privacy-focused Android operating system that prioritizes security and user control, protecting the device from security threats.
 
-**11. ente Photos:** Keeping my photos organized and secure, ente Photos offers end-to-end encryption and local storage options, ensuring my memories remain private.
+### URL Cleaner
 
-**12. MEGA:** For cloud storage needs, MEGA provides secure, encrypted storage with generous free tiers and cross-platform support.
+Automatically removes tracking parameters from URLs, preserving browsing privacy.
 
-**13. Mull:** Mull is a privacy-focused fork of the Firefox browser, removing trackers and other privacy-invading elements, providing a more secure browsing experience.
+## Messengers
 
-**14. Brave:** A privacy-focused web browser, Brave blocks ads and trackers by default, providing a faster and safer browsing experience.
+### SimpleX Chat
 
-**15. CuteCalc:** Adding a touch of whimsy to my daily tasks, CuteCalc is a fully functional calculator app with a charming design.
+Redefines secure messaging with two-layer end-to-end encryption, ensuring privacy in communications.
 
-**16. GrapheneOS:** Protecting my device from security threats, GrapheneOS is a privacy-focused Android operating system that prioritizes security and user control.
+### Molly
 
-**17. Quillpad:** Taking notes with true offline, unlike Google that stole your notes.
+A privacy-focused fork of Signal messenger, enhancing push notifications and operating independently from Google Mobile Services (GMS).
 
-**18. Binary Eye:** For scanning QR codes without compromising privacy.
+## Email Services
 
-**19. KeePassDX:** Managing my passwords securely, KeePassDX stores my credentials in an encrypted database, accessible only with a master password or key file.
+### Tuta
 
-**20. PCAPdroid:** Monitoring network traffic on my device, PCAPdroid helps me identify and block suspicious connections, enhancing my security.
+Provides secure communication with end-to-end encryption and zero-tracking policies.
 
-**21. LocalSend:** Need to transfer files between devices? LocalSend utilizes peer-to-peer technology for fast and secure file sharing over local networks.
+### Proton Mail
 
-**22. KDE Connect:** Seamlessly integrating my Android device with my desktop environment, KDE Connect allows for file sharing, notifications, and remote control across devices.
+Offers encrypted email services as part of a comprehensive suite of digital privacy tools.
 
-**23. microG:** Enjoying the benefits of Google services without sacrificing privacy, microG is a free and open-source reimplementation of Google's proprietary libraries, allowing for a more privacy-respecting Android experience.
+## Cloud Storage
 
-**24. Aves:** Aves serves as a secure gallery app, ensuring your images and photos are stored with privacy and protection in mind.
+### Proton Drive
 
-**25. Neo Launcher:** Customizing my Android experience, Neo Launcher provides a lightweight, privacy-focused alternative to traditional launchers.
+Part of the Proton suite, offering secure cloud storage with photo auto-sync and encrypted storage solutions.
 
-**26. URL Cleaner:** Protecting my browsing habits from prying eyes, URL Cleaner automatically removes tracking parameters from URLs, preserving my privacy online.
+### ente Photos
 
-**27. Coffee:** Coffee is a handy tool that allows you to prevent your screen from timing out, ensuring it stays on when you need it. This minimalist app doesn't track your location or personal data, providing a simple and effective solution for keeping your screen awake.
+End-to-end encrypted photo storage, keeping photos organized and secure with local storage options.
+
+### MEGA
+
+Provides secure, encrypted cloud storage with generous free tiers and cross-platform support.
+
+## App Stores
+
+### NeoStore
+
+Provides a convenient interface for accessing the vast repository of FOSS apps on F-Droid.
+
+### Aurora Store
+
+Allows downloading and updating apps from the Google Play Store anonymously, without the need for a Google account.
+
+## Browsers
+
+### Mull
+
+A privacy-focused fork of the Firefox browser, removing trackers and other privacy-invading elements for a more secure browsing experience.
+
+### Brave
+
+Blocks ads and trackers by default, offering a faster and safer browsing experience.
+
+## YouTube Clients
+
+### NewPipe
+
+A lightweight YouTube client that allows watching videos and listening to music without compromising privacy by avoiding tracking and ads.
+
+### LibreTube
+
+Built on NewPipe, fetching videos from the Piped.video API to provide a decentralized and privacy-focused platform for watching online content.
+
+## Utility & Productivity
+
+### KeePassDX
+
+Securely manages passwords, storing credentials in an encrypted database accessible only with a master password or key file.
+
+### LocalSend
+
+Utilizes peer-to-peer technology for fast and secure file sharing over local networks.
+
+### KDE Connect
+
+Integrates Android devices with desktop environments for file sharing, notifications, and remote control across devices.
+
+### CuteCalc
+
+A fully functional calculator app with a charming design.
+
+### Quillpad
+
+Allows taking notes with true offline capabilities, without the risk of data being stolen.
+
+### Binary Eye
+
+Scans QR codes without compromising privacy.
+
+### Coffee
+
+Prevents the screen from timing out, ensuring it stays on when needed without tracking personal data.
+
+## Launchers & Customization
+
+### Neo Launcher
+
+A lightweight, privacy-focused alternative to traditional Android launchers, providing a customizable user experience.
+
+## Galleries & Media
+
+### Aves
+
+A secure gallery app ensuring images and photos are stored with privacy and protection in mind.
 
 ## Take back our Privacy
 
-With these FOSS Android apps, taken back control of our digital life, prioritizing privacy and security without sacrificing functionality. reclaiming your online privacy with FOSS alternatives to mainstream apps.
+Offers a one-stop solution for digital privacy, including encrypted email services, VPN protection, secure cloud storage, password management, and a private calendar.
+
+With these FOSS Android apps, you can take back control of your digital life, prioritizing privacy and security without sacrificing functionality. Reclaim your online privacy with these FOSS alternatives to mainstream apps.
