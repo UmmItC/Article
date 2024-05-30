@@ -42,12 +42,12 @@ Git will pause at each commit marked for editing. For each paused commit, Git wi
 
 After editing all desired commit messages, Git will continue with the rebase process, applying your changes.
 
-### Step 7: Force Push Your Changes (If Necessary)
+### Step 7: Force Push Your Changes
 
-If you've already pushed the old commits to a remote repository, you'll need to force push the changes to update the history. Use the following command:
+You'll need to force push the changes to update the history. Use the following command:
 
 ```bash
-git push --force
+git push origin master --force
 ```
 
 ### Well done!
