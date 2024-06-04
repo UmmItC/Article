@@ -3,7 +3,7 @@ author: "UmmIt"
 title: "Good Bye 2023: Essential Linux Terminal Tools for Linux Geeks"
 tags: ["Linux"]
 date: 2024-01-01T04:15:29+0800
-lastmod: 2024-01-01T05:16:29+0800
+lastmod: 2024-05-31T21:11:50+0800
 ---
 
 ## Good-bye 2023 :o
@@ -14,7 +14,7 @@ As we all know, we hardly need Gui in our lives. everything the terminal can do.
 
 First-class basic commands like ls, pwd, cd, lsblk, gdisk, fdisk, ps, pkill... I won't go into details here... I think you should be familiar with these tools.
 
-BTW, this post just popped into my head on 2023-12-12 at around 11:55. As a useful article for 2024-01-01 :d. Now, Let's fire up the terminal geek tools :p
+BTW, this post just popped into my head on 2023-12-31 at around 11:55. As a useful article for 2024-01-01 :d. Now, Let's fire up the terminal geek tools :p
 
 ### 1. Viu - Visual Image Delight
 
