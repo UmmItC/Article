@@ -14,7 +14,7 @@ I’ve had some people asking how to set up their system like mine, so I decided
 
 This article is mainly for newcomers to Hyprland.
 
-![./featured.jpg]
+![](./featured.jpg)
 
 ## Want the Same Look as in the Image?
 
