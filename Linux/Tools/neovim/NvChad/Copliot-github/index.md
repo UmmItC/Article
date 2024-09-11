@@ -46,6 +46,7 @@ add the following line to your `~/.config/nvim/lua/plugins/init.lua`, which is t
 {
     "github.com/github/copilot.vim",
 }
+```
 
 Now, quit the neovim and reopen it again to begin the installation process, it will automatically install the plugin.
 
