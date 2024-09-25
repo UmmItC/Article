@@ -2,7 +2,7 @@
 author: "UmmIt"
 title: "Checking Home and Server vulnerability with Nmap: A Comprehensive Guide"
 description: "Explore the world of cybersecurity and learn how to checking your home network and server using Nmap. Dive into the network scanning and vulnerability detection in this comprehensive guide."
-tags: ["nmap", "Security"]
+tags: ["nmap", "Security", "Cyber security"]
 date: 2021-12-14T17:07:28+0800
 thumbnail: https://www.kali.org/tools/nmap/images/nmap-logo.svg
 lastmod: 2023-09-09T09:42:50+0800

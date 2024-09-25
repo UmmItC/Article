@@ -2,7 +2,7 @@
 author: "UmmIt"
 title: "How to Ensure Your Operating System Stays Infection-Free"
 description: "Explore essential steps to safeguard your operating system from viruses, malware, and more. Learn how to detect and prevent potential threats effectively."
-tags: ["Lore", "How"]
+tags: ["Lore", "How", "Cyber Security"]
 date: 2023-09-02T17:46:20+0800
 thumbnail: https://media.consumeraffairs.com/files/news/Malware_computer_concept_Olemedia_Getty_Images_1.jpg
 ---
