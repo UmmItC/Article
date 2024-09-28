@@ -44,7 +44,7 @@ add the following line to your `~/.config/nvim/lua/plugins/init.lua`, which is t
 
 ```lua
 {
-    "github.com/github/copilot.vim",
+    "github/copilot.vim",
 }
 ```
 
@@ -60,7 +60,7 @@ To load the plugin immediately, set the `lazy` to false. and your `init.lua` sho
 
 ```lua
 {
-    "github.com/github/copilot.vim",
+    "github/copilot.vim",
     lazy = false,
 }
 ```
