@@ -5,7 +5,7 @@ description: ""
 tags: ["Raspberry Pi", "Linux", "Hardware"]
 date: 2023-01-24T20:52:00+0800
 thumbnail: https://images.wondershare.com/recoverit/article/2020/08/format-sd-card-raspberry-pi-0.jpg
-lastmod: 2023-12-26T-12:04:20+0800
+lastmod: 2023-12-26T12:04:20+0800
 ---
  
 ## What is Raspberry Pi?

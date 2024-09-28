@@ -4,7 +4,7 @@ title: "Made neovim into a full featured IDE with NvChad: A Comprehensive Guide"
 description: "The guide to turn Neovim into a full-featured IDE with NvChad. Pretty much like vscode, but better and faster. also more potential."
 tags: ["Neovim"]
 date: 2023-12-26T03:19:28+0800
-lastmod: 2024-09-11:19:04:11+0800
+lastmod: 2024-09-11T19:04:11+0800
 ---
 
 ## Overview

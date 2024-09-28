@@ -5,7 +5,7 @@ description: "Unveil the potential of virt-manager, a crucial instrument for sea
 tags: ["QEMU/KVM", "GPU-Passthrough", "virt-manager"]
 date: 2023-05-13T05:58:00+0800
 thumbnail: https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/virt-manager-icon.png
-lastmod: 2023-12-2T01:11:00+0800
+lastmod: 2023-12-20T01:11:00+0800
 ---
 
 ## Step 1: Install Required Packages
