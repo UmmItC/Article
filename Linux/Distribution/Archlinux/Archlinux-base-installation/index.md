@@ -5,64 +5,45 @@ description: ""
 tags: ["Arch Linux"]
 date: 2022-12-17T02:57:50+08:00
 thumbnail: http://www.pixelstalk.net/wp-content/uploads/2016/10/Free-Arch-Linux-Image.png
-lastmod: 2023-12-26T12:46:01+08:00
+lastmod: 2024-10-04T19:28:16+08:00
 ---
 
 ## Introduction
 
 This comprehensive guide will walk you through the process of installing Arch Linux from start to finish.
 
+> Caiution: Arch Linux in not user-friendly for the beginner of GNU/Linux.
+
 ### Before You Begin
 
-**Caution: Arch Linux is Not User-Friendly**
+GNU/Linux Arch operates on a philosophy of simplicity, user control, and customization. Unlike more user-friendly distributions like Linux Mint or Ubuntu, Arch doesn't provide a graphical user interface (GUI) during the installation process. Instead, it relies heavily on the command line.
 
-Arch Linux operates on a philosophy of simplicity, user control, and customization. Unlike more user-friendly distributions like Linux Mint, Debian, or Ubuntu, Arch Linux doesn't provide a graphical user interface (GUI) during the installation process. Instead, it relies heavily on the command line. If you're new to Linux or have less than a year of experience, consider gaining more familiarity with Linux basics before attempting an Arch Linux installation.
+If you're new to GNU/Linux or have less than a year of experience, consider gaining more familiarity with GNU/Linux basics before attempting an Arch installation.
 
-**The Command Line is Your Interface**
+### The Command Line is Your Interface
 
-In Arch Linux, every step of the installation process is carried out through the command line. Unlike other distributions that offer GUI-based installers, Arch Linux exposes you directly to the power of the terminal. If you're uncomfortable with the command line or don't understand how commands work, this installation process might be challenging.
+In Arch, every step of the installation process is carried out through the command line. Unlike other distributions that offer GUI-based installers, Arch exposes you directly to the power of the terminal. If you're uncomfortable with the command line or don't understand how commands work, this installation process might be challenging.
 
-**Learning Opportunity**
+### Learning Opportunity
 
-However, Arch Linux isn't just a challenging distribution; it's also a fantastic learning opportunity. With a commitment to simplicity and an extensive official documentation, Arch Linux provides a transparent and educational experience. If you're ready to delve into the world of Linux and enhance your understanding of how a Linux system is built, Arch Linux can be a rewarding journey.
+However, Arch isn't just a challenging distribution, it's also a fantastic learning opportunity. With a commitment to simplicity and an extensive official documentation, Arch provides a transparent and educational experience.
 
-**Official Arch Linux Wiki**
+like how a GNU/Linux system is built, Arch can be a rewarding journey.
 
-Before starting the installation process, it's highly recommended to familiarize yourself with the [Official Arch Linux Wiki](https://wiki.archlinux.org/). The wiki is an invaluable resource that guides you through the installation process and offers in-depth explanations for various configurations.
+### Official Arch GNU/Linux Wiki
 
-**Is Arch Right for You?**
+Before starting the installation process, it's highly recommended to familiarize yourself with the [Official Arch GNU/Linux Wiki](https://wiki.archlinux.org/). 
+The wiki is an invaluable resource that guides you through the installation process and offers in-depth explanations for various configurations.
 
-In summary, if you're new to Linux or prefer a more user-friendly experience, you might want to consider other distributions. However, if you're up for a challenge, eager to deepen your Linux knowledge, and appreciate a do-it-yourself approach, Arch Linux could be the perfect fit.
+### Is Arch Right for You?
 
-## Conclusion
+In summary, if you're new to GNU/Linux or prefer a more user-friendly experience, you might want to consider other distributions.
 
-**For Arch Linux Veterans: Simplicity Unveiled**
+However, if you're up for a challenge, eager to deepen your GNU/Linux knowledge, and appreciate a do-it-yourself approach, Arch could be the perfect fit.
 
-If you've already ventured into the world of Arch Linux, you'll likely find the installation process surprisingly straightforward. Every command-line instruction, once understood, contributes to the simplicity and elegance of the Arch Linux system. What might seem daunting initially transforms into a series of logical and comprehensible steps.
+# Step-by-Step Guide
 
-**The Beauty of Understanding Commands**
-
-Arch Linux, with its focus on transparency and simplicity, allows you to grasp the inner workings of your system. Each command you execute contributes to building a customized environment tailored to your preferences. Once you've navigated the learning curve, you'll appreciate the beauty of simplicity in Arch Linux.
-
-**A Personalized Linux Experience**
-
-Arch Linux isn't just an operating system; it's a philosophy. By mastering its installation process, you gain the ability to craft a personalized Linux experience from the ground up. You decide what goes into your system, how it's configured, and which components are essential.
-
-**Continuous Learning Journey**
-
-While the installation might be a one-time process, Arch Linux encourages a continuous learning journey. The Arch community, along with the extensive documentation, serves as a valuable resource as you explore more advanced configurations, package management, and system optimization.
-
-**Celebrate the Mastery**
-
-So, if you've mastered the installation of Arch Linux, take a moment to celebrate your accomplishment. You've not only installed an operating system but also acquired skills that empower you to control and tailor your computing environment.
-
-Remember, Arch Linux is not just an OS; it's a dynamic and rewarding learning experience. Enjoy your journey with Arch!
-
-Now, let's proceed with the installation process!
-
-# Step-by-Step Guide to Installing Arch Linux on a Virtual Machine (VM)
-
-This comprehensive guide will walk you through the process of installing Arch Linux on a virtual machine (VM) from start to finish. Follow the steps in order for a successful installation.
+This comprehensive guide will walk you through the process of installing Arch Linux from start to finish. Follow the steps in order for a successful installation.
 
 ## 1. ISO Download
 
@@ -76,36 +57,64 @@ Choose a tool to create a bootable USB from the ISO:
 - [Rufus](https://rufus.ie/en/) (Windows Only)
 - [Pendrivelinux](https://www.pendrivelinux.com/) (Windows only, supports multi-OS)
 
-Alternatively, use `dd` on Linux to create a bootable USB:
+Alternatively, use `dd` on Linux to create a bootable USB, also known as "burning" the ISO and my recommendation of only using this method on GNU/Linux, no related any software needed, proproly every GNU/Linux distro has `dd` command.
 
 ```shell
 dd if=/path/to/archlinux.iso of=/dev/sdX status=progress
 ```
 
+### Optional: Wipe USB Drive
+
+If you want to wipe the USB drive before burning the ISO, use the following command, also have many ways to wipe the USB drive, this is one of the ways. You can use `dd` to write zeros to the USB drive.
+
+```shell
+sudo dd if=/dev/zero of=/dev/sdX bs=4M status=progress
+```
+
+and here's the way of wipefs:
+
+```shell
+sudo wipefs -a /dev/sdX
+```
+
+with shred:
+
+```shell
+sudo shred -n 2 -v /dev/sdX
+```
+
 ## 3. Modify BIOS Settings
 
-Access your VM's BIOS settings and configure them to boot from the USB drive.
+Access your BIOS settings and configure them to boot from the USB drive.
+
+Let's say you're trying to boot from the USB drive, you need to access the BIOS settings by pressing the corresponding key during the boot process. The key varies depending on the manufacturer, but common keys include `F2`, `F10`, `F12`, or `Del`. Once you're in the BIOS settings, look for the boot order or boot priority settings and set the USB drive as the first boot device.
+
+and keep remember to turn-off the secure boot option if you're using UEFI mode. Since archlinux doesn't have a signed bootloader.
 
 ## 4. Start Arch Linux Live
 
-Boot the VM from the USB drive, and you will be in the Arch Linux live environment.
+Boot from the USB drive, and you will be in the Arch Linux live boot.
 
 ## 5. Ping Test Network
 
-Check the network connection with a ping test:
+Now, lets check the network connection with ping command, if got response, that's means the network are connected.
 
 ```shell
 ping archlinux.org
 ```
 
-If response, That's means the network are connected. If not, check your LAN port or using wifi (if have) with iwctl.
+### Network configurations
+
+If you're using a wired connection, the network should be automatically configured. If not, check your LAN port or using wifi (if have) with iwctl.
+
+>The iwctl is part of the iwd package, Just for the note, arch linux already have iwd package installed by default.
 
 ```shell
 iwctl
 
 [iwd]# device list
-[iwd]# iwctl station wlan0 scan
-[iwd]# iwctl station wlan0 get-networks
+[iwd]# station wlan0 scan
+[iwd]# station wlan0 get-networks
 [iwd]# station wlan0 connect [SSID]
 exit
 
@@ -114,7 +123,7 @@ ping archlinux.org
 
 ## 6. Create Partitions
 
-Identify the disk (e.g., `/dev/sda`) and create four partitions using `cfdisk`:
+Identify the disk (e.g., `/dev/sda`) and create four partitions using `cfdisk` or `fdisk`, or `gdisk`, just choose one of them, use your preference.
 
 - 500M for EFI System (Type: EFI System)
 - 30G for root (Type: Linux filesystem)
@@ -140,28 +149,29 @@ mount /dev/sda2 /mnt      # Mount root partition
 
 mkdir /mnt/home           # Create home directory
 mount /dev/sda3 /mnt/home  # Mount home partition
-
-mkdir /mnt/boot           # Create boot directory
-mount /dev/sda1 /mnt/boot  # Mount EFI System partition
 ```
+
+The boot partition will be mounted later. we could mount it after the arch-chroot.
 
 ## 7. Install Basic Arch System
 
 Install essential packages using `pacstrap`:
 
 ```shell
-pacstrap -i /mnt base linux linux-headers linux-firmware vim networkmanager dhcpcd pulseaudio
+pacstrap -i /mnt base linux linux-headers linux-firmware vim networkmanager dhcpcd pipewire
 ```
 
 ## 8. Generate File System Table (FSTAB)
 
-Generate the file system table:
+Generate the file system table, This table is used by the system to determine how to mount the partitions.
 
 ```shell
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
 ## 9. Switching new system
+
+Switch to the new system by using `arch-chroot`:
 
 ```shell
 arch-choot /mnt
@@ -172,7 +182,7 @@ arch-choot /mnt
 Set the root password:
 
 ```shell
-arch-chroot /mnt
+passwd
 ```
 
 ## 10. Add New User & Password
@@ -209,7 +219,7 @@ Defaults timestamp_timeout=0
 Edit `locale.gen` to set the system language:
 
 ```shell
-nano /etc/locale.gen
+vim /etc/locale.gen
 ```
 
 Find `en_US.UTF-8 UTF-8` and remove the `#`.
@@ -238,7 +248,7 @@ echo Archlinux > /etc/hostname
 Edit the hosts file:
 
 ```shell
-nano /etc/hosts
+vim /etc/hosts
 ```
 
 Add the following lines:
@@ -265,8 +275,8 @@ Install GRUB for UEFI:
 ```shell
 pacman -S grub efibootmgr
 
-mkdir /boot
-mount /dev/sda1 /boot
+mkdir /boot/efi
+mount /dev/sda1 /boot/efi
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -274,7 +284,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 ## 16. Enable Internet Service
 
-Enable network services:
+To make sure the network is automatically connected after booted, enable the NetworkManager and dhcpcd services:
 
 ```shell
 systemctl enable NetworkManager.service
@@ -305,15 +315,21 @@ Reboot the system:
 reboot
 ```
 
+And now your system should boot into Arch Linux! after that, you can install the desktop environment or window manager. Just choose your preference. For this article, I will install KDE, also using the `sddm` as the display manager and xorg as the backend of the display server.
+
 ## 20. Install DE
 
 Install a desktop environment (e.g., KDE):
 
 ```shell
-sudo pacman -S xorg xorg-xinit plasma plasma-desktop plasma-wayland-session kde-applications kdeplasma-addons sddm
+sudo pacman -S xorg xorg-xinit \
+plasma plasma-desktop \
+plasma-wayland-session \
+kde-applications kdeplasma-addons \
+sddm
 ```
 
-Enable SDDM service:
+To ensure our display manager is started at boot, enable the `sddm` service:
 
 ```
 sudo systemctl enable sddm.service
@@ -333,4 +349,14 @@ Then reboot.
 reboot
 ```
 
-and now you should see the grub menu!
+and now enjoy your Arch Linux with KDE desktop environment :D
+
+## Conclusion
+
+Arch linux is a great distribution for those who want to learn more about Linux and have a more personalized experience. The installation process might be challenging, but it's a rewarding journey that allows you to build a system tailored to your preferences.
+
+After you master the arch linux, you should now feel more comfortable with the command line and have a understanding of how a GNU/Linux system works and also as well as the ability to troubleshoot issues that may arise.
+
+For more hardcores, you can try to install Gentoo or LFS (Linux From Scratch) to further deepen your knowledge of GNU/Linux.
+
+But before that, you should feel arch is simple and easy to use. otherwise, these two distributions will be a nightmare for you. Since they are a source based distribution, you need to compile everything from the source code. and the configuration is more difficult than Arch Linux.
