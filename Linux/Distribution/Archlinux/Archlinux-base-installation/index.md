@@ -1,11 +1,11 @@
 ---
 author: "UmmIt"
-title: "Step-by-Step Guide to Installing Arch Linux"
+title: "Step-by-Step Guide to Installing Arch Linux from Scratch with KDE Desktop Environment"
 description: ""
 tags: ["Arch Linux"]
 date: 2022-12-17T02:57:50+08:00
 thumbnail: http://www.pixelstalk.net/wp-content/uploads/2016/10/Free-Arch-Linux-Image.png
-lastmod: 2024-10-04T19:28:16+08:00
+lastmod: 2024-11-07T21:37:12+08:00
 ---
 
 ## Introduction
@@ -60,27 +60,27 @@ Choose a tool to create a bootable USB from the ISO:
 Alternatively, use `dd` on Linux to create a bootable USB, also known as "burning" the ISO and my recommendation of only using this method on GNU/Linux, no related any software needed, proproly every GNU/Linux distro has `dd` command.
 
 ```shell
-dd if=/path/to/archlinux.iso of=/dev/sdX status=progress
+sudo dd if=/path/to/archlinux.iso of=/dev/sdX status=progress
 ```
 
 ### Optional: Wipe USB Drive
 
-If you want to wipe the USB drive before burning the ISO, use the following command, also have many ways to wipe the USB drive, this is one of the ways. You can use `dd` to write zeros to the USB drive.
+If you want to wipe the USB drive before burning the ISO, use the following command, also have many ways to wipe the USB drive, this is one of the ways. You can use `dd` to write zeros to the USB drive, this will erase all data on the USB drive with random data.
 
 ```shell
 sudo dd if=/dev/zero of=/dev/sdX bs=4M status=progress
 ```
 
-and here's the way of wipefs:
+and here's the way of wipefs, this command will remove all filesystem signatures from the USB drive.
 
 ```shell
 sudo wipefs -a /dev/sdX
 ```
 
-with shred:
+with shred, this command will overwrite the USB drive with random data.
 
 ```shell
-sudo shred -n 2 -v /dev/sdX
+sudo shred -n 1 -v /dev/sdX
 ```
 
 ## 3. Modify BIOS Settings
@@ -322,11 +322,7 @@ And now your system should boot into Arch Linux! after that, you can install the
 Install a desktop environment (e.g., KDE):
 
 ```shell
-sudo pacman -S xorg xorg-xinit \
-plasma plasma-desktop \
-plasma-wayland-session \
-kde-applications kdeplasma-addons \
-sddm
+sudo pacman -S plasma sddm
 ```
 
 To ensure our display manager is started at boot, enable the `sddm` service:
