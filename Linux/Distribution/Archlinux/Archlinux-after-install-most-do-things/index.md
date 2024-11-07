@@ -1,16 +1,18 @@
 ---
 author: "UmmIt"
-title: "After installed Arch Linux 10 key actions"
+title: "After installed Arch Linux 10 key common tasks"
 description: "top 10 crucial tasks to perform after installing Arch Linux for an optimized and enriched experience."
 tags: ["Arch Linux"]
 date: 2023-08-05T01:08:00+0800
 thumbnail: https://i.redd.it/jsh32mpidhuy.png
-lastmod: 2023-08-28T23:00:20+0800
+lastmod: 2024-11-07T21:42:50+0800
 ---
 
 ## Setting Up Arch Linux (Keep update)
 
 Once you have Arch Linux installed, there are a few key tasks you should complete to optimize your experience. Let's walk through them:
+
+As a Arch linux user, installing package is a optinonal task, but it is the common task that you might want to do. Here're some common tasks that you might want to do after installing Arch Linux :)
 
 ### 1. Activate Multilib Repositories
 
@@ -18,10 +20,10 @@ Enhance your Arch Linux system's versatility by enabling the multilib repositori
 
 1. Open your terminal application.
 
-2. Type the following command and press Enter to open the `pacman.conf` file in the Nano text editor:
+2. Type the following command and press Enter to open the `pacman.conf` file in the vim text editor:
 
    ```shell
-   sudo nano /etc/pacman.conf
+   sudo vim /etc/pacman.conf
    ```
 
 3. In the text editor, navigate to the `[multilib]` section. It should look similar to this:
@@ -83,7 +85,7 @@ Enhance your download progress visualization with the playful "Candy" animation,
 1. Open your terminal and type the following command, then press Enter:
 
    ```shell
-   sudo nano /etc/pacman.conf
+   sudo vim /etc/pacman.conf
    ```
 
 2. Inside the text editor, navigate to the `[options]` section.
@@ -107,7 +109,7 @@ Enhance the clarity of your verbose information by enabling colorful output with
 2. Type the following command and press Enter:
 
    ```shell
-   sudo nano /etc/pacman.conf
+   sudo vim /etc/pacman.conf
    ```
 
 3. In the text editor, locate the `[options]` section.
@@ -127,7 +129,7 @@ Make your package information crystal clear by enabling "VerbosePkgLists." This 
 1. Open your terminal and type the following command, then press Enter:
 
    ```shell
-   sudo nano /etc/pacman.conf
+   sudo vim /etc/pacman.conf
    ```
 
 2. Inside the text editor, locate the `[options]` section.
@@ -147,7 +149,7 @@ Optimize your package downloads by utilizing multiple threads with `ParallelDown
 1. Open your terminal and type the following command, then press Enter:
 
    ```shell
-   sudo nano /etc/pacman.conf
+   sudo vim /etc/pacman.conf
    ```
 
 2. Inside the text editor, locate the `[options]` section.
@@ -192,9 +194,7 @@ Arch Linux offers a default GNOME environment that's visually appealing, but you
 
 ### 8: Install Yay AUR Helper
 
-Simplifying software management on Arch Linux is the `yay` package manager, designed to streamline the acquisition and organization of software from the Arch User Repository (AUR)—a vibrant hub of community-contributed packages. Depending on your preference for customization and speed, you have two choices: `yay` and `yay-bin`.
-
-Here's a comprehensive guide to installing both `yay` and `yay-bin` using Git, alongside the essential development tools, ensuring a tailored experience:
+Simplifying software management on Arch Linux is the `yay` package manager, designed to streamline the acquisition and organization of software from the Arch User Repository (AUR)—a vibrant hub of community-contributed packages. Depending on your preference for customization and speed.
 
 1. **Install Git and Essential Development Tools:**
 
@@ -226,39 +226,11 @@ Here's a comprehensive guide to installing both `yay` and `yay-bin` using Git, a
 
    Respond to prompts and grant necessary permissions during installation.
 
-3. **Installing `yay-bin` for Swiftness:**
-
-   On the other hand, if time efficiency is your priority, opt for the pre-compiled `yay-bin` version. This version eliminates the build phase for quicker installation. Begin by cloning the `yay-bin` repository from the Arch User Repository (AUR) using:
+3. **Start Using `yay`:**
 
    ```shell
-   git clone https://aur.archlinux.org/yay-bin.git
+   yay -S <package-name>
    ```
-
-   Navigate to the cloned `yay-bin` folder:
-
-   ```shell
-   cd yay-bin
-   ```
-
-   Build and install `yay-bin` with the following commands:
-
-   ```shell
-   makepkg -si
-   ```
-
-   Respond to prompts and grant necessary permissions during installation.
-
-4. **Start Using `yay`:**
-
-   With your preferred version of `yay` set up, you're ready to delve into the world of AUR packages. Whether you've installed `yay` or `yay-bin`, the command for package installation remains the same:
-
-   ```shell
-   yay -S package-name
-   ```
-
-   Harness this unified command to explore and install packages, shaping your Arch Linux environment to match your distinct preferences.
-
-By providing separate installation paths for `yay` and `yay-bin` while maintaining a consistent command for usage, you have the flexibility to personalize your Arch Linux experience with either the meticulousness of source-based installation or the swiftness of pre-compiled binaries.
 
 ### 9. Install Your Daily Software
 
@@ -304,7 +276,6 @@ When it comes to securing your system, a firewall plays a crucial role in contro
    ```
 
 Once UFW is enabled, you can start managing your firewall rules to enhance the security of your Arch Linux system. Don't forget to configure UFW rules to allow necessary network services while blocking unauthorized access.
-
 
 ## Conclusion
 
