@@ -4,7 +4,7 @@ title: "How to Build Your Own WireGuard VPN Server and Connect from Anywhere!"
 description: "Learn how to set up your very own WireGuard VPN server and securely connect from anywhere!"
 tags: ["Wireguard", "VPN", "Server", "GNU/Linux", "Android"]
 date: 2024-11-25T02:31:28+0800
-thumbnail: "https://cdn.mos.cms.futurecdn.net/Vo6wb23SMpP2HF3QQmAAmc.jpg
+thumbnail: https://cdn.mos.cms.futurecdn.net/Vo6wb23SMpP2HF3QQmAAmc.jpg
 ---
 
 ## Introduction
