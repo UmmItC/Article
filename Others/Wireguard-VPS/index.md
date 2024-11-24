@@ -62,7 +62,7 @@ wg genkey | tee client_privatekey | wg pubkey > client_publickey
 Finally, generate the pre-shared key.
 
 ```bash
-wg genpsk > presharedkey
+wg genkey > presharedkey
 ```
 
 So the total files should have 5 files in the `/etc/wireguard` directory.
