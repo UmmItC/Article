@@ -5,6 +5,7 @@ description: "Learn how to set up your very own WireGuard VPN server and securel
 tags: ["Wireguard", "VPN", "Server", "GNU/Linux", "Android"]
 date: 2024-11-25T02:31:28+0800
 thumbnail: https://cdn.mos.cms.futurecdn.net/Vo6wb23SMpP2HF3QQmAAmc.jpg
+lastmod: 2024-11-25T13:05:22+0800
 ---
 
 ## Introduction
@@ -37,7 +38,7 @@ To avoid typing sudo repeatedly, switch to the root user. This is handy because 
 sudo su
 ```
 
-### Step 3: Generate the Wireguard Server Keys
+### Step 3: Generate the Wireguard Nessessary Keys
 
 Time to generate the keys for the server and client. WireGuard uses these keys for secure communication. Here’s what we need:
 
@@ -47,10 +48,12 @@ Time to generate the keys for the server and client. WireGuard uses these keys f
 
 While you can paste keys directly into configuration files, saving them in files is more organized and makes them easier to reuse.
 
+Now, to generate the server private and public keys, run the following commands:
+
 ```bash
 cd /etc/wireguard
 
-wg genkey | tee privatekey | wg pubkey > publickey
+wg genkey | tee server_privatekey | wg pubkey > server_publickey
 ```
 
 Now, generate the client private and public keys.
@@ -134,7 +137,8 @@ Let say create the file on `/root/client1.conf`
 ```bash
 [Interface]
 
-# PrivateKey = <CLIENT PRIVATE KEY>
+# PrivateKey is the client private key.
+PrivateKey = <CLIENT PRIVATE KEY>
 
 # Address is the IP address that you want to assign.
 Address = 10.66.66.2/32
@@ -163,8 +167,8 @@ AllowedIPs = 0.0.0.0/0
 Enable IP forwarding on the server so traffic can flow between the server and client.
 
 ```bash
-echo "net.ipv4.ip_forward=1" | sudo tee -a /etc/sysctl.conf
-sudo sysctl -p
+echo "net.ipv4.ip_forward=1" | tee -a /etc/sysctl.conf
+sysctl -p
 ```
 
 ### Step 7: Start the Wireguard Server
@@ -189,7 +193,7 @@ apt install qrencode
 Now, generate the QR code for the client, the read-from is the client configuration file. So that why the path is not matter, you can create the file on everywhere you want.
 
 ```bash
-sudo qrencode --read-from=/etc/wireguard/clients/client_1.conf --type=UTF8
+qrencode --read-from=/root/client1.conf --type=UTF8
 ```
 
 And you should get the QR code.
