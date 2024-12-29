@@ -128,10 +128,34 @@ If you need to terminate a specific process using the mount point, you can use t
 sudo kill -9 PID
 ```
 
-### Step 3: Kill Processes Using the Mount Point
+### Step 4: Kill Processes Using the Mount Point
 
 If you don't sure which process is using the mount point and don't care about those processes, you can kill all processes using the mount point, which is all processes using the drive, all the using files will be closed.
 
 ```bash
 sudo fuser -k /mnt/yourdrive
 ```
+
+## Step 5: Unmount the Encrypted Drive
+
+Once you have closed all processes using the mount point, you can unmount the encrypted drive using the following command:
+
+```bash
+sudo umount /mnt/yourdrive
+```
+
+## Step 6: Close the Encrypted Drive
+
+Finally, you can close the encrypted drive using the `cryptsetup close` command:
+
+```bash
+sudo cryptsetup close yourdrive
+```
+
+## Don't Force Unplugging the Drive
+
+Gernerally, many people forget to unmount the drive before closing the encrypted drive, which will cause the drive to be still in use. And just foce to unplugging the drive will cause the drive to be corrupted. So, it is important to unmount the drive before closing the encrypted drive.
+
+## Conclusion
+
+That's all! You have successfully encrypted an external drive with LUKS and mounted it on your GNU/Linux system. Remember to safely unmount and close the encrypted drive before disconnecting it to avoid data corruption.
