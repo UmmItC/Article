@@ -1,24 +1,22 @@
 ---
-title: "Using Hashcat to breaking the value of MD5 Hash"
+title: "Brute-Force Attack on MD5 Hash Using Hashcat"
 date: 2024-10-28T09:10:10+0800
 tags: ["Brute-force", "Cyber-Security", "Hashcat", "MD5"]
-lastmod: 2024-10-31T22:03:55+0800
+lastmod: 2024-12-31T06:45:40+0800
 ---
 
 ## Introduction
 
-During my semester, I received an assignment that involved breaking an MD5 hash. While there are many online tools available for this task, I decided it was the perfect opportunity to use Hashcat, I had learned about it before btw.
+MD5 is a cryptographic hash function that produces a 128-bit hash value, and its one-way function. That means you can't reverse the hash value to the original value. But you can break it using brute-force attack. In this article, I’ll guide you through the process of breaking an MD5 hash using Hashcat on Arch Linux or any other GNU/Linux distribution.
 
-In this article, I’ll guide you through the process of breaking an MD5 hash using Hashcat on Arch Linux.
-
->I'll not cover any guide on OSX or windows. Use GNU/Linux instead.
+>NOTICE: I'll not cover any guide on OSX or windows. Use GNU/Linux instead.
 
 ## Prerequisites
 
 Before we start, you’ll need a wordlist for the brute-force attack. You can easily download a wordlist from the Arch User Repository (AUR) with the following command:
 
 ```bash
-yay -S wordlists
+paru -S wordlists
 ```
 
 The downloaded wordlists will be located at `/usr/share/wordlists` and will be about 2.1 GB in size.
