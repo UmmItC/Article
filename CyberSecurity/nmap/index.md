@@ -124,6 +124,54 @@ sudo nmap -sS -O <target>
 
 *This command runs a TCP SYN scan (which is less detectable) and attempts to identify the operating system of the target.*
 
+### TCP Connect Scan
+
+To perform a TCP connect scan, use the `-sT` flag:
+
+```bash
+nmap -sT <target>
+```
+
+>*This command performs a full TCP connect scan on the target, which establishes a full connection to each port to check if it is open.*
+
+### Scanning for Specific Ports
+
+To scan for specific ports, use the `-p` flag followed by the port numbers. For example, to scan ports 80, 443, and 8080, use:
+
+```bash
+nmap -p 80,443,8080 <target>
+```
+
+>*This command scans the specified ports (80, 443, and 8080) on the target to check for open services.*
+
+### Scanning range of Ports
+
+To scan a range of ports, use the `-p` flag followed by the range of ports. For example, to scan ports 1 to 100, use:
+
+```bash
+nmap -p 1-100 <target>
+```
+
+>*This command scans the range of ports from 1 to 100 on the target to check for open services.*
+
+### Scanning All Ports
+
+To scan all ports (1-65535), use the `-p-` flag:
+
+```bash
+nmap -p- <target>
+```
+
+>*This command scans all ports on the target to check for open services.*
+
+### Combo Options
+
+You can combine multiple options to perform a more comprehensive scan. For example, to perform a SYN scan with version detection and OS detection and scan all ports, use:
+
+```bash
+sudo nmap -sS -sV -O <target>
+```
+
 ## Vulnerability Scanning with Nmap
 
 Nmap can also check for known vulnerabilities using scripts like `nmap-vulners`. The source code can be found at [vulnersCom/nmap-vulners](https://github.com/vulnersCom/nmap-vulners).
