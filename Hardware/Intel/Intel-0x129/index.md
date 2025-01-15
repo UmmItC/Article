@@ -1,28 +1,21 @@
 ---
 author: "UmmIt"
-title: "Update your BIOS or your Intel 13th/14th Gen CPU gonna die"
-tags: ["Intel"]
+title: "Intel Fucked Up and You Need to Update Your BIOS Now !!!"
+tags: ["Intel", "CPU", "BIOS"]
 date: 2024-09-08T00:32:20+0800
 thumbnail: https://asset.watch.impress.co.jp/img/pcw/docs/1614/529/01_o.jpg
+lastmod: 2025-01-15T10:35:09+0800
 ---
 
-# What Happened?
+## What Happened?
 
-**Intel have a major bug affecting all Intel 13th/14th Gen CPUs. This issue is critical, if not addressed, your CPU might experience severe performance gonna die or even dead. The problem stems from a voltage issue that causes excessive power, potentially leading to thread failures and eventual CPU death.** 
-
-**>IMPORTANT!!! This is a permanent problem if left unresolved, so it's essential to update your BIOS to the latest version, which includes microcode 0x129 to fix this major bug.**
-
-# Finding Your Latest BIOS Files
-
-If you’re using the `B760M GAMING X AX DDR4 motherboard` like I am, you can download the latest BIOS from the official Gigabyte support page:
-
-[Gigabyte B760M GAMING X AX DDR4 Support Page](https://www.gigabyte.com/Motherboard/B760M-GAMING-X-AX-DDR4/support#support-childModelsMenu)
-
-For the `B760M GAMING X AX DDR4`, download the most recent BIOS version, which is labeled `F18d`.
+Recently, Intel have a big issue with their 13th and 14th Gen CPUs. The problem stems from a voltage issue that causes excessive power, leading to instability and potential damage to the CPU. If you have an Intel Core 13th or 14th Gen CPU, you need to update your BIOS to address this issue. Otherwise, your entire hardware we be destroyed by time of quick.
 
 ### Steps to Download and Prepare Your BIOS File:
 
-1. **Download the BIOS File:**
+I will using my BIOS as an example [Gigabyte B760M GAMING X AX DDR4](https://www.gigabyte.com/Motherboard/B760M-GAMING-X-AX-DDR4/support#support-childModelsMenu) to show you how to update your BIOS.
+
+1. **Download the BIOS File which is f18d:**
    - Go to the support page and download the latest BIOS file.
 
 2. **Extract the ZIP File:**
@@ -56,8 +49,6 @@ Run the following command in your terminal:
 grep "microcode" /proc/cpuinfo # Check CPU microcode version
 ```
 
-**Example Output:**
-
 ![Microcode Version Example](./microcode.png)
 
 Make sure the output shows `microcode: 0x129` or something similar indicating the updated microcode version.
@@ -69,8 +60,6 @@ To verify the BIOS version, use this command:
 ```shell
 sudo dmidecode --type bios # Check BIOS version
 ```
-
-**Example Output:**
 
 ![BIOS Version Example](./bios_version.png)
 
