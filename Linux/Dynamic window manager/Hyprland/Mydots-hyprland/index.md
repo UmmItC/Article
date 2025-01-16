@@ -3,106 +3,62 @@ author: "UmmIt"
 title: "My Hyprland dotfiles as, all you need to know before using this"
 tags: ["GNU/Linux", "Hyprland", "Dynamic window manager"]
 date: 2024-08-22T22:50:25+0800
-lastmod: 2024-08-22T23:47:50+0800
+lastmod: 2025-01-16T13:21:58+0800
 ---
 
-## UmmIt thank you!
+## Thank You for Using My Dotfiles!
 
-First of all, I really appreciate you using my dotfiles or checking them out on Reddit, YouTube, or elsewhere. This article is for users who want to use my dotfiles, and I’ll cover everything you need to know.
+First of all, I want to express my gratitude to everyone who has used or checked out my dotfiles on Reddit, YouTube, or elsewhere. This article is intended for users who want to set up their systems like mine, and I’ll cover everything you need to know.
 
-I’ve had some people asking how to set up their system like mine, so I decided to share the process with you.
+I’ve received several inquiries about how to achieve a similar setup, so I decided to share the process with you.
 
-This article is mainly for newcomers to Hyprland.
+This article is primarily aimed at newcomers to Hyprland.
 
-![](./featured.jpg)
+![](./featured.png)
 
-## Want the Same Look as in the Image?
+## Why This Article?
 
-Achieving this is quite straightforward. If you prefer not to use the installation script, I understand. Some users prefer not to run scripts on their system. even everything is fully open source and based on a bash script, so i decided to write this guide.
+The README file may sometimes be confusing or unclear. To address this, I’ve created this article to provide detailed explanations and guidelines to help you better understand my dotfiles.
 
-1. **Install the Required Packages**
+In fact, I don’t frequently update the README file for my dotfiles, but I do regularly update this blog post. So, why not focus on updating this blog post instead?
+
+This approach is similar to many open-source projects, where the README may not always be thoroughly updated. It’s often more beneficial to refer to the blog post or the project’s website for the latest information.
+
+Therefore, I believe that directing you to this article on my blog is a better option. At least, that’s my perspective for now.
+
+## How to Use My Dotfiles
+
+I've created a script to install my dotfiles. You can run the script using the command below:
 
 ```shell
-sudo pacman -S zsh kitty neovim cliphist clipmenu \
-ly hyprland hyprlock hypridle xdg-desktop-portal-hyprland \
-ttf-jetbrains-mono ttf-jetbrains-mono-nerd papirus-icon-theme \
-waybar fuzzel fastfetch wf-recorder swaync \
-pulseaudio pavucontrol alsa-plugins lib32-alsa-plugins lib32-alsa-lib
+bash <(curl -s https://raw.githubusercontent.com/UmmItC/Dotfiles/main/setup.sh)
 ```
 
-## What Do These Packages Do?
-
-To fully set up your system, you need both Pacman and AUR.
-
-### Pacman Packages
-
-- **zsh**: The shell prompt (install with Pacman)
-- **kitty**: The terminal emulator (install with Pacman)
-- **neovim**: The editor (install with Pacman)
-- **cliphist** and **clipmenu**: Clipboard managers (install with Pacman)
-- **ly**: Display manager (install with Pacman)
-- **hyprlock**: Lock management (install with Pacman)
-- **hypridle**: Idle management (install with Pacman)
-- **JetBrains Mono**: Fonts (install with Pacman)
-- **Papirus**: Icon theme (install with Pacman)
-- **waybar**: Status bar (install with Pacman)
-- **fuzzel**: Application launcher (install with Pacman)
-- **fastfetch**: System information tool (install with Pacman)
-- **wf-recorder**: Screen recorder (install with Pacman)
-- **swaync**: Notification daemon (install with Pacman)
-- **Pulseaudio**: Audio server (install with Pacman)
-
-### AUR Packages
-
-For AUR packages, I recommend using `yay`.
+This setup script checks whether `git` and `paru` are installed. If they are not, it will install them, then clone the dotfiles repository and copy the configurations to your system. Alternatively, you can clone my dotfiles and run the `install.sh` script manually:
 
 ```shell
-yay -S wlogout swww hyprshot hyprswitch hyprpicker emote
-```
-
-## Manually Copy Guidelines
-
-If you’ve already installed the required packages, you’re ready to set up my dotfiles. Start by cloning the repository:
-
-```shell
-git clone https://github.com/UmmItC/Dotfiles.git
-```
-
-Next, navigate into the cloned dotfiles directory:
-
-```shell
+git clone --recurse-submodules https://github.com/UmmItC/Dotfiles.git
 cd Dotfiles
+./install.sh
 ```
 
-There are two key directories in the dotfiles repository: `configs` and `scripts`.
+cloning the submodules is included my wallpaper repository, so you can get the defualt wallpaper.
 
-- **`configs`**: Contains all my configuration files and CSS.
-- **`scripts`**: Includes bash scripts for the launcher, such as the wallpaper picker and wf-recorder on Swaync.
+This script will install all the required packages and copy the configurations to your system. The setup is divided into three parts:
 
-Navigate into the `configs` directory. Here are the main directories you might want to copy:
+1. **Installing Required Packages**: This step installs the necessary packages for my dotfiles.
 
-- **fastfetch**
-- **fuzzel**
-- **hypr**
-- **kitty**
-- **swaync**
-- **waybar**
+2. **GPU Packages**: The script will detect your GPU. If you're an AMD user, it will prompt you to install the required packages for your GPU.
 
-Other configurations are optional. You can ignore these if you prefer.
+3. **Copying Configurations**: This step copies the configurations to your system (located in `~/.config`).
 
-To copy the desired configurations into `~/.config`, use the following commands:
+You can choose to skip any of these steps. My script is designed for a modular setup, so you can opt out of installing the required packages or copying the configurations if you prefer.
 
-```shell
-cp -rv fastfetch ~/.config
-cp -rv hypr ~/.config
-cp -rv kitty ~/.config
-cp -rv swaync ~/.config
-cp -rv waybar ~/.config
-```
+> **Note**: The packages of installation will use `paru` to compelete the task.
 
-For `zsh` and `powerlevel10k` configurations, they are typically generated automatically. It’s best to generate these yourself to keep them up-to-date.
+## Fastfetch on Terminal Startup
 
-Make sure to add `fastfetch` to your `~/.zshrc` or `~/.bashrc`, without that, you will not be able to view fastfetch on your terminal once it has started.
+If you want to display Fastfetch when starting the terminal, add the following line to your `.zshrc` or `.bashrc` file:
 
 ```shell
 fastfetch --show-errors --pipe false
@@ -110,36 +66,30 @@ fastfetch --show-errors --pipe false
 
 For the Hyprland configuration, you should modify the keybindings in `~/.config/hypr/hyprland/keybinds.conf`. Adjust the values to suit your preferences.
 
-### Copy the Shell Scripts
+## Post installation
 
-In this section, you’ll find scripts for various tools: clipboard manager, Hyprlock, Hyprpicker, Swaync, SWWW, and Waybar.
+After completing the installation, you should modify the configurations to suit your preferences. Since my dotfiles of the installation are based on my pre-configured settings, you will need to make some adjustments.
 
-1. **Clipboard Manager**
+### Hyprlock
 
-   For the clipboard manager, the script is stored in `cliphist`. This file serves as the launcher for the clipboard manager.
+You will need to modify this file to suit your preferences, this file located at `~/.config/hypr/hyprlock.conf`.
 
-2. **Hyprlock**
+- The monitor name you should set to your monitor name in the `monitor` variable. You can find your monitor name by running `hyprctl monitors`.
 
-   The Hyprlock script controls when the lock screen activates. Since I use GPU passthrough for my second GPU, I encountered issues when the second GPU was in use by VMs. The Hyprlock script manages these conditions to prevent system problems.
+### Waybar
 
-3. **Swaync**
+You will need to modify this file to suit your preferences, this file located at `~/.config/waybar/config`.
 
-   This script works with `wf-recorder`. It includes a toggle button for Swaync to control `wf-recorder`.
+The network interface name should be set to your network interface name in the `interface` variable. You can find your network interface name by running `ip a`.
 
-4. **SWWW**
+### Hyprshot
 
-   `swww` is the wallpaper picker. The default path for wallpapers is `~/.wallpaper`. Place your images in this directory, and the wallpaper picker will automatically detect and load them when launched. You can activate it using `ALT_L + W`.
+You will need to modify this environment variable to suit your preferences, this file located at `~/.config/hypr/hyprland/env.conf`.
 
-5. **Waybar**
+The `HYPRSHOT_DIR` variable should be set to your desired directory. otherwise your screenshots will not function properly.
 
-   The Waybar script is designed to upgrade your system. It includes updates for:
+## Wallpaper
 
-   ```shell
-   sudo pacman -Syuv
-   yay -Syuv
-   ~/.oh-my-zsh/tools/upgrade.sh
-   git -C $HOME/powerlevel10k pull
-   flatpak update -v
-   ```
+For wallpaper you just need to place the wallpaper file into `~/.wallpaper` directory.
 
-   This script ensures that your system packages and configurations are up-to-date.
+After that, press `ALT + W` to choose the wallpaper you want.
