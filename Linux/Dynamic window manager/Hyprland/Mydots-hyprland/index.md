@@ -3,7 +3,7 @@ author: "UmmIt"
 title: "My Hyprland dotfiles as, all you need to know before using this"
 tags: ["GNU/Linux", "Hyprland", "Dynamic window manager"]
 date: 2024-08-22T22:50:25+0800
-lastmod: 2025-01-16T13:21:58+0800
+lastmod: 2025-01-16T14:40:23+0800
 ---
 
 ## Thank You for Using My Dotfiles!
@@ -50,7 +50,9 @@ This script will install all the required packages and copy the configurations t
 
 2. **GPU Packages**: The script will detect your GPU. If you're an AMD user, it will prompt you to install the required packages for your GPU.
 
-3. **Copying Configurations**: This step copies the configurations to your system (located in `~/.config`).
+3. **Laptop packages**: The script will detect if you're using a laptop. If you are, it will prompt you to install the required packages for your laptop.
+
+4. **Copying Configurations**: This step copies the configurations to your system (located in `~/.config`).
 
 You can choose to skip any of these steps. My script is designed for a modular setup, so you can opt out of installing the required packages or copying the configurations if you prefer.
 
