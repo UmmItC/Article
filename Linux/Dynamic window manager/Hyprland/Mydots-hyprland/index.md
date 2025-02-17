@@ -3,7 +3,7 @@ author: "UmmIt"
 title: "My Hyprland dotfiles as, all you need to know before using this"
 tags: ["GNU/Linux", "Hyprland", "Dynamic window manager"]
 date: 2024-08-22T22:50:25+0800
-lastmod: 2025-01-16T14:40:23+0800
+lastmod: 2025-02-17T08:05:10+0800
 ---
 
 ## Thank You for Using My Dotfiles!
@@ -95,3 +95,23 @@ The `HYPRSHOT_DIR` variable should be set to your desired directory. otherwise y
 For wallpaper you just need to place the wallpaper file into `~/.wallpaper` directory.
 
 After that, press `ALT + W` to choose the wallpaper you want.
+
+
+## Showcases
+
+Here are some screenshots of my setup :D
+
+{{< gallery >}}
+    <img src="https://dl.ummit.dev/dotfiles-20250217/app-launcher.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/clipboard.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/color-picker.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/neovim.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/neovim-2.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/panel.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/power-management.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/power-management-2.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/upgrade.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/wallpaper-picker.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/windows.png" class="grid-w33" />
+    <img src="https://dl.ummit.dev/dotfiles-20250217/windows-2.png" class="grid-w33" />
+{{< /gallery >}}
