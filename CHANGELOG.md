@@ -1,7 +1,7 @@
 # Changelog
 
 - [20250101](#20250101)
-- [2025-02-06](#20250206)
+- [20250213](#20250213)
 
 ## 20250101
 
@@ -44,3 +44,18 @@ As this is the first release, there are currently no changes :)
 
 - **Removed Python Articles**: Deleted articles about Python to focus on more relevant topics. ([e52590d](https://github.com/UmmItC/Article/commit/e52590d))
 - **GPU Passthrough Articles Moved**: Removed articles about GPU passthrough, libvirtd, and virt-manager as they are being moved to a new website. ([535f19a0](https://github.com/UmmItC/Article/commit/535f19a0))
+
+## 20250310
+
+Includes 8 commits, featuring 4 new articles and 1 article improvement.
+
+### New Articles
+
+- **Bronco CTF 2025 Writeup** (commit: [e15563b](https://github.com/UmmItC/Article/commit/e15563b))
+- **How to Utilize CVE-2017-0144 to Exploit Vulnerable Windows Machines** (commit: [9fd2e41](https://github.com/UmmItC/Article/commit/9fd2e41))
+- **Creating a Trojan Backdoor with Reverse TCP Payload in Metasploit and Setting Up Worldwide Access for Windows Machines** (commit: [22cf944](https://github.com/UmmItC/Article/commit/22cf944))
+- **Monthly Curve of Mine - January to February 2025** (commit: [c63a7ed](https://github.com/UmmItC/Article/commit/c63a7ed))
+
+### Articles Improvements
+
+- **Dotfile Add Showcase Gallery** (commit: [0c75557](https://github.com/UmmItC/Article/commit/0c75557))
