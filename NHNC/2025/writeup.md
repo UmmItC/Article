@@ -220,9 +220,10 @@ Now you can start searching for deleted files by pressing search and selecting `
 This will ask about the format of the partition. As you can see in `/etc/fstab`, you know it's `ext4` format. You should select the ext4 format.
 
 ![Recovery Progress](./images/Crackme/photorec4.png)
-![Partition Format](./images/Crackme/photorec5.png)
 
 Now you should select the directory where you want to save the recovered files. Just select `.` and press `C` to continue.
+
+![Partition Format](./images/Crackme/photorec5.png)
 
 You'll see a few custom files being recovered. Let you check these files. Quit the program by pressing `q` multiple times.
 
@@ -251,21 +252,14 @@ head -c 4111 f111421696.key > keyfile.key
 
 ![trim](./images/Crackme/trim.png)
 
-Now, let's try to decrypt `/dev/vda3` with this keyfile:
+Now, let's try to decrypt `/dev/vda3` with this keyfile and mount it:
 
 ```shell
 cryptsetup -v open /dev/vda3 NHNCluks --key-file keyfile.key
-```
-
-Excellent! You can see `/dev/vda3` was decrypted successfully!
-
-Let's mount it with this command.
-
-> By the way, you can see there are already two empty directories - that's actually a hint that you need to mount two partitions to capture the flag.
-
-```shell
 cd ~ && mount /dev/mapper/NHNCluks first_one
 ```
+
+> By the way, you can see there are already two empty directories - that's actually a hint that you need to mount two partitions to capture the flag.
 
 ![mount1](./images/Crackme/mount1.png)
 
@@ -294,7 +288,7 @@ You can use a tool from the Kali repository called `bruteforce-luks`:
 
 But there's one problem - this machine isn't Kali, right?
 
-You can find the source code and build the program yourself. Actually, thinking about this question also coincides with me creating my very own first GNU/Linux distro based on Arch.
+You can find the source code and build the program yourself. Actually, thinking about this question also coincides with me creating my very own first GNU/Linux distro based on Arch. (been a while xd)
 
 As a CTF player and Arch user, I also started packaging my own packages, and surprisingly, this bruteforce tool doesn't even exist in AUR.
 
@@ -366,7 +360,7 @@ The time this takes depends on how much CPU you're using!
 
 ![Bruteforce Progress](./images/Crackme/bf.png)
 
-It will take some time. (2thread about 30min~
+It will take some time. ( 2 threads about 30min~
 
 I set the password to be around line 777 in the wordlist. Since didn't want people guessing the password easily XD, so maybe I made it a bit challenging...
 
@@ -401,5 +395,10 @@ Hopefully you learned something or found it fun and helpful.
 
 Did you learn a lot about recovery, Linux, and GitHub/Git usage? :D
 
+29 Teams solve my gitgit
+
 ![GJ](./images/2025-07-08-212614_hyprshot.png)
+
+3 Teams solve my Crackme
+
 ![GJ](./images/2025-07-08-213014_hyprshot.png)
